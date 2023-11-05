@@ -1,0 +1,8 @@
+\DeclareNewTOC[
+   name=Formel,
+   listname={Formelverzeichnis}
+]{equation}
+\setuptoc{equation}{chapterlist}
+
+\newcommand{\myequations}[1]{%
+\addcontentsline{equation}{chapter}{\protect\numberline{\theequation}#1}}

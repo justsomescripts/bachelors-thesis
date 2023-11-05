@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>rv6l_main</name>
+  <version>1.0.0</version>
+  <description>Object detection and Point Cloud mapping using ROS Noetic and Intel RealSense 435</description>
+
+  <maintainer email="dgries@mailbox.org">David Gries</maintainer>
+
+  <license>TODO</license>
+
+  <url type="website">https://rzlapgle01.intern.th-ab.de/s170417/rv6l-kinect</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>realsense2_camera</build_depend>
+  <build_depend>darknet_ros_3d</build_depend>
+  <build_depend>rv6l_3d_msgs</build_depend>
+  <build_depend>opencv_apps</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>rv6l_pick_and_place</build_depend>
+  <build_depend>forward_command_controller</build_depend>
+  <build_depend>joint_state_controller</build_depend>
+  <build_depend>joint_trajectory_controller</build_depend>
+  <build_depend>position_controllers</build_depend>
+  <build_depend>rqt_joint_trajectory_controller</build_depend>
+  <build_depend>rsv_cartesian_interface</build_depend>
+  <build_depend>rsv_joint_interface</build_depend>
+  <build_depend>rv6l</build_depend>
+  <build_depend>rv6l_cell</build_depend>
+  <build_depend>rv6l_cell_config</build_depend>
+  <build_depend>rv6l_config</build_depend>
+  <build_depend>nlopt</build_depend>
+
+  <build_export_depend>realsense2_camera</build_export_depend>
+  <build_export_depend>darknet_ros_3d</build_export_depend>
+  <build_export_depend>rv6l_3d_msgs</build_export_depend>
+  <build_export_depend>opencv_apps</build_export_depend>
+  <build_export_depend>pcl_ros</build_export_depend>
+  <build_export_depend>rv6l_pick_and_place</build_export_depend>
+  <build_export_depend>forward_command_controller</build_export_depend>
+  <build_export_depend>joint_state_controller</build_export_depend>
+  <build_export_depend>joint_trajectory_controller</build_export_depend>
+  <build_export_depend>position_controllers</build_export_depend>
+  <build_export_depend>rqt_joint_trajectory_controller</build_export_depend>
+  <build_export_depend>rsv_cartesian_interface</build_export_depend>
+  <build_export_depend>rsv_joint_interface</build_export_depend>
+  <build_export_depend>rv6l</build_export_depend>
+  <build_export_depend>rv6l_cell</build_export_depend>
+  <build_export_depend>rv6l_cell_config</build_export_depend>
+  <build_export_depend>rv6l_config</build_export_depend>
+  <build_export_depend>nlopt</build_export_depend>
+
+  <exec_depend>realsense2_camera</exec_depend>
+  <exec_depend>darknet_ros_3d</exec_depend>
+  <exec_depend>rv6l_3d_msgs</exec_depend>
+  <exec_depend>opencv_apps</exec_depend>
+  <exec_depend>pcl_ros</exec_depend>
+  <exec_depend>rv6l_pick_and_place</exec_depend>
+  <exec_depend>forward_command_controller</exec_depend>
+  <exec_depend>joint_state_controller</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>position_controllers</exec_depend>
+  <exec_depend>rqt_joint_trajectory_controller</exec_depend>
+  <exec_depend>rsv_cartesian_interface</exec_depend>
+  <exec_depend>rsv_joint_interface</exec_depend>
+  <exec_depend>rv6l</exec_depend>
+  <exec_depend>rv6l_cell</exec_depend>
+  <exec_depend>rv6l_cell_config</exec_depend>
+  <exec_depend>rv6l_config</exec_depend>
+  <exec_depend>nlopt</exec_depend>
+
+  <export>
+  </export>
+</package>

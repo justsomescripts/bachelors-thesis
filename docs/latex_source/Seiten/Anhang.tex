@@ -1,0 +1,804 @@
+\part*{Anhang}
+%\chapter{Anhang}
+\appendixtoc
+
+\vspace*{\fill}
+Auf dem beigelegten Datenträger (Verzeichnis \lstinline{David Gries/Dokumente und Medien}) befindet sich eine HTML-Datei mit Anleitungen zur Installation der \ac{ROS}-Pakete. Außerdem ist der vollständige Quellcode aller relevanten Pakete und eine Demonstration des Projekts in Form eines Videos enthalten. Entfernte Zeilen zur Verbesserung der Übersicht sind mit \lstinline{[ . . . ]} gekennzeichnet. Die Verzeichnisstruktur von Quellcode und Konfigurationsdateien richtet sich dabei nach der Struktur des folgenden schriftlichen Anhangs. Dieser beinhaltet alle Code-Abschnitte, die zum besseren Verständnis der Arbeit beitragen.
+
+Informationen zu Lizenzen der in dieser Arbeit verwendeten Projekte sind auf dem Datenträger zu finden. Diese befinden je nach Anforderungen der jeweiligen Lizenz im Ordner des Softwarepakets oder am Anfang des Quellcodes. Kennzeichnungspflichtige Änderungen wurden an den entsprechenden Stellen ergänzt.
+
+\newpage
+\overfullrule=0pt\dirtree{%
+  .1 David Gries.
+  .2 Anhang A - RV6L 3D.
+  .3 A\_1 - Konfiguration.
+  .4 RV6L.yaml.
+  .4 ros.yaml.
+  .4 darknet\_3d.yaml.
+  .3 A\_2 - Bounding Box Funktion.
+  .4 Darknet3DListener.cpp.
+  .4 Darknet3D.cpp.
+  .4 darknet3d\_node.cpp.
+  .3 A\_3 - Bounding Box Message.
+  .4 RV6L\_positions.msg.
+  .4 RV6L\_position.msg.
+  .3 A\_4 - Launchfiles.
+  .4 first.launch.
+  .4 RV6L.launch.
+  .4 second.launch.
+  .3 A\_5 - ROS Package.
+  .4 package.xml.
+  .2 Anhang B - RealSense Launchfile.
+  .3 RV6L.launch.
+  .2 Anhang C - Handhabung.
+  .3 C\_1 - Bounding Box Subscriber.
+  .4 subscriber\_cam.py.
+  .3 C\_2 - Anfahren des Objekts.
+  .4 pick\_and\_place\_detection.py.
+  .2 Anhang D - Darknet.
+  .3 D\_1 - Darknet Konfiguration.
+  .4 RV6L.cfg.
+  .3 D\_2 - Objekt Konfiguration.
+  .4 obj.data.
+  .3 D\_3 - Generator fuer train.
+  .4 generate\_train.py.
+  .2 Dokumente und Medien.
+  .3 Bachelorarbeit David Gries.pdf.
+  .3 Bilder und Quelldateien/....
+  .3 Installationsanleitung.html.
+  .3 Objekterkennung Demo.mp4.
+}
+
+%├── Anhang A - RV6L 3D
+%│   ├── A_1 - Konfiguration
+%│   │   ├── darknet_3d.yaml
+%│   │   ├── ros.yaml
+%│   │   └── RV6L.yaml
+%│   ├── A_2 - Bounding Box Funktion
+%│   │   ├── Darknet3D.cpp
+%│   │   ├── Darknet3DListener.cpp
+%│   │   └── darknet3d_node.cpp
+%│   ├── A_3 - Bounding Box Message
+%│   │   ├── RV6L_position.msg
+%│   │   └── RV6L_positions.msg
+%│   ├── A_4 - Launchfiles
+%│   │   ├── first.launch
+%│   │   ├── RV6L.launch
+%│   │   └── second.launch
+%│   └── A_5 - ROS Package
+%│       └── package.xml
+%├── Anhang B - RealSense Launchfile
+%│   └── RV6L.launch
+%├── Anhang C - Handhabung
+%│   ├── C_1 - Bounding Box Subscriber
+%│   │   └── subscriber_cam.py
+%│   └── C_2 - Anfahren des Objekts
+%│       └── pick_and_place_detection.py
+%├── Anhang D - Darknet
+%│   ├── D_1 - Darknet Konfiguration
+%│   │   └── RV6L.cfg
+%│   ├── D_2 - Objekt Konfiguration
+%│   │   └── obj.data
+%│   └── D_3 - Generator fuer train
+%│       └── generate_train.py
+%└── Dokumente und Medien
+%    ├── Installationsanleitung.html
+%    └── Objekterkennung Demo.mp4
+
+\newpage\section{RV6L 3D} \label{sec:rv6l_3d}
+
+\subsection{Konfiguration} \label{subsec:bounding_config}
+
+\subsubsection{Hauptkonfiguration}
+
+\lstinline{[darknet_3d.yaml]}
+
+\begin{lstlisting}
+darknet_ros_topic: /darknet_ros/bounding_boxes
+output_bbx3d_topic: /darknet_ros_3d/bounding_boxes
+point_cloud_topic: /camera/depth_registered/points
+working_frame: camera_link
+mininum_detection_thereshold: 0.3
+minimum_probability: 0.3
+interested_classes: ["box_r", "box_g", "cyl_b"]
+\end{lstlisting}
+
+
+\subsubsection{Darknet ROS Konfiguration} \label{subsec:darknet_rosconfig}
+
+\lstinline{[ros.yaml]}
+
+\begin{lstlisting}
+subscribers:
+
+  camera_reading:
+    topic: /camera/color/image_raw
+    queue_size: 1
+[ . . . ]
+\end{lstlisting}
+
+\subsubsection{RV6L Konfiguration} \label{subsec:darknet_rv6lconfig}
+
+\lstinline{[rv6l.yaml]}
+
+\begin{lstlisting}
+yolo_model:
+
+  config_file:
+    name: RV6L.cfg
+  weight_file:
+    name: RV6L.weights
+  threshold:
+    value: 0.3
+  detection_classes:
+    names:
+      - box_r
+      - box_g
+      - cyl_b
+\end{lstlisting}
+
+\subsection{Bounding Box Funktion} \label{subsec:bounding_funkt}
+
+\lstinline{[darknet3d_node.cpp, Darknet3D.cpp, Darknet3DListener.cpp]}
+
+\begin{lstlisting}[language=c++]
+[ . . . ]
+
+void
+Darknet3D::calculate_boxes(const sensor_msgs::PointCloud2& cloud_pc2,
+    const pcl::PointCloud<pcl::PointXYZRGB>::ConstPtr cloud_pcl,
+    rv6l_3d_msgs::RV6L_positions* boxes) // Funktion zur Berechnung der Positionsdaten
+{
+  boxes->header.stamp = cloud_pc2.header.stamp;
+  boxes->header.frame_id = working_frame_;
+
+  for (auto bbx : original_bboxes_)
+  {
+    if ((bbx.probability < minimum_probability_) ||
+        (std::find(interested_classes_.begin(), interested_classes_.end(), bbx.Class) == interested_classes_.end()))
+    {
+      continue;
+    }
+
+    int center_x, center_y;
+
+    center_x = (bbx.xmax + bbx.xmin) / 2;
+    center_y = (bbx.ymax + bbx.ymin) / 2;
+    
+    int pcl_index = (center_y* cloud_pc2.width) + center_x;
+    pcl::PointXYZRGB center_point =  cloud_pcl->at(pcl_index);
+    
+    if (std::isnan(center_point.x))
+      continue;
+    
+    float maxx, minx, maxy, miny, maxz, minz, midx, midy, midz, w, h, d;
+    
+    maxx = maxy = maxz =  -std::numeric_limits<float>::max();
+    minx = miny = minz =  std::numeric_limits<float>::max();
+  
+    for (int i = bbx.xmin; i < bbx.xmax; i++)
+      for (int j = bbx.ymin; j < bbx.ymax; j++)
+      {
+        pcl_index = (j* cloud_pc2.width) + i;
+        pcl::PointXYZRGB point =  cloud_pcl->at(pcl_index);
+    
+        if (std::isnan(point.x))
+          continue;
+    
+        if (fabs(point.x - center_point.x) > mininum_detection_thereshold_)
+              continue;
+    
+        maxx = std::max(point.x, maxx); 
+        maxy = std::max(point.y, maxy);
+        maxz = std::max(point.z, maxz);
+        minx = std::min(point.x, minx);
+        miny = std::min(point.y, miny);
+        minz = std::min(point.z, minz);
+
+        midx = (maxx + minx) / 2; // Objektmittelpunkt (x)
+        midy = (maxy + miny) / 2; // Objektmittelpunkt (y)
+        midz = (maxz + minz) / 2; // Objektmittelpunkt (z)
+      }
+    
+    rv6l_3d_msgs::RV6L_position bbx_msg;
+    bbx_msg.Class = bbx.Class;
+    bbx_msg.probability = bbx.probability;
+
+    bbx_msg.w = midy; // "horizontale" Position
+    bbx_msg.h = midz; // "vertikale" Position
+    bbx_msg.d = minx; // Abstand (min)
+
+    boxes->bounding_boxes.push_back(bbx_msg);
+  }
+}
+
+[ . . . ]
+\end{lstlisting}
+
+\subsection{Bounding Box Message} \label{subsec:bounding_strukt}
+
+\lstinline{[RV6L_position.msg, RV6L_positions.msg]}
+
+\subsubsection{Struktur}
+
+% Msg Struktur
+\begin{lstlisting}
+string Class
+float32 probability
+float32 w
+float32 h
+float32 d
+\end{lstlisting}
+
+\subsubsection{Ausgabe (Topic)} 
+% Msg Ausgabe
+\begin{lstlisting}[language=c]
+---
+ header: 
+  seq: 5
+  stamp: 
+    secs: 1644414390
+    nsecs: 296165943
+  frame_id: "camera_link"
+bounding_boxes: 
+  - 
+    Class: "box_r"                  // Objektklasse
+    probability: 0.9995404481887817 // Wahrscheinlichkeit
+    w: 0.3090042471885681           // hor. Position in m
+    h: 0.18566249310970306          // ver. Position in m
+    d: 0.5624291300773621           // Abstand in m
+\end{lstlisting}
+
+\subsection{Launchfiles} \label{subsec:bounding_launchfiles}
+
+\subsubsection{RV6L 3D (Darknet)}
+
+\lstinline{[RV6L.launch]}
+
+\begin{lstlisting}[language=xml]
+<launch>
+
+  <!-- Config camera image topic  -->
+  <arg name="camera_rgb_topic" default="/camera/color/image_raw" />
+
+  <!-- Console launch prefix -->
+  <arg name="launch_prefix" default=""/>
+
+  <!-- Config and weights folder. -->
+  <arg name="yolo_weights_path"          default="$(find darknet_ros)/yolo_network_config/weights"/>
+  <arg name="yolo_config_path"           default="$(find darknet_ros)/yolo_network_config/cfg"/>
+
+  <!-- ROS and network parameter files -->
+  <arg name="ros_param_file"             default="$(find darknet_ros)/config/ros.yaml"/>
+  <arg name="network_param_file"         default="$(find darknet_ros)/config/RV6L.yaml"/>
+
+  <!-- Load parameters -->
+  <rosparam command="load" ns="darknet_ros" file="$(arg network_param_file)"/>
+  <rosparam command="load" file="$(find darknet_ros)/config/ros.yaml"/>
+  <param name="darknet_ros/subscribers/camera_reading/topic" type="string" value="$(arg camera_rgb_topic)" />
+
+  <!-- Start darknet and ros wrapper -->
+  <node pkg="darknet_ros" type="darknet_ros" name="darknet_ros" output="screen" launch-prefix="$(arg launch_prefix)">
+
+    <param name="weights_path"          value="$(arg yolo_weights_path)" />
+    <param name="config_path"           value="$(arg yolo_config_path)" />
+  </node>
+
+  <!-- Start darknet ros 3d -->
+  <node pkg="darknet_ros_3d" type="darknet3d_node" name="darknet_3d" output="screen">
+    <rosparam command="load" file="$(find darknet_ros_3d)/config/darknet_3d.yaml" />
+  </node>
+</launch>
+\end{lstlisting}
+
+\subsubsection{rv6l\_object\_detection}
+
+\lstinline{[first.launch]}
+
+\begin{lstlisting}[language=xml]
+  <launch>
+
+  <!-- Start RealSense driver -->
+  <include file="$(find realsense2_camera)/launch/RV6L.launch" />
+
+  <!-- Start rv6l_3d -->
+  <include file="$(find darknet_ros_3d)/launch/RV6L.launch" />
+  
+  <!-- Start hardware interface -->
+  <include file="$(find rsv_cartesian_interface)/test/test_hardware_interface.launch" /> 
+
+</launch>
+\end{lstlisting}
+
+\lstinline{[second.launch]}
+
+\begin{lstlisting}[language=xml]
+  <launch>
+
+  <!-- Start execution -->
+  <include file="$(find rv6l_cell_config)/launch/rv6l_moveit_planning_execution_tut.launch" />
+
+  <!-- Start movement -->
+
+</launch>
+\end{lstlisting}
+
+\subsection{ROS Package}
+
+\lstinline{[package.xml]}
+
+\begin{lstlisting}[language=xml]
+<?xml version="1.0"?>
+<package format="2">
+  <name>rv6l_main</name>
+  <version>1.0.0</version>
+  <description>Object detection and Point Cloud mapping using ROS Noetic and Intel RealSense 435</description>
+  
+  <maintainer email="dgries@mailbox.org">David Gries</maintainer>
+  
+  <url type="website">https://rzlapgle01.intern.th-ab.de/s170417/rv6l-kinect</url>
+  
+  <buildtool_depend>catkin</buildtool_depend>
+  
+  <build_depend>realsense2_camera</build_depend>
+  <build_depend>darknet_ros_3d</build_depend>
+  <build_depend>rv6l_3d_msgs</build_depend>
+  <build_depend>opencv_apps</build_depend>
+  <build_depend>pcl_ros</build_depend>
+  <build_depend>rv6l_pick_and_place</build_depend>
+  <build_depend>forward_command_controller</build_depend>
+  <build_depend>joint_state_controller</build_depend>
+  <build_depend>joint_trajectory_controller</build_depend>
+  <build_depend>position_controllers</build_depend>
+  <build_depend>rqt_joint_trajectory_controller</build_depend>
+  <build_depend>rsv_cartesian_interface</build_depend>
+  <build_depend>rsv_joint_interface</build_depend>
+  <build_depend>rv6l</build_depend>
+  <build_depend>rv6l_cell</build_depend>
+  <build_depend>rv6l_cell_config</build_depend>
+  <build_depend>rv6l_config</build_depend>
+  <build_depend>nlopt</build_depend>
+  
+  <build_export_depend>realsense2_camera</build_export_depend>
+  <build_export_depend>darknet_ros_3d</build_export_depend>
+  <build_export_depend>rv6l_3d_msgs</build_export_depend>
+  <build_export_depend>opencv_apps</build_export_depend>
+  <build_export_depend>pcl_ros</build_export_depend>
+  <build_export_depend>rv6l_pick_and_place</build_export_depend>
+  <build_export_depend>forward_command_controller</build_export_depend>
+  <build_export_depend>joint_state_controller</build_export_depend>
+  <build_export_depend>joint_trajectory_controller</build_export_depend>
+  <build_export_depend>position_controllers</build_export_depend>
+  <build_export_depend>rqt_joint_trajectory_controller</build_export_depend>
+  <build_export_depend>rsv_cartesian_interface</build_export_depend>
+  <build_export_depend>rsv_joint_interface</build_export_depend>
+  <build_export_depend>rv6l</build_export_depend>
+  <build_export_depend>rv6l_cell</build_export_depend>
+  <build_export_depend>rv6l_cell_config</build_export_depend>
+  <build_export_depend>rv6l_config</build_export_depend>
+  <build_export_depend>nlopt</build_export_depend>
+  
+  <exec_depend>realsense2_camera</exec_depend>
+  <exec_depend>darknet_ros_3d</exec_depend>
+  <exec_depend>rv6l_3d_msgs</exec_depend>
+  <exec_depend>opencv_apps</exec_depend>
+  <exec_depend>pcl_ros</exec_depend>
+  <exec_depend>rv6l_pick_and_place</exec_depend>
+  <exec_depend>forward_command_controller</exec_depend>
+  <exec_depend>joint_state_controller</exec_depend>
+  <exec_depend>joint_trajectory_controller</exec_depend>
+  <exec_depend>position_controllers</exec_depend>
+  <exec_depend>rqt_joint_trajectory_controller</exec_depend>
+  <exec_depend>rsv_cartesian_interface</exec_depend>
+  <exec_depend>rsv_joint_interface</exec_depend>
+  <exec_depend>rv6l</exec_depend>
+  <exec_depend>rv6l_cell</exec_depend>
+  <exec_depend>rv6l_cell_config</exec_depend>
+  <exec_depend>rv6l_config</exec_depend>
+  <exec_depend>nlopt</exec_depend>
+  
+  <export>
+  </export>
+</package>
+\end{lstlisting}
+
+\newpage\section{Realsense Launchfile} \label{sec:realsense}
+
+\lstinline{[RV6L.launch]}
+
+\begin{lstlisting}[language=xml]
+<!--
+A launch file, derived from rgbd_launch and customized for Realsense ROS driver,
+to publish XYZRGB point cloud like an OpenNI camera.
+
+NOTICE: To use this launch file you must first install ros package rgbd_launch.
+
+To launch Realsense with software registeration (ROS Image Pipeline and rgbd_launch):
+    $ roslaunch realsense2_camera rs_rgbd.launch
+Processing enabled by ROS driver:
+    # depth rectification
+Processing enabled by this node:
+    # rgb rectification
+    # depth registeration
+    # pointcloud_xyzrgb generation
+
+To launch Realsense with hardware registeration (ROS Realsense depth alignment):
+    $ roslaunch realsense2_camera rs_rgbd.launch align_depth:=true
+Processing enabled by ROS driver:
+    # depth rectification
+    # depth registration
+Processing enabled by this node:
+    # rgb rectification
+    # pointcloud_xyzrgb generation
+-->
+
+<launch>
+  <arg name="camera"              default="camera"/>
+  <arg name="tf_prefix"           default="$(arg camera)"/>
+  <arg name="external_manager"    default="false"/>
+  <arg name="manager"             default="realsense2_camera_manager"/>
+
+  <!-- Camera device specific arguments -->
+
+  [ . . . ]
+
+  <arg name="depth_width"         default="-1"/>
+  <arg name="depth_height"        default="-1"/>
+  <arg name="enable_depth"        default="true"/>
+
+  [ . . . ]
+
+  <arg name="color_width"         default="-1"/>
+  <arg name="color_height"        default="-1"/>
+  <arg name="enable_color"        default="true"/>
+
+  [ . . . ]
+
+  <arg name="depth_fps"           default="-1"/>
+  <arg name="infra_fps"           default="-1"/>
+  <arg name="color_fps"           default="-1"/>
+
+  [ . . . ]
+
+  <arg name="enable_pointcloud"   default="false"/>
+  <arg name="enable_sync"         default="true"/>
+  <arg name="align_depth"         default="true"/>
+  <arg name="filters"             default="pointcloud"/>
+
+  <arg name="publish_tf"          default="true"/>
+  <arg name="tf_publish_rate"     default="0"/> <!-- 0 - static transform -->
+
+  <!-- rgbd_launch specific arguments -->
+
+  <!-- Arguments for remapping all device namespaces -->
+  <arg name="rgb"                             default="color" />
+  [ . . . ]
+  <arg name="depth"                           default="depth" />
+  <arg name="depth_registered_pub"            default="depth_registered" />
+  <arg name="depth_registered"                default="depth_registered" unless="$(arg align_depth)" />
+  <arg name="depth_registered"                default="aligned_depth_to_color" if="$(arg align_depth)" />
+  <arg name="depth_registered_filtered"       default="$(arg depth_registered)" />
+  <arg name="projector"                       default="projector" />
+
+  <!-- Processing Modules -->
+  <arg name="rgb_processing"                  default="true"/>
+  [ . . . ]
+  <arg name="depth_processing"                default="false"/>
+  <arg name="depth_registered_processing"     default="true"/>
+  [ . . . ]
+
+  <group ns="$(arg camera)">
+
+    <!-- Launch the camera device nodelet-->
+    <include file="$(find realsense2_camera)/launch/includes/nodelet.launch.xml">
+
+      [ . . . ]
+
+      <arg name="enable_pointcloud"        value="$(arg enable_pointcloud)"/>
+      <arg name="enable_sync"              value="$(arg enable_sync)"/>
+      <arg name="align_depth"              value="$(arg align_depth)"/>
+
+      [ . . . ]
+
+      <arg name="depth_width"              value="$(arg depth_width)"/>
+      <arg name="depth_height"             value="$(arg depth_height)"/>
+      <arg name="enable_depth"             value="$(arg enable_depth)"/>
+
+      <arg name="color_width"              value="$(arg color_width)"/>
+      <arg name="color_height"             value="$(arg color_height)"/>
+      <arg name="enable_color"             value="$(arg enable_color)"/>
+
+      [ . . . ]
+
+      <arg name="depth_fps"                value="$(arg depth_fps)"/>
+      <arg name="color_fps"                value="$(arg color_fps)"/>
+      <arg name="filters"                  value="$(arg filters)"/>
+
+      <arg name="publish_tf"               value="$(arg publish_tf)"/>
+      <arg name="tf_publish_rate"          value="$(arg tf_publish_rate)"/>
+    </include>
+
+    <!-- RGB processing -->
+    <include if="$(arg rgb_processing)"
+             file="$(find rgbd_launch)/launch/includes/rgb.launch.xml">
+      <arg name="manager"                       value="$(arg manager)" />
+      <arg name="respawn"                       value="$(arg respawn)" />
+      <arg name="rgb"                           value="$(arg rgb)" />
+      <arg name="debayer_processing"            value="$(arg debayer_processing)" />
+    </include>
+
+    <group if="$(eval depth_registered_processing and sw_registered_processing)">
+      <node pkg="nodelet" type="nodelet" name="register_depth"
+            args="load depth_image_proc/register $(arg manager) $(arg bond)" respawn="$(arg respawn)">
+        <remap from="rgb/camera_info"             to="$(arg rgb)/camera_info" />
+        <remap from="depth/camera_info"           to="$(arg depth)/camera_info" />
+        <remap from="depth/image_rect"            to="$(arg depth)/image_rect_raw" />
+        <remap from="depth_registered/image_rect" to="$(arg depth_registered)/sw_registered/image_rect_raw" />
+      </node>
+
+      <!-- Publish registered XYZRGB point cloud with software registered input -->
+      <node pkg="nodelet" type="nodelet" name="points_xyzrgb_sw_registered"
+            args="load depth_image_proc/point_cloud_xyzrgb $(arg manager) $(arg bond)" respawn="$(arg respawn)">
+        <remap from="rgb/image_rect_color"        to="$(arg rgb)/image_rect_color" />
+        <remap from="rgb/camera_info"             to="$(arg rgb)/camera_info" />
+        <remap from="depth_registered/image_rect" to="$(arg depth_registered_filtered)/sw_registered/image_rect_raw" />
+        <remap from="depth_registered/points"     to="$(arg depth_registered)/points" />
+      </node>
+    </group>
+
+    <group if="$(eval depth_registered_processing and hw_registered_processing)">
+      <!-- Publish registered XYZRGB point cloud with hardware registered input (ROS Realsense depth alignment) -->
+      <node pkg="nodelet" type="nodelet" name="points_xyzrgb_hw_registered"
+            args="load depth_image_proc/point_cloud_xyzrgb $(arg manager) $(arg bond)" respawn="$(arg respawn)">
+        <remap from="rgb/image_rect_color"        to="$(arg rgb)/image_rect_color" />
+        <remap from="rgb/camera_info"             to="$(arg rgb)/camera_info" />
+        <remap from="depth_registered/image_rect" to="$(arg depth_registered)/image_raw" />
+        <remap from="depth_registered/points"     to="$(arg depth_registered_pub)/points" />
+      </node>
+    </group>
+  </group>
+</launch>
+\end{lstlisting}
+
+\newpage\section{Handhabung} \label{sec:handhabung}
+
+\subsection{Bounding Box Subscriber} \label{subsec:bounding_sub}
+
+\lstinline{[subscriber_cam.py]}
+
+\begin{lstlisting}[language=python]
+#!/usr/bin/env python3
+
+import rospy
+from rv6l_3d_msgs.msg import RV6L_positions
+
+class uwe:
+   def __init__(self):
+        rospy.init_node('cam_subscriber_Node', anonymous=None)
+        rospy.Subscriber("/darknet_ros_3d/bounding_boxes", RV6L_positions, self.callback_pos)
+        
+    def callback_pos(self, data):
+        for box in data.bounding_boxes:
+            self.object_pos_cam = [box.Class, box.h, box.w, box.d]
+
+if __name__ == '__main__':
+    pos_cam = uwe()
+    rospy.wait_for_message("/darknet_ros_3d/bounding_boxes/", RV6L_positions, timeout=None)
+    print("[Objektklasse, horizontal, vertikal, Tiefe]: ", pos_cam.object_pos_cam)
+\end{lstlisting}
+
+\subsection{Anfahren des Objekts}
+
+\lstinline{[pick_and_place_detection.py]} 
+
+\begin{lstlisting}[language=python]
+#!/usr/bin/env python3
+ 
+from bauplan_auswertung import get_position
+from bauplan_auswertung import hoehenauswertung
+from subscriber_cam import uwe
+from rv6l_3d_msgs.msg import RV6L_positions
+
+[ . . . ]
+
+TCP   = 0.29      # Offset des TCP
+REF_X = 0.89      # Scanposition X-Koordinate
+REF_Y = 0         # Scanposition Y-Koordinate
+REF_Z = 1.56      # Scanposition Z-Koorinate
+
+STATIC_X = 0.237  # Offset in X-Richtung
+STATIC_Y = 0      # Offset in Y-Richtung
+STATIC_Z = 0.235  # Offset in Z-Richtung
+
+SCAN_NEAR = 0.30  # Hoehe fuer nahen Scan
+    
+[ . . . ]
+
+class MoveGroupPythonInterface(object):
+    """MoveGroupPythonInterface"""
+
+    def __init__(self):
+
+[ . . . ]
+
+    def go_to_pose_goal(self, posx, posy, posz):
+        
+        move_group = self.move_group
+
+        ## Planning to a Pose Goal
+        ## ^^^^^^^^^^^^^^^^^^^^^^^
+        ## We can plan a motion for this group to a desired pose for the
+        ## end-effector:
+        pose_goal = geometry_msgs.msg.Pose()
+        pose_goal.orientation.w = 0
+        pose_goal.orientation.x = 1
+        pose_goal.orientation.y = 0
+        pose_goal.orientation.z = 0
+        pose_goal.position.x = posx
+        pose_goal.position.y = posy
+        pose_goal.position.z = posz
+
+        move_group.set_pose_target(pose_goal)
+
+        ## Now, we call the planner to compute the plan and execute it.
+        plan = move_group.go(wait=True)
+        # Calling `stop()` ensures that there is no residual movement
+        move_group.stop()
+        # It is always good to clear your targets after planning with poses.
+        move_group.clear_pose_targets()
+     
+        current_pose = self.move_group.get_current_pose().pose
+        return all_close(pose_goal, current_pose, 0.01)
+
+    def go_to_scan(self, posx, posy, posz):
+        
+        move_group = self.move_group
+
+        ## Planning to the specific scan of an object (only with camera system)
+        ## ^^^^^^^^^^^^^^^^^^^^^^^
+        ## We can plan a motion for this group to a desired pose for the
+        ## end-effector:
+        scan_goal = geometry_msgs.msg.Pose()
+        scan_goal.orientation.x = 0
+        scan_goal.orientation.y = 0.7071067811865464
+        scan_goal.orientation.z = 0
+        scan_goal.orientation.w = 0.7071067811865464
+        scan_goal.position.x = posx
+        scan_goal.position.y = posy
+        scan_goal.position.z = posz
+
+        move_group.set_pose_target(scan_goal)
+
+        ## Now, we call the planner to compute the plan and execute it.
+        plan = move_group.go(wait=True)
+        # Calling `stop()` ensures that there is no residual movement
+        move_group.stop()
+        # It is always good to clear your targets after planning with poses.
+        move_group.clear_pose_targets()
+     
+        current_pose = self.move_group.get_current_pose().pose
+        return all_close(scan_goal, current_pose, 0.01)
+
+
+[ . . . ]
+    
+    #########################################################
+    # Codeabschnitt zur manuellen Objekterkennungserprobung #
+    #########################################################
+
+    input("<ENTER> fuer Scanposition")
+    py.go_to_scan_pose()  # Scanposition anfahren
+
+    # Klasse aus subscriber_cam initialisieren, Objektpos. auslesen
+    input("<ENTER> zum Ermitteln der ungefaehren Objektposition")
+    ichbinder = uwe()
+    rospy.wait_for_message("/darknet_ros_3d/bounding_boxes/", RV6L_positions, timeout=None)
+    cam_pos = ichbinder.object_pos_cam  # Aktuelle position in cam_pos speichern
+    print("Scanposition: ", (cam_pos[1] + REF_X), (cam_pos[2] + REF_Y),(REF_Z - cam_pos[3] + SCAN_NEAR))
+
+    input("<ENTER> Anfahren der Scanposition fuer den genauen Scan")
+                     
+    py.go_to_scan((cam_pos[1] + REF_X), (cam_pos[2] + REF_Y),(REF_Z - cam_pos[3] + SCAN_NEAR))  # Anfahren der Scanposition ~ ueber dem Bauteil
+
+    input("<ENTER> zum Ermitteln des Objektmittelpunkts")
+    cam_near = ichbinder.object_pos_cam
+    print("genauer Mittelpunkt: ", (cam_pos[1] + REF_X + cam_near[1]), (cam_pos[2] + REF_Y + cam_near[2]),(REF_Z - cam_pos[3] + SCAN_NEAR - (cam_near[3] - SCAN_NEAR)))
+    
+    input("<ENTER> Greifposition anfahren")
+    py.go_to_pose_goal((cam_pos[1] + REF_X + cam_near[1] + STATIC_X), (cam_pos[2] + REF_Y + cam_near[2] + STATIC_Y), (REF_Z - cam_pos[3] + STATIC_Z - (cam_near[3] - SCAN_NEAR)))
+
+
+    input("<ENTER> Endeffektor absenken")
+    py.go_to_pose_goal((cam_pos[1] + REF_X + cam_near[1] + STATIC_X), (cam_pos[2] + REF_Y + cam_near[2] + STATIC_Y), (REF_Z - cam_pos[3] + STATIC_Z - (cam_near[3] - SCAN_NEAR) - 0.25))
+    
+    input("<ENTER> <SAUGER>")
+
+    input("<ENTER> Endeffektor anheben")
+    py.go_to_pose_goal((cam_pos[1] + REF_X + cam_near[1] + STATIC_X), (cam_pos[2] + REF_Y + cam_near[2] + STATIC_Y), (REF_Z - cam_pos[3] + STATIC_Z - (cam_near[3] - SCAN_NEAR)))
+
+    input("<ENTER> Zielposition anfahren")
+    py.go_to_pose_goal(float(pos1_gesucht[0]), float(pos1_gesucht[1]), (float(pos1_gesucht[2]) + height2 + TCP))
+
+    input("<ENTER> Objekt ablegen")
+    py.go_to_pose_goal(float(pos1_gesucht[0]), float(pos1_gesucht[1]), (float(pos1_gesucht[2]) + height2 + TCP - 0.25))
+
+    input("<ENTER> <SAUGER AUS>")
+    # Sauger aus
+
+    input("<ENTER> Endeffektor anheben")
+    py.go_to_pose_goal((cam_pos[1] + REF_X + cam_near[1] + STATIC_X), (cam_pos[2] + REF_Y + cam_near[2] + STATIC_Y), (REF_Z - cam_pos[3] + STATIC_Z - (cam_near[3] - SCAN_NEAR)))
+
+    #########################################################
+    
+    print("============ Python pick and place Demo complete!")
+  except rospy.ROSInterruptException:
+    return
+  except KeyboardInterrupt:
+    return
+    
+if __name__ == "__main__":
+    main()
+
+   
+\end{lstlisting}
+
+\newpage\section{Darknet} \label{sec:darknet}
+
+\subsection{Darknet Konfiguration} \label{subsec:darknet_config}
+
+\lstinline{[RV6L.cfg]}
+
+\begin{lstlisting}
+[net] # Alle
+batch = 64
+
+subdivisions = 16 (32 if issues occur)
+
+max_batches = 10000 (higher number leads to greater accuracy but longer compute time)
+max_batches = (2000 * number_of_classes, minimum 4000)
+steps = (0.8 * max_batches), (0.9 * max_batches)
+
+
+[convolutional] # Alle ueber [yolo]
+
+filters = (number_of_classes + 5) * 3
+
+
+[yolo] # Alle
+
+classes = number_of_classes
+\end{lstlisting}
+
+\subsection{Objekt Konfiguration} \label{subsec:object_config}
+
+\lstinline{[obj.data]}
+
+\begin{lstlisting}
+classes = <Anzahl Klassen>
+train = data/train.txt
+valid = data/test.txt
+names = data/obj.names  
+\end{lstlisting}
+
+\subsection{Generator für train.txt (Python)} \label{subsec:darknet_train}
+
+\lstinline{[generate_train.py]}
+
+\begin{lstlisting}[language=python]
+#!/usr/bin/env python
+import os
+
+image_files = []
+os.chdir(os.path.join("data", "obj"))
+for filename in os.listdir(os.getcwd()):
+    if filename.endswith(".jpg"):
+        image_files.append("data/obj/" + filename)
+os.chdir("..")
+with open("train.txt", "w") as outfile:
+    for image in image_files:
+        outfile.write(image)
+        outfile.write("\n")
+    outfile.close()
+os.chdir("..")
+\end{lstlisting}
+\cite{the_ai_guy_yologeneratetrainingfile_2021}

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+<!-- Folgende Zeile anpassen!!!!!!! -->
+    <param name="robot_description" command="cat $(find rv6l)/urdf/rv6l.urdf"/>
+    <rosparam file="$(find rsv_cartesian_interface)/test/test_params.yaml" command="load" />
+
+    <!-- Start RSV interface -->
+    <node name="rsv_cartesian_interface" pkg="rsv_cartesian_interface"
+      type="rsv_cartesian_interface_node" respawn="false"
+      output="screen"
+      required="true"/>
+
+    <!-- Load joint controller configurations from YAML file to parameter server -->
+    <rosparam file="$(find rsv_cartesian_interface)/config/hardware_controllers.yaml" command="load"/>
+    <!-- Load standard rsv controller joint names from YAML file to parameter server -->
+    <rosparam file="$(find rsv_cartesian_interface)/config/controller_joint_names.yaml" command="load"/>
+
+    <!-- Load controllers -->
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen"
+        args="position_trajectory_controller joint_state_controller --shutdown-timeout 1"/>
+    <!-- Load robot state publisher -->
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" />
+</launch>

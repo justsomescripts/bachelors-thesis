@@ -1,0 +1,17 @@
+<launch>
+
+  <!--https://github.com/ros-planning/moveit/commit/072276200dee3253783e3f718adeff761ac22b21?branch=072276200dee3253783e3f718adeff761ac22b21-->
+  <arg name="execution_type" default="interpolate" />
+
+    <!-- loads ros_controllers to the param server -->
+  <rosparam file="$(find rv6l_cell_config)/config/controllers.yaml"/>
+  <!-- loads moveit_controller_manager on the parameter server which is taken as argument
+    if no argument is passed, moveit_simple_controller_manager will be set -->
+  <arg name="moveit_controller_manager" default="moveit_simple_controller_manager/MoveItSimpleControllerManager" />
+  <param name="use_controller_manager" value="false"/>
+  <param name="trajectory_execution/execution_duration_monitoring" value="false"/>
+    
+  <param name="moveit_controller_manager" value="$(arg moveit_controller_manager)"/>
+  
+
+</launch>

@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-1-g15f4949  Build Version: 1.6.7594.29634
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="rv6l">
+  <link
+    name="RV6L_L1">
+    <inertial>
+      <origin
+        xyz="-0.011669 0 0.45634"
+        rpy="0 0 0" />
+      <mass
+        value="91.486" />
+      <inertia
+        ixx="2.4489"
+        ixy="4.4764E-17"
+        ixz="-0.18189"
+        iyy="2.5908"
+        iyz="7.3455E-17"
+        izz="1.5279" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="RV6L_L2">
+    <inertial>
+      <origin
+        xyz="0.16779 0.019758 0.13471"
+        rpy="0 0 0" />
+      <mass
+        value="23.489" />
+      <inertia
+        ixx="0.31629"
+        ixy="-0.016755"
+        ixz="-0.072157"
+        iyy="0.28925"
+        iyz="-0.023028"
+        izz="0.37089" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_1"
+    type="continuous">
+    <origin
+      xyz="0 0 0.912"
+      rpy="0 0 0" />
+    <parent
+      link="RV6L_L1" />
+    <child
+      link="RV6L_L2" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-3.1"
+      upper="2.6"
+      effort="0"
+      velocity="2.4" />
+  </joint>
+  <link
+    name="RV6L_L3">
+    <inertial>
+      <origin
+        xyz="0.27967 5.116E-07 -0.19021"
+        rpy="0 0 0" />
+      <mass
+        value="15.986" />
+      <inertia
+        ixx="0.077323"
+        ixy="1.5334E-06"
+        ixz="0.027022"
+        iyy="0.39281"
+        iyz="1.9081E-07"
+        izz="0.37023" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_2"
+    type="continuous">
+    <origin
+      xyz="0.28 0 0.203"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="RV6L_L2" />
+    <child
+      link="RV6L_L3" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.1"
+      upper="0.5"
+      effort="0"
+      velocity="2.4" />
+  </joint>
+  <link
+    name="RV6L_L4">
+    <inertial>
+      <origin
+        xyz="-0.078281 0.039079 -0.0022158"
+        rpy="0 0 0" />
+      <mass
+        value="11.879" />
+      <inertia
+        ixx="0.10965"
+        ixy="0.046217"
+        ixz="0.0013005"
+        iyy="0.12618"
+        iyz="-0.0011595"
+        izz="0.18037" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_3"
+    type="continuous">
+    <origin
+      xyz="0.615 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RV6L_L3" />
+    <child
+      link="RV6L_L4" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2"
+      upper="2.6"
+      effort="0"
+      velocity="2.4" />
+  </joint>
+  <link
+    name="RV6L_L5">
+    <inertial>
+      <origin
+        xyz="0.25644 -0.00019106 -1.1102E-16"
+        rpy="0 0 0" />
+      <mass
+        value="10.468" />
+      <inertia
+        ixx="0.019196"
+        ixy="-5.0133E-05"
+        ixz="-2.9411E-17"
+        iyy="0.22409"
+        iyz="-9.3311E-06"
+        izz="0.21864" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_4"
+    type="continuous">
+    <origin
+      xyz="0 0 0"
+      rpy="1.5707963267949 0 0" />
+    <parent
+      link="RV6L_L4" />
+    <child
+      link="RV6L_L5" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="-3.1"
+      upper="3.1"
+      effort="0"
+      velocity="4.6" />
+  </joint>
+  <link
+    name="RV6L_L6">
+    <inertial>
+      <origin
+        xyz="0.031554 -2.5737E-08 1.05E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.38498" />
+      <inertia
+        ixx="0.0002071"
+        ixy="5.7131E-12"
+        ixz="-2.643E-07"
+        iyy="0.00053065"
+        iyz="8.8854E-12"
+        izz="0.0005245" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_L6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_5"
+    type="continuous">
+    <origin
+      xyz="0.74 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="RV6L_L5" />
+    <child
+      link="RV6L_L6" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-2.1"
+      upper="2.1"
+      effort="0"
+      velocity="4.6" />
+  </joint>
+  <link
+    name="RV6L_Greifer_Sauger">
+    <inertial>
+      <origin
+        xyz="-0.00064473 0 0.12636"
+        rpy="0 0 0" />
+      <mass
+        value="1.3959" />
+      <inertia
+        ixx="0.0079992"
+        ixy="-2.1898E-19"
+        ixz="2.8024E-05"
+        iyy="0.0070973"
+        iyz="8.8711E-19"
+        izz="0.0016686" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_Greifer_Sauger.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://rv6l/meshes/RV6L_Greifer_Sauger.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint_6"
+    type="continuous">
+    <origin
+      xyz="0.0900000000000001 0 0"
+      rpy="1.5707963267949 0 1.5707963267949" />
+    <parent
+      link="RV6L_L6" />
+    <child
+      link="RV6L_Greifer_Sauger" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="-6.2"
+      upper="6.2"
+      effort="0"
+      velocity="6.8" />
+  </joint>
+</robot>

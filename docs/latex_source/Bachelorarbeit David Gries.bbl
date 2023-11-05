@@ -1,0 +1,2845 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{diesing_how_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=4cea9101a826551199cfa304a0c4a0f0}{%
+           family={Diesing},
+           familyi={D\bibinitperiod},
+           given={Genevieve},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{4cea9101a826551199cfa304a0c4a0f0}
+      \strng{fullhash}{4cea9101a826551199cfa304a0c4a0f0}
+      \strng{bibnamehash}{4cea9101a826551199cfa304a0c4a0f0}
+      \strng{authorbibnamehash}{4cea9101a826551199cfa304a0c4a0f0}
+      \strng{authornamehash}{4cea9101a826551199cfa304a0c4a0f0}
+      \strng{authorfullhash}{4cea9101a826551199cfa304a0c4a0f0}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{1}
+      \field{langid}{english}
+      \field{month}{9}
+      \field{title}{How {AI} and Machine Vision Impact Vision Robotics}
+      \field{titleaddon}{Quality Magazine}
+      \field{urlday}{27}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb How AI and Machine Vision Impact Vision Robotics | Quality Magazine:/home/david/snap/zotero-snap/common/Zotero/storage/ZX9SEVVV/96664-how-ai-and-machine-vision-impact-vision-robotics.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.qualitymag.com/articles/96664-how-ai-and-machine-vision-impact-vision-robotics
+      \endverb
+      \verb{url}
+      \verb https://www.qualitymag.com/articles/96664-how-ai-and-machine-vision-impact-vision-robotics
+      \endverb
+    \endentry
+    \entry{quigley_ros_2009}{article}{}
+      \name{author}{9}{}{%
+        {{hash=9404eebbe5c52f5580a6f6515ebcbb80}{%
+           family={Quigley},
+           familyi={Q\bibinitperiod},
+           given={Morgan},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a8ad4a5f43253f69552460c946e34e49}{%
+           family={Gerkey},
+           familyi={G\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+        {{hash=03be3bc097356f7d1ec26652c7045241}{%
+           family={Conley},
+           familyi={C\bibinitperiod},
+           given={Ken},
+           giveni={K\bibinitperiod}}}%
+        {{hash=960c70f75f497debf10c247f8076241e}{%
+           family={Faust},
+           familyi={F\bibinitperiod},
+           given={Josh},
+           giveni={J\bibinitperiod}}}%
+        {{hash=0d11ace6e44e4742ea1692d7ddf4819e}{%
+           family={Foote},
+           familyi={F\bibinitperiod},
+           given={Tully},
+           giveni={T\bibinitperiod}}}%
+        {{hash=fae0a680822c97400d0807bb44b87838}{%
+           family={Leibs},
+           familyi={L\bibinitperiod},
+           given={Jeremy},
+           giveni={J\bibinitperiod}}}%
+        {{hash=05ef16e9b1890a54a9c97ac2b1be9f80}{%
+           family={Berger},
+           familyi={B\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=1afca7d350a45f78259bb8af3f168e7d}{%
+           family={Wheeler},
+           familyi={W\bibinitperiod},
+           given={Rob},
+           giveni={R\bibinitperiod}}}%
+        {{hash=bdb4d740fc9548d1c32a62103c30169d}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{5702e63b159ec9b7d822eb99ba3e1aa1}
+      \strng{fullhash}{0f9a5bb9cc2736bbc6efcf11c1e2f968}
+      \strng{bibnamehash}{0f9a5bb9cc2736bbc6efcf11c1e2f968}
+      \strng{authorbibnamehash}{0f9a5bb9cc2736bbc6efcf11c1e2f968}
+      \strng{authornamehash}{5702e63b159ec9b7d822eb99ba3e1aa1}
+      \strng{authorfullhash}{0f9a5bb9cc2736bbc6efcf11c1e2f968}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper gives an overview of {ROS}, an opensource robot operating system. {ROS} is not an operating system in the traditional sense of process management and scheduling; rather, it provides a structured communications layer above the host operating systems of a heterogenous compute cluster. In this paper, we discuss how {ROS} relates to existing robot software frameworks, and brieﬂy overview some of the available application software which uses {ROS}.}
+      \field{day}{12}
+      \field{langid}{english}
+      \field{month}{5}
+      \field{number}{3}
+      \field{title}{{ROS}: an open-source Robot Operating System}
+      \field{year}{2009}
+      \field{dateera}{ce}
+      \field{pages}{6}
+      \range{pages}{1}
+      \verb{file}
+      \verb Quigley et al. - ROS an open-source Robot Operating System.pdf:/home/david/snap/zotero-snap/common/Zotero/storage/QJJQSXG2/Quigley et al. - ROS an open-source Robot Operating System.pdf:application/pdf
+      \endverb
+    \endentry
+    \entry{steinbeck_entwicklung_2022}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=0032cd7e2fff0be94fa6a6639ea2f549}{%
+           family={Steinbeck},
+           familyi={S\bibinitperiod},
+           given={Dennis},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{0032cd7e2fff0be94fa6a6639ea2f549}
+      \strng{fullhash}{0032cd7e2fff0be94fa6a6639ea2f549}
+      \strng{bibnamehash}{0032cd7e2fff0be94fa6a6639ea2f549}
+      \strng{authorbibnamehash}{0032cd7e2fff0be94fa6a6639ea2f549}
+      \strng{authornamehash}{0032cd7e2fff0be94fa6a6639ea2f549}
+      \strng{authorfullhash}{0032cd7e2fff0be94fa6a6639ea2f549}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{27}
+      \field{langid}{german}
+      \field{month}{2}
+      \field{title}{Entwicklung einer {KI}-basierten Robotersteuerung mit Industrial {ROS} - Generierung von Handhabungssequenzen für mechanische Konstruktionen nach gegebenen Bauplänen}
+      \field{year}{2022}
+      \field{dateera}{ce}
+    \endentry
+    \entry{rosorg_roshome_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=454c079cf1e43cd87218eb3963ce3cf9}{%
+           family={{ros.org}},
+           familyi={r\bibinitperiod}}}%
+      }
+      \strng{namehash}{454c079cf1e43cd87218eb3963ce3cf9}
+      \strng{fullhash}{454c079cf1e43cd87218eb3963ce3cf9}
+      \strng{bibnamehash}{454c079cf1e43cd87218eb3963ce3cf9}
+      \strng{authorbibnamehash}{454c079cf1e43cd87218eb3963ce3cf9}
+      \strng{authornamehash}{454c079cf1e43cd87218eb3963ce3cf9}
+      \strng{authorfullhash}{454c079cf1e43cd87218eb3963ce3cf9}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{ROS}/Home}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ros.org/
+      \endverb
+      \verb{url}
+      \verb https://www.ros.org/
+      \endverb
+    \endentry
+    \entry{joseph_mastering_2018}{book}{}
+      \name{author}{2}{}{%
+        {{hash=6899949d3918f5d0b97064b0c6adfba7}{%
+           family={Joseph},
+           familyi={J\bibinitperiod},
+           given={Lentin},
+           giveni={L\bibinitperiod}}}%
+        {{hash=26f06a571b4062656792d975fa9ddd47}{%
+           family={Cacace},
+           familyi={C\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Birmingham Mumbai}%
+      }
+      \list{publisher}{1}{%
+        {Packt}%
+      }
+      \strng{namehash}{2a9ba9094ae1e500a159213cdd0ff07d}
+      \strng{fullhash}{2a9ba9094ae1e500a159213cdd0ff07d}
+      \strng{bibnamehash}{2a9ba9094ae1e500a159213cdd0ff07d}
+      \strng{authorbibnamehash}{2a9ba9094ae1e500a159213cdd0ff07d}
+      \strng{authornamehash}{2a9ba9094ae1e500a159213cdd0ff07d}
+      \strng{authorfullhash}{2a9ba9094ae1e500a159213cdd0ff07d}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{edition}{Second edition}
+      \field{isbn}{978-1-78847-895-3}
+      \field{pagetotal}{559}
+      \field{shorttitle}{Mastering {ROS} for robotics programming}
+      \field{title}{Mastering {ROS} for robotics programming: design, build, and simulate complex robots using the Robot Operating System}
+      \field{year}{2018}
+      \field{dateera}{ce}
+    \endentry
+    \entry{rosindustrialorg_brief_nodate}{online}{}
+      \name{author}{1}{}{%
+        {{hash=448a9df65c887eaf48260fb80f931046}{%
+           family={{rosindustrial.org}},
+           familyi={r\bibinitperiod}}}%
+      }
+      \strng{namehash}{448a9df65c887eaf48260fb80f931046}
+      \strng{fullhash}{448a9df65c887eaf48260fb80f931046}
+      \strng{bibnamehash}{448a9df65c887eaf48260fb80f931046}
+      \strng{authorbibnamehash}{448a9df65c887eaf48260fb80f931046}
+      \strng{authornamehash}{448a9df65c887eaf48260fb80f931046}
+      \strng{authorfullhash}{448a9df65c887eaf48260fb80f931046}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Brief History}
+      \field{urlday}{9}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://rosindustrial.org/briefhistory
+      \endverb
+      \verb{url}
+      \verb https://rosindustrial.org/briefhistory
+      \endverb
+    \endentry
+    \entry{dattalo_rosintroduction_2018}{online}{}
+      \name{author}{1}{}{%
+        {{hash=404424082ae3fec590ca6d20c186becc}{%
+           family={Dattalo},
+           familyi={D\bibinitperiod},
+           given={Amanda},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{404424082ae3fec590ca6d20c186becc}
+      \strng{fullhash}{404424082ae3fec590ca6d20c186becc}
+      \strng{bibnamehash}{404424082ae3fec590ca6d20c186becc}
+      \strng{authorbibnamehash}{404424082ae3fec590ca6d20c186becc}
+      \strng{authornamehash}{404424082ae3fec590ca6d20c186becc}
+      \strng{authorfullhash}{404424082ae3fec590ca6d20c186becc}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{8}
+      \field{month}{8}
+      \field{title}{{ROS}/Introduction - {ROS} Wiki}
+      \field{type}{Wiki}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.ros.org/ROS/Introduction
+      \endverb
+      \verb{url}
+      \verb https://wiki.ros.org/ROS/Introduction
+      \endverb
+    \endentry
+    \entry{wikirosorg_noeticinstallation_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3d34d294171b114769696416e9d9edc1}{%
+           family={{wiki.ros.org}},
+           familyi={w\bibinitperiod}}}%
+      }
+      \strng{namehash}{3d34d294171b114769696416e9d9edc1}
+      \strng{fullhash}{3d34d294171b114769696416e9d9edc1}
+      \strng{bibnamehash}{3d34d294171b114769696416e9d9edc1}
+      \strng{authorbibnamehash}{3d34d294171b114769696416e9d9edc1}
+      \strng{authornamehash}{3d34d294171b114769696416e9d9edc1}
+      \strng{authorfullhash}{3d34d294171b114769696416e9d9edc1}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{month}{12}
+      \field{title}{noetic/Installation - {ROS} Wiki}
+      \field{type}{Wiki}
+      \field{urlday}{11}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.ros.org/noetic/Installation
+      \endverb
+      \verb{url}
+      \verb https://wiki.ros.org/noetic/Installation
+      \endverb
+    \endentry
+    \entry{romero_rosconcepts_2014}{online}{}
+      \name{author}{1}{}{%
+        {{hash=9551246b170da4fff7dc86fa7fa3c340}{%
+           family={Romero},
+           familyi={R\bibinitperiod},
+           given={Aaron\bibnamedelima Martinez},
+           giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{9551246b170da4fff7dc86fa7fa3c340}
+      \strng{fullhash}{9551246b170da4fff7dc86fa7fa3c340}
+      \strng{bibnamehash}{9551246b170da4fff7dc86fa7fa3c340}
+      \strng{authorbibnamehash}{9551246b170da4fff7dc86fa7fa3c340}
+      \strng{authornamehash}{9551246b170da4fff7dc86fa7fa3c340}
+      \strng{authorfullhash}{9551246b170da4fff7dc86fa7fa3c340}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{6}
+      \field{title}{{ROS}/Concepts - {ROS} Wiki}
+      \field{type}{Wiki}
+      \field{urlday}{12}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2014}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.ros.org/ROS/Concepts
+      \endverb
+      \verb{url}
+      \verb https://wiki.ros.org/ROS/Concepts
+      \endverb
+    \endentry
+    \entry{thomas_catkinworkspaces_2017}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3f4d9f73d764549dcf6a342e02430bb5}{%
+           family={Thomas},
+           familyi={T\bibinitperiod},
+           given={Dirk},
+           giveni={D\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f4d9f73d764549dcf6a342e02430bb5}
+      \strng{fullhash}{3f4d9f73d764549dcf6a342e02430bb5}
+      \strng{bibnamehash}{3f4d9f73d764549dcf6a342e02430bb5}
+      \strng{authorbibnamehash}{3f4d9f73d764549dcf6a342e02430bb5}
+      \strng{authornamehash}{3f4d9f73d764549dcf6a342e02430bb5}
+      \strng{authorfullhash}{3f4d9f73d764549dcf6a342e02430bb5}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{7}
+      \field{month}{7}
+      \field{title}{catkin/workspaces - {ROS} Wiki}
+      \field{type}{Wiki}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://wiki.ros.org/catkin/workspaces
+      \endverb
+      \verb{url}
+      \verb http://wiki.ros.org/catkin/workspaces
+      \endverb
+    \endentry
+    \entry{van_eeden_catkinconceptual_overview_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=897adaa0b97b5861f8661fdb6ae7cb43}{%
+           family={Van\bibnamedelima Eeden},
+           familyi={V\bibinitperiod\bibinitdelim E\bibinitperiod},
+           given={Francois},
+           giveni={F\bibinitperiod}}}%
+      }
+      \strng{namehash}{897adaa0b97b5861f8661fdb6ae7cb43}
+      \strng{fullhash}{897adaa0b97b5861f8661fdb6ae7cb43}
+      \strng{bibnamehash}{897adaa0b97b5861f8661fdb6ae7cb43}
+      \strng{authorbibnamehash}{897adaa0b97b5861f8661fdb6ae7cb43}
+      \strng{authornamehash}{897adaa0b97b5861f8661fdb6ae7cb43}
+      \strng{authorfullhash}{897adaa0b97b5861f8661fdb6ae7cb43}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{26}
+      \field{month}{3}
+      \field{title}{catkin/conceptual\_overview - {ROS} Wiki}
+      \field{type}{Wiki}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://wiki.ros.org/catkin/conceptual_overview
+      \endverb
+      \verb{url}
+      \verb http://wiki.ros.org/catkin/conceptual_overview
+      \endverb
+    \endentry
+    \entry{loretz_rosdep_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=847b1cb997c17960e13b408190094a21}{%
+           family={Loretz},
+           familyi={L\bibinitperiod},
+           given={Shane},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{847b1cb997c17960e13b408190094a21}
+      \strng{fullhash}{847b1cb997c17960e13b408190094a21}
+      \strng{bibnamehash}{847b1cb997c17960e13b408190094a21}
+      \strng{authorbibnamehash}{847b1cb997c17960e13b408190094a21}
+      \strng{authornamehash}{847b1cb997c17960e13b408190094a21}
+      \strng{authorfullhash}{847b1cb997c17960e13b408190094a21}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{month}{5}
+      \field{title}{rosdep - {ROS} Wiki}
+      \field{type}{Wiki}
+      \field{urlday}{14}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.ros.org/rosdep
+      \endverb
+      \verb{url}
+      \verb https://wiki.ros.org/rosdep
+      \endverb
+    \endentry
+    \entry{clearpath_robotics_intro_2015}{online}{}
+      \name{author}{1}{}{%
+        {{hash=afae5e3f85168f31e454f46dcdbfd5f9}{%
+           family={{Clearpath Robotics}},
+           familyi={C\bibinitperiod}}}%
+      }
+      \strng{namehash}{afae5e3f85168f31e454f46dcdbfd5f9}
+      \strng{fullhash}{afae5e3f85168f31e454f46dcdbfd5f9}
+      \strng{bibnamehash}{afae5e3f85168f31e454f46dcdbfd5f9}
+      \strng{authorbibnamehash}{afae5e3f85168f31e454f46dcdbfd5f9}
+      \strng{authornamehash}{afae5e3f85168f31e454f46dcdbfd5f9}
+      \strng{authorfullhash}{afae5e3f85168f31e454f46dcdbfd5f9}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Intro to {ROS} — {ROS} Tutorials 0.5.2 documentation}
+      \field{urlday}{19}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.clearpathrobotics.com/assets/guides/kinetic/ros/Intro%20to%20the%20Robot%20Operating%20System.html
+      \endverb
+      \verb{url}
+      \verb https://www.clearpathrobotics.com/assets/guides/kinetic/ros/Intro%20to%20the%20Robot%20Operating%20System.html
+      \endverb
+    \endentry
+    \entry{staples_support_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=d3f303b47e47febec79e61e9abb67b08}{%
+           family={Staples},
+           familyi={S\bibinitperiod},
+           given={Gabriel},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{d3f303b47e47febec79e61e9abb67b08}
+      \strng{fullhash}{d3f303b47e47febec79e61e9abb67b08}
+      \strng{bibnamehash}{d3f303b47e47febec79e61e9abb67b08}
+      \strng{authorbibnamehash}{d3f303b47e47febec79e61e9abb67b08}
+      \strng{authornamehash}{d3f303b47e47febec79e61e9abb67b08}
+      \strng{authorfullhash}{d3f303b47e47febec79e61e9abb67b08}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{6}
+      \field{month}{11}
+      \field{title}{Support - {ROS} Wiki}
+      \field{type}{Wiki}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.ros.org/Support
+      \endverb
+      \verb{url}
+      \verb https://wiki.ros.org/Support
+      \endverb
+    \endentry
+    \entry{miura_distributions_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0ab3f96f8a6710eb9bc5378f71b93a8b}{%
+           family={Miura},
+           familyi={M\bibinitperiod},
+           given={Yasuyuki},
+           giveni={Y\bibinitperiod}}}%
+      }
+      \strng{namehash}{0ab3f96f8a6710eb9bc5378f71b93a8b}
+      \strng{fullhash}{0ab3f96f8a6710eb9bc5378f71b93a8b}
+      \strng{bibnamehash}{0ab3f96f8a6710eb9bc5378f71b93a8b}
+      \strng{authorbibnamehash}{0ab3f96f8a6710eb9bc5378f71b93a8b}
+      \strng{authornamehash}{0ab3f96f8a6710eb9bc5378f71b93a8b}
+      \strng{authorfullhash}{0ab3f96f8a6710eb9bc5378f71b93a8b}
+      \field{sortinit}{2}
+      \field{sortinithash}{ed39bb39cf854d5250e95b1c1f94f4ed}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{15}
+      \field{month}{5}
+      \field{title}{Distributions - {ROS} Wiki}
+      \field{type}{Wiki}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.ros.org/Distributions
+      \endverb
+      \verb{url}
+      \verb https://wiki.ros.org/Distributions
+      \endverb
+    \endentry
+    \entry{murray_releases_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=7c8cedb909b2e835bf649610b15680d2}{%
+           family={Murray},
+           familyi={M\bibinitperiod},
+           given={Brian},
+           giveni={B\bibinitperiod}}}%
+      }
+      \strng{namehash}{7c8cedb909b2e835bf649610b15680d2}
+      \strng{fullhash}{7c8cedb909b2e835bf649610b15680d2}
+      \strng{bibnamehash}{7c8cedb909b2e835bf649610b15680d2}
+      \strng{authorbibnamehash}{7c8cedb909b2e835bf649610b15680d2}
+      \strng{authornamehash}{7c8cedb909b2e835bf649610b15680d2}
+      \strng{authorfullhash}{7c8cedb909b2e835bf649610b15680d2}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{21}
+      \field{month}{10}
+      \field{title}{Releases - Ubuntu Wiki}
+      \field{type}{Wiki}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://wiki.ubuntu.com/Releases
+      \endverb
+      \verb{url}
+      \verb https://wiki.ubuntu.com/Releases
+      \endverb
+    \endentry
+    \entry{open_robotics_distributions_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=6d2ee5676b068857db569005a9c6205a}{%
+           family={{Open Robotics}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{fullhash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{bibnamehash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{authorbibnamehash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{authornamehash}{6d2ee5676b068857db569005a9c6205a}
+      \strng{authorfullhash}{6d2ee5676b068857db569005a9c6205a}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Distributions — {ROS} 2 Documentation: Foxy documentation}
+      \field{type}{Wiki}
+      \field{urlday}{13}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.ros.org/en/foxy/Releases.html
+      \endverb
+      \verb{url}
+      \verb https://docs.ros.org/en/foxy/Releases.html
+      \endverb
+    \endentry
+    \entry{sir_david_brewster_stereoscope_1856}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bd8e022a849779021da03d18992dd28f}{%
+           family={{Sir David Brewster}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{bd8e022a849779021da03d18992dd28f}
+      \strng{fullhash}{bd8e022a849779021da03d18992dd28f}
+      \strng{bibnamehash}{bd8e022a849779021da03d18992dd28f}
+      \strng{authorbibnamehash}{bd8e022a849779021da03d18992dd28f}
+      \strng{authornamehash}{bd8e022a849779021da03d18992dd28f}
+      \strng{authorfullhash}{bd8e022a849779021da03d18992dd28f}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{The stereoscope : its history, theory, and construction, with its application to the fine and useful arts and to education / by Sir David Brewster.}
+      \field{langid}{english}
+      \field{shorttitle}{The stereoscope}
+      \field{title}{The stereoscope : its history, theory, and construction, with its application to the fine and useful arts and to education / by Sir David Brewster.}
+      \field{titleaddon}{Wellcome Collection}
+      \field{urlday}{10}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{1856}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/dennis/snap/zotero-snap/common/Zotero/storage/LGV2YIMJ/fehj4h6n.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://wellcomecollection.org/works/fehj4h6n
+      \endverb
+      \verb{url}
+      \verb https://wellcomecollection.org/works/fehj4h6n
+      \endverb
+    \endentry
+    \entry{waack_stereofotografie_1979}{book}{}
+      \name{author}{1}{}{%
+        {{hash=25f895ecd6b93660e7e76096474ef182}{%
+           family={Waack},
+           familyi={W\bibinitperiod},
+           given={F.G.},
+           giveni={F\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Selbsverl.}%
+      }
+      \strng{namehash}{25f895ecd6b93660e7e76096474ef182}
+      \strng{fullhash}{25f895ecd6b93660e7e76096474ef182}
+      \strng{bibnamehash}{25f895ecd6b93660e7e76096474ef182}
+      \strng{authorbibnamehash}{25f895ecd6b93660e7e76096474ef182}
+      \strng{authornamehash}{25f895ecd6b93660e7e76096474ef182}
+      \strng{authorfullhash}{25f895ecd6b93660e7e76096474ef182}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Stereofotografie: Einführung in der Fototechnik und praktische Ratschläge für der Aufnahme}
+      \field{year}{1979}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://books.google.de/books?id=TK5fPgAACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.de/books?id=TK5fPgAACAAJ
+      \endverb
+    \endentry
+    \entry{prof_dr-ing_gunter_pomaska_tiefenkameras_2013}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2a2acf5685a5ed9039bc372b89f9446c}{%
+           family={{Prof. Dr.-Ing. Günter Pomaska}},
+           familyi={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{2a2acf5685a5ed9039bc372b89f9446c}
+      \strng{fullhash}{2a2acf5685a5ed9039bc372b89f9446c}
+      \strng{bibnamehash}{2a2acf5685a5ed9039bc372b89f9446c}
+      \strng{authorbibnamehash}{2a2acf5685a5ed9039bc372b89f9446c}
+      \strng{authornamehash}{2a2acf5685a5ed9039bc372b89f9446c}
+      \strng{authorfullhash}{2a2acf5685a5ed9039bc372b89f9446c}
+      \field{sortinit}{3}
+      \field{sortinithash}{a37a8ef248a93c322189792c34fc68c9}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Tiefenkameras}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Tiefenkameras:/home/dennis/snap/zotero-snap/common/Zotero/storage/RRSEQTYS/depthcam.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.scanner.imagefact.de/de/depthcam.html
+      \endverb
+      \verb{url}
+      \verb https://www.scanner.imagefact.de/de/depthcam.html
+      \endverb
+    \endentry
+    \entry{prof_dr-ing_gunter_pomaska_primesensorpng_2013}{online}{}
+      \name{author}{1}{}{%
+        {{hash=ed05ea9bc250de4032f167d143a3f2a7}{%
+           family={Pomaska},
+           familyi={P\bibinitperiod},
+           given={Prof.\bibnamedelimi Dr.-Ing.\bibnamedelimi Günter},
+           giveni={P\bibinitperiod\bibinitdelim D\bibinithyphendelim I\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{ed05ea9bc250de4032f167d143a3f2a7}
+      \strng{fullhash}{ed05ea9bc250de4032f167d143a3f2a7}
+      \strng{bibnamehash}{ed05ea9bc250de4032f167d143a3f2a7}
+      \strng{authorbibnamehash}{ed05ea9bc250de4032f167d143a3f2a7}
+      \strng{authornamehash}{ed05ea9bc250de4032f167d143a3f2a7}
+      \strng{authorfullhash}{ed05ea9bc250de4032f167d143a3f2a7}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{primeSensor}.png ({PNG} Image, 380 × 312 pixels)}
+      \field{urlday}{23}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2013}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb primeSensor.png (PNG Image, 380 × 312 pixels):/home/dennis/snap/zotero-snap/common/Zotero/storage/362BGWSP/primeSensor.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.scanner.imagefact.de/img/primeSensor.png
+      \endverb
+      \verb{url}
+      \verb https://www.scanner.imagefact.de/img/primeSensor.png
+      \endverb
+    \endentry
+    \entry{mohan_6_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=60c0badb0d94ee591a45ee2fd38c891a}{%
+           family={Mohan},
+           familyi={M\bibinitperiod},
+           given={Sachin},
+           giveni={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{60c0badb0d94ee591a45ee2fd38c891a}
+      \strng{fullhash}{60c0badb0d94ee591a45ee2fd38c891a}
+      \strng{bibnamehash}{60c0badb0d94ee591a45ee2fd38c891a}
+      \strng{authorbibnamehash}{60c0badb0d94ee591a45ee2fd38c891a}
+      \strng{authornamehash}{60c0badb0d94ee591a45ee2fd38c891a}
+      \strng{authorfullhash}{60c0badb0d94ee591a45ee2fd38c891a}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this article we will cover some popular different types of object detection algorithms along with their advantages and limitations.}
+      \field{day}{30}
+      \field{month}{6}
+      \field{title}{6 Different Types of Object Detection Algorithms in Nutshell}
+      \field{urlday}{19}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://machinelearningknowledge.ai/different-types-of-object-detection-algorithms/
+      \endverb
+      \verb{url}
+      \verb https://machinelearningknowledge.ai/different-types-of-object-detection-algorithms/
+      \endverb
+    \endentry
+    \entry{lowe_distinctive_2004}{article}{}
+      \name{author}{1}{}{%
+        {{hash=83f4643381c1cc2c483b4210498fedb0}{%
+           family={Lowe},
+           familyi={L\bibinitperiod},
+           given={David\bibnamedelima G.},
+           giveni={D\bibinitperiod\bibinitdelim G\bibinitperiod}}}%
+      }
+      \strng{namehash}{83f4643381c1cc2c483b4210498fedb0}
+      \strng{fullhash}{83f4643381c1cc2c483b4210498fedb0}
+      \strng{bibnamehash}{83f4643381c1cc2c483b4210498fedb0}
+      \strng{authorbibnamehash}{83f4643381c1cc2c483b4210498fedb0}
+      \strng{authornamehash}{83f4643381c1cc2c483b4210498fedb0}
+      \strng{authorfullhash}{83f4643381c1cc2c483b4210498fedb0}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{This paper presents a method for extracting distinctive invariant features from images that can be used to perform reliable matching between different views of an object or scene. The features are invariant to image scale and rotation, and are shown to provide robust matching across a substantial range of affine distortion, change in 3D viewpoint, addition of noise, and change in illumination. The features are highly distinctive, in the sense that a single feature can be correctly matched with high probability against a large database of features from many images. This paper also describes an approach to using these features for object recognition. The recognition proceeds by matching individual features to a database of features from known objects using a fast nearest-neighbor algorithm, followed by a Hough transform to identify clusters belonging to a single object, and finally performing verification through least-squares solution for consistent pose parameters. This approach to recognition can robustly identify objects among clutter and occlusion while achieving near real-time performance.}
+      \field{day}{1}
+      \field{issn}{1573-1405}
+      \field{journaltitle}{International Journal of Computer Vision}
+      \field{month}{11}
+      \field{note}{Number: 2}
+      \field{number}{2}
+      \field{shortjournal}{International Journal of Computer Vision}
+      \field{title}{Distinctive Image Features from Scale-Invariant Keypoints}
+      \field{volume}{60}
+      \field{year}{2004}
+      \field{dateera}{ce}
+      \field{pages}{91\bibrangedash 110}
+      \range{pages}{20}
+      \verb{doi}
+      \verb 10.1023/B:VISI.0000029664.99615.94
+      \endverb
+      \verb{urlraw}
+      \verb https://doi.org/10.1023/B:VISI.0000029664.99615.94
+      \endverb
+      \verb{url}
+      \verb https://doi.org/10.1023/B:VISI.0000029664.99615.94
+      \endverb
+    \endentry
+    \entry{bay_surf_2006}{inproceedings}{}
+      \name{author}{3}{}{%
+        {{hash=a06a24a184d39c3aa9a7718cd9a5868d}{%
+           family={Bay},
+           familyi={B\bibinitperiod},
+           given={Herbert},
+           giveni={H\bibinitperiod}}}%
+        {{hash=1fffde1e018446dc52c3da9c6e26ec11}{%
+           family={Tuytelaars},
+           familyi={T\bibinitperiod},
+           given={Tinne},
+           giveni={T\bibinitperiod}}}%
+        {{hash=d3bc7b9be5061411a87f19fcdf39499c}{%
+           family={Van\bibnamedelima Gool},
+           familyi={V\bibinitperiod\bibinitdelim G\bibinitperiod},
+           given={Luc},
+           giveni={L\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=4b50e741a7dba42c324c39c81ef815a9}{%
+           family={Leonardis},
+           familyi={L\bibinitperiod},
+           given={Aleš},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a3e36d7b360de7388d78599c2446ac34}{%
+           family={Bischof},
+           familyi={B\bibinitperiod},
+           given={Horst},
+           giveni={H\bibinitperiod}}}%
+        {{hash=da62ba43b7f8467cb2aee3e08a6d5234}{%
+           family={Pinz},
+           familyi={P\bibinitperiod},
+           given={Axel},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Berlin Heidelberg}%
+      }
+      \strng{namehash}{b96921d02422275a74b2ed60260ec3f0}
+      \strng{fullhash}{b96921d02422275a74b2ed60260ec3f0}
+      \strng{bibnamehash}{b96921d02422275a74b2ed60260ec3f0}
+      \strng{authorbibnamehash}{b96921d02422275a74b2ed60260ec3f0}
+      \strng{authornamehash}{b96921d02422275a74b2ed60260ec3f0}
+      \strng{authorfullhash}{b96921d02422275a74b2ed60260ec3f0}
+      \strng{editorbibnamehash}{603ac7b48b49d698b9933adf4625f33c}
+      \strng{editornamehash}{603ac7b48b49d698b9933adf4625f33c}
+      \strng{editorfullhash}{603ac7b48b49d698b9933adf4625f33c}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{In this paper, we present a novel scale- and rotation-invariant interest point detector and descriptor, coined {SURF} (Speeded Up Robust Features). It approximates or even outperforms previously proposed schemes with respect to repeatability, distinctiveness, and robustness, yet can be computed and compared much faster.}
+      \field{booktitle}{Computer Vision – {ECCV} 2006}
+      \field{isbn}{978-3-540-33833-8}
+      \field{note}{Veranstaltungsort: Berlin, Heidelberg}
+      \field{title}{{SURF}: Speeded Up Robust Features}
+      \field{year}{2006}
+      \field{dateera}{ce}
+      \field{pages}{404\bibrangedash 417}
+      \range{pages}{14}
+    \endentry
+    \entry{cortes_support-vector_1995}{article}{}
+      \name{author}{2}{}{%
+        {{hash=17acda211a651e90e228f1776ee07818}{%
+           family={Cortes},
+           familyi={C\bibinitperiod},
+           given={Corinna},
+           giveni={C\bibinitperiod}}}%
+        {{hash=c2b3e05872463585b4be6aab10d10d63}{%
+           family={Vapnik},
+           familyi={V\bibinitperiod},
+           given={Vladimir},
+           giveni={V\bibinitperiod}}}%
+      }
+      \strng{namehash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{fullhash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{bibnamehash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{authorbibnamehash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{authornamehash}{4c67d5268f413e83454c8adc14ab43c3}
+      \strng{authorfullhash}{4c67d5268f413e83454c8adc14ab43c3}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{The support-vector network is a new learning machine for two-group classification problems. The machine conceptually implements the following idea: input vectors are non-linearly mapped to a very highdimension feature space. In this feature space a linear decision surface is constructed. Special properties of the decision surface ensures high generalization ability of the learning machine. The idea behind the support-vector network was previously implemented for the restricted case where the training data can be separated without errors. We here extend this result to non-separable training data.}
+      \field{issn}{0885-6125, 1573-0565}
+      \field{journaltitle}{Machine Learning}
+      \field{month}{9}
+      \field{number}{3}
+      \field{shortjournal}{Mach Learn}
+      \field{title}{Support-vector networks}
+      \field{urlday}{19}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{volume}{20}
+      \field{year}{1995}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{273\bibrangedash 297}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1007/BF00994018
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/BF00994018
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/BF00994018
+      \endverb
+    \endentry
+    \entry{youzi_review_2020}{article}{}
+      \name{author}{7}{}{%
+        {{hash=df6bab8e9a31c0b49fe0acd32062922e}{%
+           family={Youzi},
+           familyi={Y\bibinitperiod},
+           given={Xiao},
+           giveni={X\bibinitperiod}}}%
+        {{hash=a59f076e03a5bbb14e196d87deead5cc}{%
+           family={Tian},
+           familyi={T\bibinitperiod},
+           given={Zhiqiang},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=bad31247d78c82ed74d3381b4e513505}{%
+           family={Yu},
+           familyi={Y\bibinitperiod},
+           given={Jiachen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=28530b0acace787b9d9ef2b09ae6dc21}{%
+           family={Zhang},
+           familyi={Z\bibinitperiod},
+           given={Yinshu},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=d58d91187c2f880c55b42ef5deb36852}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Shuai},
+           giveni={S\bibinitperiod}}}%
+        {{hash=c1d3d8871c9b7ae5f7c9e3e440ad1394}{%
+           family={Du},
+           familyi={D\bibinitperiod},
+           given={Shaoyi},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f9c00fc2835426c7b03152d44809f3e2}{%
+           family={Lan},
+           familyi={L\bibinitperiod},
+           given={Xuguang},
+           giveni={X\bibinitperiod}}}%
+      }
+      \strng{namehash}{8cc0db2666bbcdde1d2455835b8484ef}
+      \strng{fullhash}{ced5708ef2ce4295f1ee615c0f065e6c}
+      \strng{bibnamehash}{ced5708ef2ce4295f1ee615c0f065e6c}
+      \strng{authorbibnamehash}{ced5708ef2ce4295f1ee615c0f065e6c}
+      \strng{authornamehash}{8cc0db2666bbcdde1d2455835b8484ef}
+      \strng{authorfullhash}{ced5708ef2ce4295f1ee615c0f065e6c}
+      \field{sortinit}{4}
+      \field{sortinithash}{e071e0bcb44634fab398d68ad04e69f4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{With the rapid development of deep learning techniques, deep convolutional neural networks ({DCNNs}) have become more important for object detection. Compared with traditional handcrafted feature-based methods, the deep learning-based object detection methods can learn both low-level and high-level image features. The image features learned through deep learning techniques are more representative than the handcrafted features. Therefore, this review paper focuses on the object detection algorithms based on deep convolutional neural networks, while the traditional object detection algorithms will be simply introduced as well. Through the review and analysis of deep learning-based object detection techniques in recent years, this work includes the following parts: backbone networks, loss functions and training strategies, classical object detection architectures, complex problems, datasets and evaluation metrics, applications and future development directions. We hope this review paper will be helpful for researchers in the field of object detection.}
+      \field{day}{1}
+      \field{journaltitle}{Multimedia Tools and Applications}
+      \field{month}{9}
+      \field{shortjournal}{Multimedia Tools and Applications}
+      \field{title}{A review of object detection based on deep learning}
+      \field{volume}{79}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.1007/s11042-020-08976-6
+      \endverb
+    \endentry
+    \entry{arai_deep_2020}{incollection}{}
+      \name{author}{8}{}{%
+        {{hash=77f1ebe097f2eb6ba430259e7c3f909e}{%
+           family={O’Mahony},
+           familyi={O\bibinitperiod},
+           given={Niall},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3610783d90e6f33dd2825fba18530c85}{%
+           family={Campbell},
+           familyi={C\bibinitperiod},
+           given={Sean},
+           giveni={S\bibinitperiod}}}%
+        {{hash=f6c6043c7f099e12414c35f022c46dfd}{%
+           family={Carvalho},
+           familyi={C\bibinitperiod},
+           given={Anderson},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e1f762bc2171cfad70c98da2ce1542e9}{%
+           family={Harapanahalli},
+           familyi={H\bibinitperiod},
+           given={Suman},
+           giveni={S\bibinitperiod}}}%
+        {{hash=b5a6e28bd056a6763762a59aa4b27ba1}{%
+           family={Hernandez},
+           familyi={H\bibinitperiod},
+           given={Gustavo\bibnamedelima Velasco},
+           giveni={G\bibinitperiod\bibinitdelim V\bibinitperiod}}}%
+        {{hash=b3797f2c968cc507cbbe92ca103399e7}{%
+           family={Krpalkova},
+           familyi={K\bibinitperiod},
+           given={Lenka},
+           giveni={L\bibinitperiod}}}%
+        {{hash=2c218dde295b64e98278c09e600dfdb0}{%
+           family={Riordan},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2016abe7bd371587d0d74f7864ae1ef9}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \name{editor}{2}{}{%
+        {{hash=7195f9989a901e2a02c5ca45804cf1b9}{%
+           family={Arai},
+           familyi={A\bibinitperiod},
+           given={Kohei},
+           giveni={K\bibinitperiod}}}%
+        {{hash=4c6ff158d3a3072b3ddf6f7d90780a78}{%
+           family={Kapoor},
+           familyi={K\bibinitperiod},
+           given={Supriya},
+           giveni={S\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{a597c4ca384ddd2413582b64bf3fb9ef}
+      \strng{fullhash}{19a9497eedb2bdf9a72abe31e911ed1b}
+      \strng{bibnamehash}{19a9497eedb2bdf9a72abe31e911ed1b}
+      \strng{authorbibnamehash}{19a9497eedb2bdf9a72abe31e911ed1b}
+      \strng{authornamehash}{a597c4ca384ddd2413582b64bf3fb9ef}
+      \strng{authorfullhash}{19a9497eedb2bdf9a72abe31e911ed1b}
+      \strng{editorbibnamehash}{47417fb0f059134143a5ef79cd2425e5}
+      \strng{editornamehash}{47417fb0f059134143a5ef79cd2425e5}
+      \strng{editorfullhash}{47417fb0f059134143a5ef79cd2425e5}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Deep Learning has pushed the limits of what was possible in the domain of Digital Image Processing. However, that is not to say that the traditional computer vision techniques which had been undergoing progressive development in years prior to the rise of {DL} have become obsolete. This paper will analyse the benefits and drawbacks of each approach. The aim of this paper is to promote a discussion on whether knowledge of classical computer vision techniques should be maintained. The paper will also explore how the two sides of computer vision can be combined. Several recent hybrid methodologies are reviewed which have demonstrated the ability to improve computer vision performance and to tackle problems not suited to Deep Learning. For example, combining traditional computer vision techniques with Deep Learning has been popular in emerging domains such as Panoramic Vision and 3D vision for which Deep Learning models have not yet been fully optimised.}
+      \field{booktitle}{Advances in Computer Vision}
+      \field{isbn}{978-3-030-17794-2 978-3-030-17795-9}
+      \field{langid}{english}
+      \field{note}{Titel der Serie: Advances in Intelligent Systems and Computing}
+      \field{title}{Deep Learning vs. Traditional Computer Vision}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{volume}{943}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{128\bibrangedash 144}
+      \range{pages}{17}
+      \verb{doi}
+      \verb 10.1007/978-3-030-17795-9_10
+      \endverb
+      \verb{file}
+      \verb O’Mahony et al. - 2020 - Deep Learning vs. Traditional Computer Vision.pdf:/home/david/snap/zotero-snap/common/Zotero/storage/3WRU822K/O’Mahony et al. - 2020 - Deep Learning vs. Traditional Computer Vision.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-030-17795-9_10
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-030-17795-9_10
+      \endverb
+    \endentry
+    \entry{labbe_find_2011}{online}{}
+      \name{author}{1}{}{%
+        {{hash=fd756508acb13b835d00615e4238d76a}{%
+           family={Labbé},
+           familyi={L\bibinitperiod},
+           given={Mathieu},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{fd756508acb13b835d00615e4238d76a}
+      \strng{fullhash}{fd756508acb13b835d00615e4238d76a}
+      \strng{bibnamehash}{fd756508acb13b835d00615e4238d76a}
+      \strng{authorbibnamehash}{fd756508acb13b835d00615e4238d76a}
+      \strng{authornamehash}{fd756508acb13b835d00615e4238d76a}
+      \strng{authorfullhash}{fd756508acb13b835d00615e4238d76a}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Find Object}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2011}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb http://introlab.github.io/find-object
+      \endverb
+      \verb{url}
+      \verb http://introlab.github.io/find-object
+      \endverb
+    \endentry
+    \entry{bonaccorso_machine_2018}{book}{}
+      \name{author}{1}{}{%
+        {{hash=87f5f5541028f63b43aee540aa5323cb}{%
+           family={Bonaccorso},
+           familyi={B\bibinitperiod},
+           given={Giuseppe},
+           giveni={G\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Packt Publishing}%
+      }
+      \strng{namehash}{87f5f5541028f63b43aee540aa5323cb}
+      \strng{fullhash}{87f5f5541028f63b43aee540aa5323cb}
+      \strng{bibnamehash}{87f5f5541028f63b43aee540aa5323cb}
+      \strng{authorbibnamehash}{87f5f5541028f63b43aee540aa5323cb}
+      \strng{authornamehash}{87f5f5541028f63b43aee540aa5323cb}
+      \strng{authorfullhash}{87f5f5541028f63b43aee540aa5323cb}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{An easy-to-follow, step-by-step guide for getting to grips with the real-world application of machine learning algorithms}
+      \field{edition}{2}
+      \field{isbn}{978-1-78934-799-9}
+      \field{langid}{english}
+      \field{series}{Machine Learning Algorithms}
+      \field{title}{Machine Learning Algorithms}
+      \field{urlday}{4}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/david/snap/zotero-snap/common/Zotero/storage/CDYV75WB/9781789347999.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.packtpub.com/product/machine-learning-algorithms-second-edition/9781789347999
+      \endverb
+      \verb{url}
+      \verb https://www.packtpub.com/product/machine-learning-algorithms-second-edition/9781789347999
+      \endverb
+    \endentry
+    \entry{o_mahony_adaptive_2016}{inproceedings}{}
+      \name{author}{5}{}{%
+        {{hash=060509aaf0210fc09ea9b795c36a8af3}{%
+           family={O'\bibnamedelima Mahony},
+           familyi={O\bibinitperiod\bibinitdelim M\bibinitperiod},
+           given={Niall},
+           giveni={N\bibinitperiod}}}%
+        {{hash=3b066a3783f2899c5fc96a04b45531cb}{%
+           family={Murphy},
+           familyi={M\bibinitperiod},
+           given={Trevor},
+           giveni={T\bibinitperiod}}}%
+        {{hash=039564d3d0820961c5f27f357081135a}{%
+           family={Panduru},
+           familyi={P\bibinitperiod},
+           given={Krishna},
+           giveni={K\bibinitperiod}}}%
+        {{hash=2c218dde295b64e98278c09e600dfdb0}{%
+           family={Riordan},
+           familyi={R\bibinitperiod},
+           given={Daniel},
+           giveni={D\bibinitperiod}}}%
+        {{hash=2016abe7bd371587d0d74f7864ae1ef9}{%
+           family={Walsh},
+           familyi={W\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{76e78ac3805e85ece5e85726bfd5937d}
+      \strng{fullhash}{874da767c396ed3e1287b9b461050338}
+      \strng{bibnamehash}{874da767c396ed3e1287b9b461050338}
+      \strng{authorbibnamehash}{874da767c396ed3e1287b9b461050338}
+      \strng{authornamehash}{76e78ac3805e85ece5e85726bfd5937d}
+      \strng{authorfullhash}{874da767c396ed3e1287b9b461050338}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Increased globalisation and competition are drivers for process analytical technologies ({PAT}) that enable seamless process control, greater flexibility and cost efficiency in the process industries. This research aims to introduce an integrated process control approach, embedding novel sensors for monitoring in real time the critical control parameters of key processes in the minerals, ceramics, non-ferrous metals, and chemical process industries. The paper will discuss smart sensors, data fusion and process modelling and control in industrial applications with an emphasis on solutions enabling the real-time data analytics of sensor measurements that {PAT} demands.}
+      \field{booktitle}{2016 27th Irish Signals and Systems Conference ({ISSC})}
+      \field{eventtitle}{2016 27th Irish Signals and Systems Conference ({ISSC})}
+      \field{month}{6}
+      \field{title}{Adaptive process control and sensor fusion for process analytical technology}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.1109/ISSC.2016.7528449
+      \endverb
+      \verb{file}
+      \verb IEEE Xplore Full Text PDF:/home/david/snap/zotero-snap/common/Zotero/storage/XPVHUCUS/O' Mahony et al. - 2016 - Adaptive process control and sensor fusion for pro.pdf:application/pdf;IEEE Xplore Abstract Record:/home/david/snap/zotero-snap/common/Zotero/storage/TL4NSYFW/7528449.html:text/html
+      \endverb
+      \keyw{Biological neural networks,data fusion,Data integration,Industries,Intelligent sensors,Machine learning,Neurons,predictive control,process analytical technology,Process control,Sensor fusion}
+    \endentry
+    \entry{yurtsever_survey_2020}{article}{}
+      \name{author}{4}{}{%
+        {{hash=0c3f0ad3da3151d25b9be89f2f2465b0}{%
+           family={Yurtsever},
+           familyi={Y\bibinitperiod},
+           given={Ekim},
+           giveni={E\bibinitperiod}}}%
+        {{hash=bb0130687f341d41152fb7ecf5dcf8f1}{%
+           family={Lambert},
+           familyi={L\bibinitperiod},
+           given={Jacob},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c545cd85de7ae382971b9d8f679743bf}{%
+           family={Carballo},
+           familyi={C\bibinitperiod},
+           given={Alexander},
+           giveni={A\bibinitperiod}}}%
+        {{hash=2b2282fdbdd87a174a8a26f0e6e2f477}{%
+           family={Takeda},
+           familyi={T\bibinitperiod},
+           given={Kazuya},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{b393f0fede2552d6cbb3f7b007907795}
+      \strng{fullhash}{b847c40b635aa0be3c6b16a7a6ff16e6}
+      \strng{bibnamehash}{b847c40b635aa0be3c6b16a7a6ff16e6}
+      \strng{authorbibnamehash}{b847c40b635aa0be3c6b16a7a6ff16e6}
+      \strng{authornamehash}{b393f0fede2552d6cbb3f7b007907795}
+      \strng{authorfullhash}{b847c40b635aa0be3c6b16a7a6ff16e6}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Automated driving systems ({ADSs}) promise a safe, comfortable and efﬁcient driving experience. However, fatalities involving vehicles equipped with {ADSs} are on the rise. The full potential of {ADSs} cannot be realized unless the robustness of state-of-the-art is improved further. This paper discusses unsolved problems and surveys the technical aspect of automated driving. Studies regarding present challenges, highlevel system architectures, emerging methodologies and core functions including localization, mapping, perception, planning, and human machine interfaces, were thoroughly reviewed. Furthermore, many stateof-the-art algorithms were implemented and compared on our own platform in a real-world driving setting. The paper concludes with an overview of available datasets and tools for {ADS} development.}
+      \field{day}{22}
+      \field{eprinttype}{arxiv}
+      \field{issn}{2169-3536}
+      \field{journaltitle}{{IEEE} Access}
+      \field{month}{3}
+      \field{shortjournal}{{IEEE} Access}
+      \field{shorttitle}{A Survey of Autonomous Driving}
+      \field{title}{A Survey of Autonomous Driving: Common Practices and Emerging Technologies}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{volume}{8}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{58443\bibrangedash 58469}
+      \range{pages}{27}
+      \verb{doi}
+      \verb 10.1109/ACCESS.2020.2983149
+      \endverb
+      \verb{eprint}
+      \verb 1906.05113
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1906.05113
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1906.05113
+      \endverb
+      \keyw{Computer Science - Robotics,Electrical Engineering and Systems Science - Systems and Control}
+    \endentry
+    \entry{redmon_you_2016}{article}{}
+      \name{author}{4}{}{%
+        {{hash=99bced2e56a5253f3fe98a5f04e6d9b2}{%
+           family={Redmon},
+           familyi={R\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+        {{hash=05ca9f19da9ecbd2def4e5514f8043c8}{%
+           family={Divvala},
+           familyi={D\bibinitperiod},
+           given={Santosh},
+           giveni={S\bibinitperiod}}}%
+        {{hash=bd5dadbe57bedc5957c19a3154c4d424}{%
+           family={Girshick},
+           familyi={G\bibinitperiod},
+           given={Ross},
+           giveni={R\bibinitperiod}}}%
+        {{hash=396c6ddedb6f986906fc3e4994d19974}{%
+           family={Farhadi},
+           familyi={F\bibinitperiod},
+           given={Ali},
+           giveni={A\bibinitperiod}}}%
+      }
+      \strng{namehash}{fceadd5e0c88bc623c502d7999f124d7}
+      \strng{fullhash}{b5530443e433a4da53dbe3cf155225b4}
+      \strng{bibnamehash}{b5530443e433a4da53dbe3cf155225b4}
+      \strng{authorbibnamehash}{b5530443e433a4da53dbe3cf155225b4}
+      \strng{authornamehash}{fceadd5e0c88bc623c502d7999f124d7}
+      \strng{authorfullhash}{b5530443e433a4da53dbe3cf155225b4}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{We present {YOLO}, a new approach to object detection. Prior work on object detection repurposes classifiers to perform detection. Instead, we frame object detection as a regression problem to spatially separated bounding boxes and associated class probabilities. A single neural network predicts bounding boxes and class probabilities directly from full images in one evaluation. Since the whole detection pipeline is a single network, it can be optimized end-to-end directly on detection performance. Our unified architecture is extremely fast. Our base {YOLO} model processes images in real-time at 45 frames per second. A smaller version of the network, Fast {YOLO}, processes an astounding 155 frames per second while still achieving double the {mAP} of other real-time detectors. Compared to state-of-the-art detection systems, {YOLO} makes more localization errors but is far less likely to predict false detections where nothing exists. Finally, {YOLO} learns very general representations of objects. It outperforms all other detection methods, including {DPM} and R-{CNN}, by a wide margin when generalizing from natural images to artwork on both the Picasso Dataset and the People-Art Dataset.}
+      \field{day}{9}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{{arXiv}:1506.02640 [cs]}
+      \field{month}{5}
+      \field{shorttitle}{You Only Look Once}
+      \field{title}{You Only Look Once: Unified, Real-Time Object Detection}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 1506.02640
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1506.02640
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1506.02640
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{bandyopadhyay_yolo_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2ea28ea916d2be12366d099dee0aebad}{%
+           family={Bandyopadhyay},
+           familyi={B\bibinitperiod},
+           given={Hmrishav},
+           giveni={H\bibinitperiod}}}%
+      }
+      \strng{namehash}{2ea28ea916d2be12366d099dee0aebad}
+      \strng{fullhash}{2ea28ea916d2be12366d099dee0aebad}
+      \strng{bibnamehash}{2ea28ea916d2be12366d099dee0aebad}
+      \strng{authorbibnamehash}{2ea28ea916d2be12366d099dee0aebad}
+      \strng{authornamehash}{2ea28ea916d2be12366d099dee0aebad}
+      \strng{authorfullhash}{2ea28ea916d2be12366d099dee0aebad}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{What is {YOLO} and how does it work? Learn about different {YOLO} versions and start training your own {YOLO} object detection models.}
+      \field{day}{9}
+      \field{month}{9}
+      \field{shorttitle}{{YOLO}}
+      \field{title}{{YOLO}: Real-Time Object Detection Explained}
+      \field{type}{Blog}
+      \field{urlday}{11}
+      \field{urlmonth}{1}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.v7labs.com/blog/yolo-object-detection
+      \endverb
+      \verb{url}
+      \verb https://www.v7labs.com/blog/yolo-object-detection
+      \endverb
+    \endentry
+    \entry{zou_object_2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=79ecb3ddec80cff3d752091ba8cc0113}{%
+           family={Zou},
+           familyi={Z\bibinitperiod},
+           given={Zhengxia},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=a163a5390bc6150e96c215cfd4d1f35f}{%
+           family={Shi},
+           familyi={S\bibinitperiod},
+           given={Zhenwei},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=65c428484ceb9cc9d8774f6bc3df701c}{%
+           family={Guo},
+           familyi={G\bibinitperiod},
+           given={Yuhong},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=45f8892411700a9b1d4fcd3acaeeefd0}{%
+           family={Ye},
+           familyi={Y\bibinitperiod},
+           given={Jieping},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{55dea863548cdbb29a42a792ad92ecdc}
+      \strng{fullhash}{f1e770f272358bcece6b9166dd8c3463}
+      \strng{bibnamehash}{f1e770f272358bcece6b9166dd8c3463}
+      \strng{authorbibnamehash}{f1e770f272358bcece6b9166dd8c3463}
+      \strng{authornamehash}{55dea863548cdbb29a42a792ad92ecdc}
+      \strng{authorfullhash}{f1e770f272358bcece6b9166dd8c3463}
+      \field{sortinit}{5}
+      \field{sortinithash}{5dd416adbafacc8226114bc0202d5fdd}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{Object detection, as of one the most fundamental and challenging problems in computer vision, has received great attention in recent years. Its development in the past two decades can be regarded as an epitome of computer vision history. If we think of today's object detection as a technical aesthetics under the power of deep learning, then turning back the clock 20 years we would witness the wisdom of cold weapon era. This paper extensively reviews 400+ papers of object detection in the light of its technical evolution, spanning over a quarter-century's time (from the 1990s to 2019). A number of topics have been covered in this paper, including the milestone detectors in history, detection datasets, metrics, fundamental building blocks of the detection system, speed up techniques, and the recent state of the art detection methods. This paper also reviews some important detection applications, such as pedestrian detection, face detection, text detection, etc, and makes an in-deep analysis of their challenges as well as technical improvements in recent years.}
+      \field{day}{15}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{{arXiv}:1905.05055 [cs]}
+      \field{month}{5}
+      \field{shorttitle}{Object Detection in 20 Years}
+      \field{title}{Object Detection in 20 Years: A Survey}
+      \field{urlday}{15}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 1905.05055
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1905.05055
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1905.05055
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{redmon_darknet_2021}{software}{}
+      \name{author}{1}{}{%
+        {{hash=99bced2e56a5253f3fe98a5f04e6d9b2}{%
+           family={Redmon},
+           familyi={R\bibinitperiod},
+           given={Joseph},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{99bced2e56a5253f3fe98a5f04e6d9b2}
+      \strng{fullhash}{99bced2e56a5253f3fe98a5f04e6d9b2}
+      \strng{bibnamehash}{99bced2e56a5253f3fe98a5f04e6d9b2}
+      \strng{authorbibnamehash}{99bced2e56a5253f3fe98a5f04e6d9b2}
+      \strng{authornamehash}{99bced2e56a5253f3fe98a5f04e6d9b2}
+      \strng{authorfullhash}{99bced2e56a5253f3fe98a5f04e6d9b2}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Convolutional Neural Networks}
+      \field{day}{20}
+      \field{month}{12}
+      \field{title}{Darknet}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/pjreddie/darknet
+      \endverb
+      \verb{url}
+      \verb https://github.com/pjreddie/darknet
+      \endverb
+    \endentry
+    \entry{joseph_redmon_i_2020}{online}{}
+      \name{author}{1}{}{%
+        {{hash=51b5b11fcca54510f0569a06917b9735}{%
+           family={{Joseph Redmon}},
+           familyi={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{51b5b11fcca54510f0569a06917b9735}
+      \strng{fullhash}{51b5b11fcca54510f0569a06917b9735}
+      \strng{bibnamehash}{51b5b11fcca54510f0569a06917b9735}
+      \strng{authorbibnamehash}{51b5b11fcca54510f0569a06917b9735}
+      \strng{authornamehash}{51b5b11fcca54510f0569a06917b9735}
+      \strng{authorfullhash}{51b5b11fcca54510f0569a06917b9735}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{20}
+      \field{month}{2}
+      \field{title}{I stopped doing {CV} research}
+      \field{type}{Tweet}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://twitter.com/pjreddie/status/1230524770350817280
+      \endverb
+      \verb{url}
+      \verb https://twitter.com/pjreddie/status/1230524770350817280
+      \endverb
+    \endentry
+    \entry{bochkovskiy_yolov4_2020}{article}{}
+      \name{author}{3}{}{%
+        {{hash=c0b2fdc20c37a4bd8d817822d374f809}{%
+           family={Bochkovskiy},
+           familyi={B\bibinitperiod},
+           given={Alexey},
+           giveni={A\bibinitperiod}}}%
+        {{hash=053d491932411950eccf2bb9a1025d11}{%
+           family={Wang},
+           familyi={W\bibinitperiod},
+           given={Chien-Yao},
+           giveni={C\bibinithyphendelim Y\bibinitperiod}}}%
+        {{hash=c81478c691c1bc1cc01404c44b5bd5bf}{%
+           family={Liao},
+           familyi={L\bibinitperiod},
+           given={Hong-Yuan\bibnamedelima Mark},
+           giveni={H\bibinithyphendelim Y\bibinitperiod\bibinitdelim M\bibinitperiod}}}%
+      }
+      \strng{namehash}{cf5dc5f8f26df49f548c03581fb80644}
+      \strng{fullhash}{cf5dc5f8f26df49f548c03581fb80644}
+      \strng{bibnamehash}{cf5dc5f8f26df49f548c03581fb80644}
+      \strng{authorbibnamehash}{cf5dc5f8f26df49f548c03581fb80644}
+      \strng{authornamehash}{cf5dc5f8f26df49f548c03581fb80644}
+      \strng{authorfullhash}{cf5dc5f8f26df49f548c03581fb80644}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{There are a huge number of features which are said to improve Convolutional Neural Network ({CNN}) accuracy. Practical testing of combinations of such features on large datasets, and theoretical justification of the result, is required. Some features operate on certain models exclusively and for certain problems exclusively, or only for small-scale datasets; while some features, such as batch-normalization and residual-connections, are applicable to the majority of models, tasks, and datasets. We assume that such universal features include Weighted-Residual-Connections ({WRC}), Cross-Stage-Partial-connections ({CSP}), Cross mini-Batch Normalization ({CmBN}), Self-adversarial-training ({SAT}) and Mish-activation. We use new features: {WRC}, {CSP}, {CmBN}, {SAT}, Mish activation, Mosaic data augmentation, {CmBN}, {DropBlock} regularization, and {CIoU} loss, and combine some of them to achieve state-of-the-art results: 43.5\% {AP} (65.7\% {AP}50) for the {MS} {COCO} dataset at a realtime speed of {\textbackslash}textasciitilde65 {FPS} on Tesla V100. Source code is at https://github.com/{AlexeyAB}/darknet}
+      \field{day}{22}
+      \field{eprinttype}{arxiv}
+      \field{journaltitle}{{arXiv}:2004.10934 [cs, eess]}
+      \field{month}{4}
+      \field{shorttitle}{{YOLOv}4}
+      \field{title}{{YOLOv}4: Optimal Speed and Accuracy of Object Detection}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2020}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{eprint}
+      \verb 2004.10934
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/2004.10934
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/2004.10934
+      \endverb
+      \keyw{Computer Science - Computer Vision and Pattern Recognition,Electrical Engineering and Systems Science - Image and Video Processing}
+    \endentry
+    \entry{bjelonic_yolo_2016}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=53f42f424532d55e35ab63be96aba40f}{%
+           family={Bjelonic},
+           familyi={B\bibinitperiod},
+           given={Marko},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{53f42f424532d55e35ab63be96aba40f}
+      \strng{fullhash}{53f42f424532d55e35ab63be96aba40f}
+      \strng{bibnamehash}{53f42f424532d55e35ab63be96aba40f}
+      \strng{authorbibnamehash}{53f42f424532d55e35ab63be96aba40f}
+      \strng{authornamehash}{53f42f424532d55e35ab63be96aba40f}
+      \strng{authorfullhash}{53f42f424532d55e35ab63be96aba40f}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{YOLO} {ROS}: Real-Time Object Detection for {ROS}}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/leggedrobotics/darknet_ros
+      \endverb
+      \verb{url}
+      \verb https://github.com/leggedrobotics/darknet_ros
+      \endverb
+    \endentry
+    \entry{sung_real-time_2019}{article}{}
+      \name{author}{4}{}{%
+        {{hash=176a75cca840d5ad051b58c2db3d1356}{%
+           family={Sung},
+           familyi={S\bibinitperiod},
+           given={Nak-Jun},
+           giveni={N\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=1ce81ddc23283076762f440bfcc36d37}{%
+           family={{Ma}},
+           familyi={M\bibinitperiod}}}%
+        {{hash=6b55a3458c4bad76d4bdd53fb7d47db7}{%
+           family={Choi},
+           familyi={C\bibinitperiod},
+           given={Chil-Sung},
+           giveni={C\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=7dfe0c4668f8819666bf3a105a8b4e76}{%
+           family={Hong},
+           familyi={H\bibinitperiod},
+           given={Gwi-Ryung},
+           giveni={G\bibinithyphendelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{073d751aea8c682c17e4e8870699fb38}
+      \strng{fullhash}{e9d4c3ff3c82e6d39f133555028f3bd2}
+      \strng{bibnamehash}{e9d4c3ff3c82e6d39f133555028f3bd2}
+      \strng{authorbibnamehash}{e9d4c3ff3c82e6d39f133555028f3bd2}
+      \strng{authornamehash}{073d751aea8c682c17e4e8870699fb38}
+      \strng{authorfullhash}{e9d4c3ff3c82e6d39f133555028f3bd2}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Physics education applications using augmented reality technology, which has been developed extensively in recent years, have a lot of restrictions in terms of performance and accuracy. The purpose of our research is to develop a real-time simulation system for physics education that is based on parallel processing. In this paper, we present a video see-through {AR} (Augmented Reality) system that includes an environment recognizer using a depth image of Microsoft’s Kinect V2 and a real-time soft body simulator based on parallel processing using {GPU} (Graphic Processing Unit). Soft body simulation can provide more realistic simulation results than rigid body simulation, so it can be more effective in systems for physics education. We have designed and implemented a system that provides the physical deformation and movement of 3D volumetric objects, and uses them in education. To verify the usefulness of the proposed system, we conducted a questionnaire survey of 10 students majoring in physics education. As a result of the questionnaire survey, 93\% of respondents answered that they would like to use it for education. We plan to use the stand-alone {AR} device including one or more cameras to improve the system in the future.}
+      \field{day}{25}
+      \field{journaltitle}{Applied Sciences}
+      \field{month}{9}
+      \field{shortjournal}{Applied Sciences}
+      \field{title}{Real-Time Augmented Reality Physics Simulator for Education}
+      \field{volume}{9}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{pages}{4019}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.3390/app9194019
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/figure/Microsoft-Kinect-V2s-Hardware-Structure-Information-Resolution-Frame-per-Second-FPS_fig5_336061295
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/figure/Microsoft-Kinect-V2s-Hardware-Structure-Information-Resolution-Frame-per-Second-FPS_fig5_336061295
+      \endverb
+    \endentry
+    \entry{noonan_repurposing_2015}{article}{}
+      \name{author}{4}{}{%
+        {{hash=7519a6e66d6283e392e129fc9276341a}{%
+           family={Noonan},
+           familyi={N\bibinitperiod},
+           given={P\bibnamedelima J},
+           giveni={P\bibinitperiod\bibinitdelim J\bibinitperiod}}}%
+        {{hash=4d67eba52a6b56932ec7d8d119f801c0}{%
+           family={Howard},
+           familyi={H\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod}}}%
+        {{hash=6d8582b311ed49dc15792fc9138d1649}{%
+           family={Hallett},
+           familyi={H\bibinitperiod},
+           given={W\bibnamedelima A},
+           giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+        {{hash=dfefee7166647d361d8674fe7376a828}{%
+           family={Gunn},
+           familyi={G\bibinitperiod},
+           given={R\bibnamedelima N},
+           giveni={R\bibinitperiod\bibinitdelim N\bibinitperiod}}}%
+      }
+      \strng{namehash}{328bf8eca88418f49aebfcb107feb881}
+      \strng{fullhash}{1c4b9e5fe1387f544fb5a01e6723ef0d}
+      \strng{bibnamehash}{1c4b9e5fe1387f544fb5a01e6723ef0d}
+      \strng{authorbibnamehash}{1c4b9e5fe1387f544fb5a01e6723ef0d}
+      \strng{authornamehash}{328bf8eca88418f49aebfcb107feb881}
+      \strng{authorfullhash}{1c4b9e5fe1387f544fb5a01e6723ef0d}
+      \field{sortinit}{6}
+      \field{sortinithash}{7851c86048328b027313775d8fbd2131}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Medical imaging systems such as those used in positron emission tomography ({PET}) are capable of spatial resolutions that enable the imaging of small, functionally important brain structures. However, the quality of data from {PET} brain studies is often limited by subject motion during acquisition. This is particularly challenging for patients with neurological disorders or with dynamic research studies that can last 90 min or more. Restraining head movement during the scan does not eliminate motion entirely and can be unpleasant for the subject. Head motion can be detected and measured using a variety of techniques that either use the {PET} data itself or an external tracking system. Advances in computer vision arising from the video gaming industry could offer significant benefits when re-purposed for medical applications. A method for measuring rigid body type head motion using the Microsoft Kinect v2 is described with results presenting ⩽  0.5 mm spatial accuracy. Motion data is measured in real-time at 30 Hz using the {KinectFusion} algorithm. Non-rigid motion is detected using the residual alignment energy data of the {KinectFusion} algorithm allowing for unreliable motion to be discarded. Motion data is aligned to {PET} listmode data using injected pulse sequences into the {PET}/{CT} gantry allowing for correction of rigid body motion. Pilot data from a clinical dynamic {PET}/{CT} examination is shown.}
+      \field{day}{21}
+      \field{issn}{0031-9155, 1361-6560}
+      \field{journaltitle}{Physics in Medicine and Biology}
+      \field{langid}{english}
+      \field{month}{11}
+      \field{number}{22}
+      \field{shortjournal}{Phys. Med. Biol.}
+      \field{title}{Repurposing the Microsoft Kinect for Windows v2 for external head motion tracking for brain {PET}}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{volume}{60}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{8753\bibrangedash 8766}
+      \range{pages}{14}
+      \verb{doi}
+      \verb 10.1088/0031-9155/60/22/8753
+      \endverb
+      \verb{file}
+      \verb Noonan et al. - 2015 - Repurposing the Microsoft Kinect for Windows v2 fo.pdf:/home/david/snap/zotero-snap/common/Zotero/storage/YQFL28AP/Noonan et al. - 2015 - Repurposing the Microsoft Kinect for Windows v2 fo.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://iopscience.iop.org/article/10.1088/0031-9155/60/22/8753
+      \endverb
+      \verb{url}
+      \verb https://iopscience.iop.org/article/10.1088/0031-9155/60/22/8753
+      \endverb
+    \endentry
+    \entry{chen_comparison_2017}{incollection}{}
+      \name{author}{2}{}{%
+        {{hash=3e97c2ccb871c45d1e144cf4bd674580}{%
+           family={Wasenmüller},
+           familyi={W\bibinitperiod},
+           given={Oliver},
+           giveni={O\bibinitperiod}}}%
+        {{hash=c0478ee9487d25a73d22d36eaf6bffa8}{%
+           family={Stricker},
+           familyi={S\bibinitperiod},
+           given={Didier},
+           giveni={D\bibinitperiod}}}%
+      }
+      \name{editor}{3}{}{%
+        {{hash=838aebaea9d44dda6a6136ef334c9908}{%
+           family={Chen},
+           familyi={C\bibinitperiod},
+           given={Chu-Song},
+           giveni={C\bibinithyphendelim S\bibinitperiod}}}%
+        {{hash=1cf0ee43b6d661a185414a4002b503b5}{%
+           family={Lu},
+           familyi={L\bibinitperiod},
+           given={Jiwen},
+           giveni={J\bibinitperiod}}}%
+        {{hash=cd16103d76b32c3a006e7b7ad54f13c5}{%
+           family={Ma},
+           familyi={M\bibinitperiod},
+           given={Kai-Kuang},
+           giveni={K\bibinithyphendelim K\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cham}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{8888f4bf09be5b9e318ff47a0d3d5a15}
+      \strng{fullhash}{8888f4bf09be5b9e318ff47a0d3d5a15}
+      \strng{bibnamehash}{8888f4bf09be5b9e318ff47a0d3d5a15}
+      \strng{authorbibnamehash}{8888f4bf09be5b9e318ff47a0d3d5a15}
+      \strng{authornamehash}{8888f4bf09be5b9e318ff47a0d3d5a15}
+      \strng{authorfullhash}{8888f4bf09be5b9e318ff47a0d3d5a15}
+      \strng{editorbibnamehash}{51d0c8e3da102880b3612543b001b932}
+      \strng{editornamehash}{51d0c8e3da102880b3612543b001b932}
+      \strng{editorfullhash}{51d0c8e3da102880b3612543b001b932}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{RGB}-D cameras like the Microsoft Kinect had a huge impact on recent research in Computer Vision as well as Robotics. With the release of the Kinect v2 a new promising device is available, which will – most probably – be used in many future research. In this paper, we present a systematic comparison of the Kinect v1 and Kinect v2. We investigate the accuracy and precision of the devices for their usage in the context of 3D reconstruction, {SLAM} or visual odometry. For each device we rigorously ﬁgure out and quantify inﬂuencing factors on the depth images like temperature, the distance of the camera or the scene color. Furthermore, we demonstrate errors like ﬂying pixels and multipath interference. Our insights build the basis for incorporating or modeling the errors of the devices in follow-up algorithms for diverse applications.}
+      \field{booktitle}{Computer Vision – {ACCV} 2016 Workshops}
+      \field{isbn}{978-3-319-54426-7 978-3-319-54427-4}
+      \field{langid}{english}
+      \field{note}{Titel der Serie: Lecture Notes in Computer Science}
+      \field{title}{Comparison of Kinect V1 and V2 Depth Images in Terms of Accuracy and Precision}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{volume}{10117}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{34\bibrangedash 45}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1007/978-3-319-54427-4_3
+      \endverb
+      \verb{file}
+      \verb Wasenmüller und Stricker - 2017 - Comparison of Kinect V1 and V2 Depth Images in Ter.pdf:/home/david/snap/zotero-snap/common/Zotero/storage/PH5XW7MF/Wasenmüller und Stricker - 2017 - Comparison of Kinect V1 and V2 Depth Images in Ter.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://link.springer.com/10.1007/978-3-319-54427-4_3
+      \endverb
+      \verb{url}
+      \verb http://link.springer.com/10.1007/978-3-319-54427-4_3
+      \endverb
+    \endentry
+    \entry{xiang_libfreenect2_2016}{software}{}
+      \name{author}{30}{}{%
+        {{hash=f22ef5f4a396865369feb1e65aab3b88}{%
+           family={Xiang},
+           familyi={X\bibinitperiod},
+           given={Lingzhu},
+           giveni={L\bibinitperiod}}}%
+        {{hash=ed471729dafb97e854bd83800cb255ae}{%
+           family={Echtler},
+           familyi={E\bibinitperiod},
+           given={Florian},
+           giveni={F\bibinitperiod}}}%
+        {{hash=c8b46d457d7577efc9d388d1c40fb783}{%
+           family={Kerl},
+           familyi={K\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=b6b2493050e648394e9600d78b546081}{%
+           family={Wiedemeyer},
+           familyi={W\bibinitperiod},
+           given={Thiemo},
+           giveni={T\bibinitperiod}}}%
+        {{hash=194d0e546256a68cd16233038190aaef}{%
+           family={Lars},
+           familyi={L\bibinitperiod}}}%
+        {{hash=2248d0b6242856642bd186901a7383aa}{%
+           family={hanyazou},
+           familyi={h\bibinitperiod}}}%
+        {{hash=c02de2ad6f7f1789325a30bf39d21aff}{%
+           family={Gordon},
+           familyi={G\bibinitperiod},
+           given={Ryan},
+           giveni={R\bibinitperiod}}}%
+        {{hash=19c8d4ed8770e5813c0ebfa4b901699c}{%
+           family={Facioni},
+           familyi={F\bibinitperiod},
+           given={Francisco},
+           giveni={F\bibinitperiod}}}%
+        {{hash=bfffb352fb5e9fd11f3f7fa750de2431}{%
+           family={laborer2008},
+           familyi={l\bibinitperiod}}}%
+        {{hash=c7d87b83446eaf6784ed7fb28af5fdc7}{%
+           family={Wareham},
+           familyi={W\bibinitperiod},
+           given={Rich},
+           giveni={R\bibinitperiod}}}%
+        {{hash=65e1eb287b3f1b6773d900b2e8269118}{%
+           family={Goldhoorn},
+           familyi={G\bibinitperiod},
+           given={Matthias},
+           giveni={M\bibinitperiod}}}%
+        {{hash=ebcbd47dadfd4d533f4094d514257082}{%
+           family={alberth},
+           familyi={a\bibinitperiod}}}%
+        {{hash=b0c8c3d8b58f6366677781d51a3198f0}{%
+           family={gaborpapp},
+           familyi={g\bibinitperiod}}}%
+        {{hash=0024f917b409b8dd29a809bdaf91d463}{%
+           family={Fuchs},
+           familyi={F\bibinitperiod},
+           given={Steffen},
+           giveni={S\bibinitperiod}}}%
+        {{hash=07d4c9c24ec7537fcf02785493e779de}{%
+           family={jmtatsch},
+           familyi={j\bibinitperiod}}}%
+        {{hash=51369bcbc8126c635c0b3be59a4655bf}{%
+           family={Blake},
+           familyi={B\bibinitperiod},
+           given={Joshua},
+           giveni={J\bibinitperiod}}}%
+        {{hash=8dbb480fcc62b5d19008dbd3429e281b}{%
+           family={Federico},
+           familyi={F\bibinitperiod}}}%
+        {{hash=61b89dbf55431b4fbbcb2363bc297b31}{%
+           family={Jungkurth},
+           familyi={J\bibinitperiod},
+           given={Henning},
+           giveni={H\bibinitperiod}}}%
+        {{hash=3b3face084f3a3abea19c20bda520345}{%
+           family={Mingze},
+           familyi={M\bibinitperiod},
+           given={Yuan},
+           giveni={Y\bibinitperiod}}}%
+        {{hash=54630fe1a57e3218802d4fb39361b1a1}{%
+           family={vinouz},
+           familyi={v\bibinitperiod}}}%
+        {{hash=c1cd9b64f98a3208d7ffe34c692bc313}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=f81bf4ac2381d4b3bdc662e5d904ceb8}{%
+           family={Burns},
+           familyi={B\bibinitperiod},
+           given={Brendan},
+           giveni={B\bibinitperiod}}}%
+        {{hash=2bceb0a74f213861d1a03b9099a95ffc}{%
+           family={Rawat},
+           familyi={R\bibinitperiod},
+           given={Rahul},
+           giveni={R\bibinitperiod}}}%
+        {{hash=acccf37bb6bd265131d77f87ad3a1de1}{%
+           family={Mokhov},
+           familyi={M\bibinitperiod},
+           given={Serguei},
+           giveni={S\bibinitperiod}}}%
+        {{hash=ae98619b8d13e39226f7ecda3d255678}{%
+           family={Reynolds},
+           familyi={R\bibinitperiod},
+           given={Paul},
+           giveni={P\bibinitperiod}}}%
+        {{hash=1c9c4234d30253819fedad3e30171473}{%
+           family={Viau},
+           familyi={V\bibinitperiod},
+           given={P.\bibnamedelimi E.},
+           giveni={P\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=78cafdf8894fafc10f95805e20743c3f}{%
+           family={Fraissinet-Tachet},
+           familyi={F\bibinithyphendelim T\bibinitperiod},
+           given={Matthieu},
+           giveni={M\bibinitperiod}}}%
+        {{hash=a968d5ec5047bcef68be5e9269d6109d}{%
+           family={Ludique},
+           familyi={L\bibinitperiod}}}%
+        {{hash=21de09ed0675524e02fea69f92094c9e}{%
+           family={Billingham},
+           familyi={B\bibinitperiod},
+           given={James},
+           giveni={J\bibinitperiod}}}%
+        {{hash=324793750ff5a65992d676a60434409b}{%
+           family={Alistair},
+           familyi={A\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Zenodo}%
+      }
+      \strng{namehash}{d0e10a1e206e9e8725d2f4ab8a391ab6}
+      \strng{fullhash}{797410b75cffa28ec26a2831846c6676}
+      \strng{bibnamehash}{797410b75cffa28ec26a2831846c6676}
+      \strng{authorbibnamehash}{797410b75cffa28ec26a2831846c6676}
+      \strng{authornamehash}{d0e10a1e206e9e8725d2f4ab8a391ab6}
+      \strng{authorfullhash}{797410b75cffa28ec26a2831846c6676}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{shorttitle}
+      \field{abstract}{This release provides performance improvements in {JPEG} and depth decoding with various implementations which enable hardware acceleration, including {CUDA}, {VA}-{API}, {VideoToolbox}, and Tegra. See also this performance benchmark. {OpenNI}2 integration is included in this release. Various internal performance improvements, error handling, and bug fixes are also included. For programmers, the {API} is expanded to provide Freenect2Device::{startStreams}() (selectively start {RGB} or depth stream), Registration::{undistortDepth}() (rectification only without registration), and Registration::{getPointXYZ}() (3-D points without color).}
+      \field{day}{28}
+      \field{month}{4}
+      \field{shorttitle}{libfreenect2}
+      \field{title}{libfreenect2: Release 0.2}
+      \field{urlday}{8}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2016}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{doi}
+      \verb 10.5281/zenodo.50641
+      \endverb
+      \verb{file}
+      \verb Zenodo Snapshot:/home/david/snap/zotero-snap/common/Zotero/storage/CFTU6XB6/50641.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://zenodo.org/record/50641
+      \endverb
+      \verb{url}
+      \verb https://zenodo.org/record/50641
+      \endverb
+    \endentry
+    \entry{wiedemeyer_iai_2021}{software}{}
+      \name{author}{1}{}{%
+        {{hash=b6b2493050e648394e9600d78b546081}{%
+           family={Wiedemeyer},
+           familyi={W\bibinitperiod},
+           given={Thiemo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute for Artificial Intelligence - University of Bremen}%
+      }
+      \strng{namehash}{b6b2493050e648394e9600d78b546081}
+      \strng{fullhash}{b6b2493050e648394e9600d78b546081}
+      \strng{bibnamehash}{b6b2493050e648394e9600d78b546081}
+      \strng{authorbibnamehash}{b6b2493050e648394e9600d78b546081}
+      \strng{authornamehash}{b6b2493050e648394e9600d78b546081}
+      \strng{authorfullhash}{b6b2493050e648394e9600d78b546081}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Tools for using the Kinect One (Kinect v2) in {ROS}}
+      \field{day}{16}
+      \field{month}{12}
+      \field{title}{{IAI} Kinect2}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/code-iai/iai_kinect2/blob/0e2c5f63134a076606bb79963406e1d47f2da651/kinect2_calibration/README.md
+      \endverb
+      \verb{url}
+      \verb https://github.com/code-iai/iai_kinect2/blob/0e2c5f63134a076606bb79963406e1d47f2da651/kinect2_calibration/README.md
+      \endverb
+    \endentry
+    \entry{intel_corporation_depth_2022}{online}{}
+      \name{author}{1}{}{%
+        {{hash=b7f0fb90e404efb48f8a85a517dec3c9}{%
+           family={{Intel Corporation}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{fullhash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{bibnamehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{authorbibnamehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{authornamehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{authorfullhash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \field{extraname}{1}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Depth Camera D435 offers the widest field of view of all our cameras, global shutter on the depth sensor that is ideal for fast moving applications.}
+      \field{langid}{american}
+      \field{title}{Depth Camera D435}
+      \field{titleaddon}{Intel® {RealSense}™ Depth and Tracking Cameras}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/david/snap/zotero-snap/common/Zotero/storage/Z6X2I7VT/depth-camera-d435.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://www.intelrealsense.com/depth-camera-d435/
+      \endverb
+      \verb{url}
+      \verb https://www.intelrealsense.com/depth-camera-d435/
+      \endverb
+    \endentry
+    \entry{intel_corporation_intelrealsenselibrealsense_2022}{software}{}
+      \name{author}{1}{}{%
+        {{hash=b7f0fb90e404efb48f8a85a517dec3c9}{%
+           family={{Intel Corporation}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Intel® {RealSense}™}%
+      }
+      \strng{namehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{fullhash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{bibnamehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{authorbibnamehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{authornamehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{authorfullhash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \field{extraname}{2}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Intel® {RealSense}™ {SDK}}
+      \field{day}{8}
+      \field{month}{2}
+      \field{note}{Erstveröffentlichung: 17.11.2015}
+      \field{title}{{IntelRealSense}/librealsense}
+      \field{urlday}{8}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/IntelRealSense/librealsense
+      \endverb
+      \verb{url}
+      \verb https://github.com/IntelRealSense/librealsense
+      \endverb
+      \keyw{camera-api,computer-vision,developer-kits,hardware,library,librealsense,sdk}
+    \endentry
+    \entry{intel_corporation_ros_2022}{software}{}
+      \name{author}{1}{}{%
+        {{hash=b7f0fb90e404efb48f8a85a517dec3c9}{%
+           family={{Intel Corporation}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Intel® {RealSense}™}%
+      }
+      \strng{namehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{fullhash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{bibnamehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{authorbibnamehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{authornamehash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \strng{authorfullhash}{b7f0fb90e404efb48f8a85a517dec3c9}
+      \field{extraname}{3}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Intel(R) {RealSense}({TM}) {ROS} Wrapper for D400 series, {SR}300 Camera and T265 Tracking Module}
+      \field{day}{7}
+      \field{month}{2}
+      \field{note}{Erstveröffentlichung: 23.02.2016}
+      \field{title}{{ROS} Wrapper for Intel® {RealSense}™ Devices}
+      \field{urlday}{8}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/IntelRealSense/realsense-ros
+      \endverb
+      \verb{url}
+      \verb https://github.com/IntelRealSense/realsense-ros
+      \endverb
+    \endentry
+    \entry{occipital_openni_2022}{online}{}
+      \name{author}{1}{}{%
+        {{hash=bb8b8a265fc4c3a2100805736e0cd038}{%
+           family={{Occipital}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{bb8b8a265fc4c3a2100805736e0cd038}
+      \strng{fullhash}{bb8b8a265fc4c3a2100805736e0cd038}
+      \strng{bibnamehash}{bb8b8a265fc4c3a2100805736e0cd038}
+      \strng{authorbibnamehash}{bb8b8a265fc4c3a2100805736e0cd038}
+      \strng{authornamehash}{bb8b8a265fc4c3a2100805736e0cd038}
+      \strng{authorfullhash}{bb8b8a265fc4c3a2100805736e0cd038}
+      \field{sortinit}{7}
+      \field{sortinithash}{f615fb9c6fba11c6f962fb3fd599810e}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{title}{{OpenNI} Programmers Guide}
+      \field{titleaddon}{{OpenNI} 2 {SDK} Binaries \& Docs}
+      \field{urlday}{8}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb OpenNI_Programmers_Guide.pdf:/home/david/snap/zotero-snap/common/Zotero/storage/9NTK4A99/OpenNI_Programmers_Guide.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb https://s3.amazonaws.com/com.occipital.openni/OpenNI_Programmers_Guide.pdf
+      \endverb
+      \verb{url}
+      \verb https://s3.amazonaws.com/com.occipital.openni/OpenNI_Programmers_Guide.pdf
+      \endverb
+    \endentry
+    \entry{wiedemeyer_iai_kinect2kinect2_bridgedata_2015}{software}{}
+      \name{author}{1}{}{%
+        {{hash=b6b2493050e648394e9600d78b546081}{%
+           family={Wiedemeyer},
+           familyi={W\bibinitperiod},
+           given={Thiemo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Institute for Artificial Intelligence - University of Bremen}%
+      }
+      \strng{namehash}{b6b2493050e648394e9600d78b546081}
+      \strng{fullhash}{b6b2493050e648394e9600d78b546081}
+      \strng{bibnamehash}{b6b2493050e648394e9600d78b546081}
+      \strng{authorbibnamehash}{b6b2493050e648394e9600d78b546081}
+      \strng{authornamehash}{b6b2493050e648394e9600d78b546081}
+      \strng{authorfullhash}{b6b2493050e648394e9600d78b546081}
+      \field{extraname}{2}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Tools for using the Kinect One (Kinect v2) in {ROS}. Contribute to code-iai/iai\_kinect2 development by creating an account on {GitHub}.}
+      \field{day}{18}
+      \field{month}{5}
+      \field{title}{iai\_kinect2/kinect2\_bridge/data}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/code-iai/iai_kinect2
+      \endverb
+      \verb{url}
+      \verb https://github.com/code-iai/iai_kinect2
+      \endverb
+    \endentry
+    \entry{opencvorg_camera_2019}{online}{}
+      \name{author}{1}{}{%
+        {{hash=3de30fb004b0092ec0572c74803cb793}{%
+           family={{opencv.org}},
+           familyi={o\bibinitperiod}}}%
+      }
+      \strng{namehash}{3de30fb004b0092ec0572c74803cb793}
+      \strng{fullhash}{3de30fb004b0092ec0572c74803cb793}
+      \strng{bibnamehash}{3de30fb004b0092ec0572c74803cb793}
+      \strng{authorbibnamehash}{3de30fb004b0092ec0572c74803cb793}
+      \strng{authornamehash}{3de30fb004b0092ec0572c74803cb793}
+      \strng{authorfullhash}{3de30fb004b0092ec0572c74803cb793}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{31}
+      \field{langid}{english}
+      \field{month}{12}
+      \field{title}{Camera Calibration and 3D Reconstruction — {OpenCV} 2.4.13.7 documentation}
+      \field{urlday}{27}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2019}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/2.4/modules/calib3d/doc/camera_calibration_and_3d_reconstruction.html
+      \endverb
+    \endentry
+    \entry{grunnet-jepsen_intel_2021}{online}{}
+      \name{author}{5}{}{%
+        {{hash=f16c59ba18efcda456ec1efca8b79d70}{%
+           family={Grunnet-Jepsen},
+           familyi={G\bibinithyphendelim J\bibinitperiod},
+           given={Andreas},
+           giveni={A\bibinitperiod}}}%
+        {{hash=49f4abd986a59a25a518f94421118921}{%
+           family={Sweetser},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=15d1579aa22ee5e408cee4f7b8cfcc2c}{%
+           family={Khuong},
+           familyi={K\bibinitperiod},
+           given={Tri},
+           giveni={T\bibinitperiod}}}%
+        {{hash=2ae54b890d894442164fd75b5c8fc4b4}{%
+           family={Tong},
+           familyi={T\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=5b25ee972488b91c98ca1355d62e862c}{%
+           family={Mulla},
+           familyi={M\bibinitperiod},
+           given={Ofir},
+           giveni={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{b03bb6cc8b2a2c278377305e83d652c6}
+      \strng{fullhash}{2fe296888dd673cc6d1689ef4323a5be}
+      \strng{bibnamehash}{2fe296888dd673cc6d1689ef4323a5be}
+      \strng{authorbibnamehash}{2fe296888dd673cc6d1689ef4323a5be}
+      \strng{authornamehash}{b03bb6cc8b2a2c278377305e83d652c6}
+      \strng{authorfullhash}{2fe296888dd673cc6d1689ef4323a5be}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{langid}{english}
+      \field{note}{Revision 2.1}
+      \field{title}{Intel® {RealSense}™ Self-Calibration for D400 Series Depth Cameras}
+      \field{titleaddon}{Intel® {RealSense}™ Developer Documentation}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Snapshot:/home/david/snap/zotero-snap/common/Zotero/storage/HWLEJNVG/self-calibration-for-depth-cameras.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://dev.intelrealsense.com/docs/self-calibration-for-depth-cameras
+      \endverb
+      \verb{url}
+      \verb https://dev.intelrealsense.com/docs/self-calibration-for-depth-cameras
+      \endverb
+    \endentry
+    \entry{tabb_solving_2017}{article}{}
+      \name{author}{2}{}{%
+        {{hash=3abff5d22655ab4aada62c686b25b5f4}{%
+           family={Tabb},
+           familyi={T\bibinitperiod},
+           given={Amy},
+           giveni={A\bibinitperiod}}}%
+        {{hash=e5384fdb0171868d3985151c552a43a9}{%
+           family={Yousef},
+           familyi={Y\bibinitperiod},
+           given={Khalil\bibnamedelimb M.\bibnamedelimi Ahmad},
+           giveni={K\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim A\bibinitperiod}}}%
+      }
+      \strng{namehash}{32cf7765331c7f27d3233fe7af32e701}
+      \strng{fullhash}{32cf7765331c7f27d3233fe7af32e701}
+      \strng{bibnamehash}{32cf7765331c7f27d3233fe7af32e701}
+      \strng{authorbibnamehash}{32cf7765331c7f27d3233fe7af32e701}
+      \strng{authornamehash}{32cf7765331c7f27d3233fe7af32e701}
+      \strng{authorfullhash}{32cf7765331c7f27d3233fe7af32e701}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Robot-world, hand-eye calibration is the problem of determining the transformation between the robot end-effector and a camera, as well as the transformation between the robot base and the world coordinate system. This relationship has been modeled as \${\textbackslash}mathbf\{{AX}\}={\textbackslash}mathbf\{{ZB}\}\$, where \${\textbackslash}mathbf\{X\}\$ and \${\textbackslash}mathbf\{Z\}\$ are unknown homogeneous transformation matrices. The successful execution of many robot manipulation tasks depends on determining these matrices accurately, and we are particularly interested in the use of calibration for use in vision tasks. In this work, we describe a collection of methods consisting of two cost function classes, three different parameterizations of rotation components, and separable versus simultaneous formulations. We explore the behavior of this collection of methods on real datasets and simulated datasets, and compare to seven other state-of-the-art methods. Our collection of methods return greater accuracy on many metrics as compared to the state-of-the-art. The collection of methods is extended to the problem of robot-world hand-multiple-eye calibration, and results are shown with two and three cameras mounted on the same robot.}
+      \field{eprinttype}{arxiv}
+      \field{issn}{0932-8092, 1432-1769}
+      \field{journaltitle}{Machine Vision and Applications}
+      \field{langid}{english}
+      \field{month}{8}
+      \field{number}{5}
+      \field{shortjournal}{Machine Vision and Applications}
+      \field{title}{Solving the Robot-World Hand-Eye(s) Calibration Problem with Iterative Methods}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{volume}{28}
+      \field{year}{2017}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \field{pages}{569\bibrangedash 590}
+      \range{pages}{22}
+      \verb{doi}
+      \verb 10.1007/s00138-017-0841-7
+      \endverb
+      \verb{eprint}
+      \verb 1907.12425
+      \endverb
+      \verb{file}
+      \verb Tabb und Yousef - 2017 - Solving the Robot-World Hand-Eye(s) Calibration Pr.pdf:/home/david/snap/zotero-snap/common/Zotero/storage/4U48VIGC/Tabb und Yousef - 2017 - Solving the Robot-World Hand-Eye(s) Calibration Pr.pdf:application/pdf
+      \endverb
+      \verb{urlraw}
+      \verb http://arxiv.org/abs/1907.12425
+      \endverb
+      \verb{url}
+      \verb http://arxiv.org/abs/1907.12425
+      \endverb
+      \keyw{Computer Science - Robotics,Computer Science - Computer Vision and Pattern Recognition}
+    \endentry
+    \entry{rauch_moveit_2022}{software}{}
+      \name{author}{11}{}{%
+        {{hash=77b567a245a79e53ab76e5cc5b39adf5}{%
+           family={Rauch},
+           familyi={R\bibinitperiod},
+           given={Christian},
+           giveni={C\bibinitperiod}}}%
+        {{hash=d73d714019593a711528b746e970cb9b}{%
+           family={Haschke},
+           familyi={H\bibinitperiod},
+           given={Robert},
+           giveni={R\bibinitperiod}}}%
+        {{hash=2d38e82cb5cf64458c2f426e4772e5c6}{%
+           family={Weaver},
+           familyi={W\bibinitperiod},
+           given={Tyler},
+           giveni={T\bibinitperiod}}}%
+        {{hash=f53967cfc5f9d8a208e4c3776cc64b79}{%
+           family={{RoboticsYY}},
+           familyi={R\bibinitperiod}}}%
+        {{hash=c1cd9b64f98a3208d7ffe34c692bc313}{%
+           family={Coleman},
+           familyi={C\bibinitperiod},
+           given={Dave},
+           giveni={D\bibinitperiod}}}%
+        {{hash=d41dcad1a81f4a6b9e98e6d53e9ce16b}{%
+           family={Magnago},
+           familyi={M\bibinitperiod},
+           given={Valerio},
+           giveni={V\bibinitperiod}}}%
+        {{hash=89aa9f40be83078f77f361c1d4c216e6}{%
+           family={Stechschulte},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=c8c39b05e80abecaf3d8469e2345f225}{%
+           family={Brahmbhatt},
+           familyi={B\bibinitperiod},
+           given={Samarth},
+           giveni={S\bibinitperiod}}}%
+        {{hash=833a737d6917911049d87d9dff4087eb}{%
+           family={{Jakubach}},
+           familyi={J\bibinitperiod}}}%
+        {{hash=f4f1bcbc04061335cc0b4ddce4c735bd}{%
+           family={Ferguson},
+           familyi={F\bibinitperiod},
+           given={Michael},
+           giveni={M\bibinitperiod}}}%
+        {{hash=3f3372728b37594ac5f16255852e76fd}{%
+           family={Brijacak},
+           familyi={B\bibinitperiod},
+           given={Inka},
+           giveni={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {{ROS} Planning}%
+      }
+      \strng{namehash}{17f9d7f1a57ac355c310ac7eb8d6df37}
+      \strng{fullhash}{f216fd256211ff2e77432d5f41c56615}
+      \strng{bibnamehash}{f216fd256211ff2e77432d5f41c56615}
+      \strng{authorbibnamehash}{f216fd256211ff2e77432d5f41c56615}
+      \strng{authornamehash}{17f9d7f1a57ac355c310ac7eb8d6df37}
+      \strng{authorfullhash}{f216fd256211ff2e77432d5f41c56615}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Hand-eye calibration tools for robot arms.}
+      \field{day}{11}
+      \field{month}{2}
+      \field{note}{Erstveröffentlichung: 02.06.2020}
+      \field{title}{{MoveIt} Calibration}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/ros-planning/moveit_calibration
+      \endverb
+      \verb{url}
+      \verb https://github.com/ros-planning/moveit_calibration
+      \endverb
+    \endentry
+    \entry{stechschulte_hand-eye_2022}{online}{}
+      \name{author}{1}{}{%
+        {{hash=89aa9f40be83078f77f361c1d4c216e6}{%
+           family={Stechschulte},
+           familyi={S\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+      }
+      \strng{namehash}{89aa9f40be83078f77f361c1d4c216e6}
+      \strng{fullhash}{89aa9f40be83078f77f361c1d4c216e6}
+      \strng{bibnamehash}{89aa9f40be83078f77f361c1d4c216e6}
+      \strng{authorbibnamehash}{89aa9f40be83078f77f361c1d4c216e6}
+      \strng{authornamehash}{89aa9f40be83078f77f361c1d4c216e6}
+      \strng{authorfullhash}{89aa9f40be83078f77f361c1d4c216e6}
+      \field{sortinit}{8}
+      \field{sortinithash}{1b24cab5087933ef0826a7cd3b99e994}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Hand-Eye Calibration — moveit\_tutorials Noetic documentation}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb Hand-Eye Calibration — moveit_tutorials Noetic documentation:/home/david/snap/zotero-snap/common/Zotero/storage/R2VNZTQA/hand_eye_calibration_tutorial.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://ros-planning.github.io/moveit_tutorials/doc/hand_eye_calibration/hand_eye_calibration_tutorial.html
+      \endverb
+      \verb{url}
+      \verb https://ros-planning.github.io/moveit_tutorials/doc/hand_eye_calibration/hand_eye_calibration_tutorial.html
+      \endverb
+    \endentry
+    \entry{scott_ros_2021}{online}{}
+      \name{author}{1}{}{%
+        {{hash=0241e40c21d494f60b2bf06e36b1bb64}{%
+           family={Scott},
+           familyi={S\bibinitperiod},
+           given={Katherine},
+           giveni={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{0241e40c21d494f60b2bf06e36b1bb64}
+      \strng{fullhash}{0241e40c21d494f60b2bf06e36b1bb64}
+      \strng{bibnamehash}{0241e40c21d494f60b2bf06e36b1bb64}
+      \strng{authorbibnamehash}{0241e40c21d494f60b2bf06e36b1bb64}
+      \strng{authornamehash}{0241e40c21d494f60b2bf06e36b1bb64}
+      \strng{authorfullhash}{0241e40c21d494f60b2bf06e36b1bb64}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{ROS} News for the Week of 5/10/2021 Arduino Portenta for Machine Control – Should run micro-{ROS} Obituary for Kinetic Kame How did Kinetic impact your life? What robots did you build with it? Check out the thread above or this Twitter thread and let us know what robots you built with Kinetic. Events 5/18/2021 {ROS} 2 Industrial Training 5/19/2021 Online Robotics Job Fair by {SVRobo} 5/19/2021 Mass Robotics Career Fair 5/22/2021 {DIY} Robocars and {BBQ} Return to Circuit Launch 5/31/2021 {ICRA}...}
+      \field{day}{14}
+      \field{month}{5}
+      \field{title}{{ROS} News for the Week of 5/10/2021 - General}
+      \field{type}{Blog}
+      \field{urlday}{17}
+      \field{urlmonth}{1}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://discourse.ros.org/t/ros-news-for-the-week-of-5-10-2021/20399
+      \endverb
+      \verb{url}
+      \verb https://discourse.ros.org/t/ros-news-for-the-week-of-5-10-2021/20399
+      \endverb
+    \endentry
+    \entry{ulisse_perusin_ros-visualizationrviz_2022}{software}{}
+      \name{author}{16}{}{%
+        {{hash=9ee1554a7d3e41934e4c37849a4776eb}{%
+           family={{Ulisse Perusin}},
+           familyi={U\bibinitperiod}}}%
+        {{hash=246a48922a84bcf892f93ab70b14da87}{%
+           family={{Steven Garrity}},
+           familyi={S\bibinitperiod}}}%
+        {{hash=1e4e810ce6b7f7840a73c26cb92f2ba4}{%
+           family={{Lapo Calamandrei}},
+           familyi={L\bibinitperiod}}}%
+        {{hash=936220ffcaf9d48ac2d103250a85e3be}{%
+           family={{Ryan Collier}},
+           familyi={R\bibinitperiod}}}%
+        {{hash=57134ed10eede6a50354cba20500c2d7}{%
+           family={{Rodney Dawes}},
+           familyi={R\bibinitperiod}}}%
+        {{hash=ecf9e1ce87de5bbcbc9751e8bc6a8442}{%
+           family={{Andreas Nilsson}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=566925b1f4f00a42f80fe86d0d07dc27}{%
+           family={{Tuomas Kuosmanen}},
+           familyi={T\bibinitperiod}}}%
+        {{hash=4aefbb25caaec3343d992f448f78028d}{%
+           family={{Garrett LeSage}},
+           familyi={G\bibinitperiod}}}%
+        {{hash=4db8f6b8ced629021c48b29e2382f2cb}{%
+           family={{Jakub Steiner}},
+           familyi={J\bibinitperiod}}}%
+        {{hash=f82eebd6fad19e9cac479d4e1561a017}{%
+           family={{David Gossow}},
+           familyi={D\bibinitperiod}}}%
+        {{hash=2cd2742187866fab7958d93b5b1d7469}{%
+           family={{Chad Rockey}},
+           familyi={C\bibinitperiod}}}%
+        {{hash=070f29b8f7ad48e1cd42c669a428a837}{%
+           family={{Kei Okada}},
+           familyi={K\bibinitperiod}}}%
+        {{hash=6b2d13464fca9cd9adb5b4e3231d2e50}{%
+           family={{Julius Kammerl}},
+           familyi={J\bibinitperiod}}}%
+        {{hash=ea74434fd5d106c41dea0971c598608c}{%
+           family={{Acorn Pooley}},
+           familyi={A\bibinitperiod}}}%
+        {{hash=7aec083dfd8990c71b51ce691acf7cf6}{%
+           family={{Rein Appeldoorn}},
+           familyi={R\bibinitperiod}}}%
+        {{hash=fd8200d0e0a3b08c78f1ee680075c4df}{%
+           family={{Robert Haschke}},
+           familyi={R\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {ros-visualization}%
+      }
+      \strng{namehash}{bac4edd53a058b5fecf1daa12f188281}
+      \strng{fullhash}{ad524b4a0efd184c06c5fd8855b847c5}
+      \strng{bibnamehash}{ad524b4a0efd184c06c5fd8855b847c5}
+      \strng{authorbibnamehash}{ad524b4a0efd184c06c5fd8855b847c5}
+      \strng{authornamehash}{bac4edd53a058b5fecf1daa12f188281}
+      \strng{authorfullhash}{ad524b4a0efd184c06c5fd8855b847c5}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{ROS} 3D Robot Visualizer}
+      \field{day}{14}
+      \field{month}{2}
+      \field{note}{Erstveröffentlichung: 18.09.2012}
+      \field{title}{ros-visualization/rviz}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2022}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/ros-visualization/rviz
+      \endverb
+      \verb{url}
+      \verb https://github.com/ros-visualization/rviz
+      \endverb
+    \endentry
+    \entry{ioan_a_sucan_moveit_nodate}{online}{}
+      \name{author}{2}{}{%
+        {{hash=88da99a0d14064d3e374d2cd482f4df3}{%
+           family={{Ioan A. Sucan}},
+           familyi={I\bibinitperiod}}}%
+        {{hash=db7b473aec43cbeeb278e0700b78d427}{%
+           family={{Sachin Chitta}},
+           familyi={S\bibinitperiod}}}%
+      }
+      \strng{namehash}{7a903f3aeaeae3af111cfa532080a5df}
+      \strng{fullhash}{7a903f3aeaeae3af111cfa532080a5df}
+      \strng{bibnamehash}{7a903f3aeaeae3af111cfa532080a5df}
+      \strng{authorbibnamehash}{7a903f3aeaeae3af111cfa532080a5df}
+      \strng{authornamehash}{7a903f3aeaeae3af111cfa532080a5df}
+      \strng{authorfullhash}{7a903f3aeaeae3af111cfa532080a5df}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{{MoveIt} is the most widely used software for manipulation and has been used on over 150 robots. It is released under the terms of the {BSD} license, and thus free for industrial, commercial, and research use. By incorporating the latest advances in motion planning, manipulation, 3D perception, kinematics, control and navigation, {MoveIt} is state of the art software for mobile manipulation.}
+      \field{langid}{english}
+      \field{title}{{MoveIt} Motion Planning Framework}
+      \field{titleaddon}{{MoveIt}}
+      \field{urlday}{15}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{urldateera}{ce}
+      \verb{file}
+      \verb MoveIt Motion Planning Framework:/home/david/snap/zotero-snap/common/Zotero/storage/Q4ZEV9TT/moveit.ros.org.html:text/html
+      \endverb
+      \verb{urlraw}
+      \verb https://moveit.ros.org/
+      \endverb
+      \verb{url}
+      \verb https://moveit.ros.org/
+      \endverb
+    \endentry
+    \entry{tzutalin_labelimg_2015}{software}{}
+      \name{author}{1}{}{%
+        {{hash=ceb2a9d636903f1d4d20af798d7786a7}{%
+           family={{Tzutalin}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{ceb2a9d636903f1d4d20af798d7786a7}
+      \strng{fullhash}{ceb2a9d636903f1d4d20af798d7786a7}
+      \strng{bibnamehash}{ceb2a9d636903f1d4d20af798d7786a7}
+      \strng{authorbibnamehash}{ceb2a9d636903f1d4d20af798d7786a7}
+      \strng{authornamehash}{ceb2a9d636903f1d4d20af798d7786a7}
+      \strng{authorfullhash}{ceb2a9d636903f1d4d20af798d7786a7}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{🖍️ {LabelImg} is a graphical image annotation tool and label object bounding boxes in images}
+      \field{title}{{LabelImg}}
+      \field{urlday}{4}
+      \field{urlmonth}{1}
+      \field{urlyear}{2022}
+      \field{year}{2015}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/tzutalin/labelImg
+      \endverb
+      \verb{url}
+      \verb https://github.com/tzutalin/labelImg
+      \endverb
+      \keyw{annotations,deep-learning,detection,image-classification,imagenet,python2,python3,recognition,tools}
+    \endentry
+    \entry{intelligentroboticslabs_darknet_ros_3d_2021}{software}{}
+      \name{author}{1}{}{%
+        {{hash=f26aa69caaba791fb7ba9684fd19759d}{%
+           family={{IntelligentRoboticsLabs}},
+           familyi={I\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Intelligent Robotics Labs}%
+      }
+      \strng{namehash}{f26aa69caaba791fb7ba9684fd19759d}
+      \strng{fullhash}{f26aa69caaba791fb7ba9684fd19759d}
+      \strng{bibnamehash}{f26aa69caaba791fb7ba9684fd19759d}
+      \strng{authorbibnamehash}{f26aa69caaba791fb7ba9684fd19759d}
+      \strng{authornamehash}{f26aa69caaba791fb7ba9684fd19759d}
+      \strng{authorfullhash}{f26aa69caaba791fb7ba9684fd19759d}
+      \field{sortinit}{9}
+      \field{sortinithash}{54047ffb55bdefa0694bbd554c1b11a0}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{16}
+      \field{month}{12}
+      \field{title}{darknet\_ros\_3d}
+      \field{urlday}{20}
+      \field{urlmonth}{12}
+      \field{urlyear}{2021}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d
+      \endverb
+      \verb{url}
+      \verb https://github.com/IntelligentRoboticsLabs/gb_visual_detection_3d
+      \endverb
+    \endentry
+    \entry{leber_steuerung_2021}{misc}{}
+      \name{author}{1}{}{%
+        {{hash=27fbca7adca484111c8192cefd44490e}{%
+           family={Leber},
+           familyi={L\bibinitperiod},
+           given={Marvin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{27fbca7adca484111c8192cefd44490e}
+      \strng{fullhash}{27fbca7adca484111c8192cefd44490e}
+      \strng{bibnamehash}{27fbca7adca484111c8192cefd44490e}
+      \strng{authorbibnamehash}{27fbca7adca484111c8192cefd44490e}
+      \strng{authornamehash}{27fbca7adca484111c8192cefd44490e}
+      \strng{authorfullhash}{27fbca7adca484111c8192cefd44490e}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{30}
+      \field{langid}{german}
+      \field{month}{9}
+      \field{title}{Steuerung eines Roboterarms mit Industrial {ROS} und {KI}-basierte Handhabung von ungeordnet zugeführten Teilen}
+      \field{urlday}{1}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+    \endentry
+    \entry{yin_fast_2018}{article}{}
+      \name{author}{5}{}{%
+        {{hash=0d3a90be6980e4da6ea04e03c78db575}{%
+           family={Yin},
+           familyi={Y\bibinitperiod},
+           given={Jun},
+           giveni={J\bibinitperiod}}}%
+        {{hash=435ce2eb7cb641b34aac69461bcfaab3}{%
+           family={Pan},
+           familyi={P\bibinitperiod},
+           given={Huadong},
+           giveni={H\bibinitperiod}}}%
+        {{hash=203b04e87eb8be93c98f7639b2c2f01b}{%
+           family={Su},
+           familyi={S\bibinitperiod},
+           given={Hui},
+           giveni={H\bibinitperiod}}}%
+        {{hash=6c40200e4ecb9ee911138816269e67e5}{%
+           family={Liu},
+           familyi={L\bibinitperiod},
+           given={Zhonggeng},
+           giveni={Z\bibinitperiod}}}%
+        {{hash=75508759d0c238e25f902490076e9d5e}{%
+           family={Peng},
+           familyi={P\bibinitperiod},
+           given={Zhirong},
+           giveni={Z\bibinitperiod}}}%
+      }
+      \strng{namehash}{3f2fb37e173207bb58ead5d1546facaa}
+      \strng{fullhash}{0328952bc28a53ae3fe10b33c18cdfe4}
+      \strng{bibnamehash}{0328952bc28a53ae3fe10b33c18cdfe4}
+      \strng{authorbibnamehash}{0328952bc28a53ae3fe10b33c18cdfe4}
+      \strng{authornamehash}{3f2fb37e173207bb58ead5d1546facaa}
+      \strng{authorfullhash}{0328952bc28a53ae3fe10b33c18cdfe4}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{We propose an object detection method that predicts the orientation bounding boxes ({OBB}) to estimate objects locations, scales and orientations based on {YOLO} (You Only Look Once), which is one of the top detection algorithms performing well both in accuracy and speed. Horizontal bounding boxes({HBB}), which are not robust to orientation variances, are used in the existing object detection methods to detect targets. The proposed orientation invariant {YOLO} ({OIYOLO}) detector can effectively deal with the bird’s eye viewpoint images where the orientation angles of the objects are arbitrary. In order to estimate the rotated angle of objects, we design a new angle loss function. Therefore, the training of {OIYOLO} forces the network to learn the annotated orientation angle of objects, making {OIYOLO} orientation invariances. The proposed approach that predicts {OBB} can be applied in other detection frameworks. In additional, to evaluate the proposed {OIYOLO} detector, we create an {UAV}-{DAHUA} datasets that annotated with objects locations, scales and orientation angles accurately. Extensive experiments conducted on {UAV}-{DAHUA} and {DOTA} datasets demonstrate that {OIYOLO} achieves state-of-the-art detection performance with high efficiency comparing with the baseline {YOLO} algorithms.}
+      \field{journaltitle}{{MATEC} Web of Conferences}
+      \field{shortjournal}{{MATEC} Web of Conferences}
+      \field{title}{A Fast Orientation Invariant Detector Based on the One-stage Method}
+      \field{volume}{232}
+      \field{year}{2018}
+      \field{dateera}{ce}
+      \field{pages}{7}
+      \range{pages}{1}
+      \verb{doi}
+      \verb 10.1051/matecconf/201823204036
+      \endverb
+      \verb{urlraw}
+      \verb https://www.researchgate.net/figure/Detection-results-of-OIYOLO-using-OBB-and-YOLO-using-HBB-on-UAV-DAHUA-dataset-The-first_fig2_329038189
+      \endverb
+      \verb{url}
+      \verb https://www.researchgate.net/figure/Detection-results-of-OIYOLO-using-OBB-and-YOLO-using-HBB-on-UAV-DAHUA-dataset-The-first_fig2_329038189
+      \endverb
+    \endentry
+    \entry{hempel_rosa_2021}{software}{}
+      \name{author}{1}{}{%
+        {{hash=e60ff2d094eeaa1b34a9a8dbccc06ea1}{%
+           family={Hempel},
+           familyi={H\bibinitperiod},
+           given={Thorsten},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{e60ff2d094eeaa1b34a9a8dbccc06ea1}
+      \strng{fullhash}{e60ff2d094eeaa1b34a9a8dbccc06ea1}
+      \strng{bibnamehash}{e60ff2d094eeaa1b34a9a8dbccc06ea1}
+      \strng{authorbibnamehash}{e60ff2d094eeaa1b34a9a8dbccc06ea1}
+      \strng{authornamehash}{e60ff2d094eeaa1b34a9a8dbccc06ea1}
+      \strng{authorfullhash}{e60ff2d094eeaa1b34a9a8dbccc06ea1}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{day}{17}
+      \field{month}{12}
+      \field{title}{{RoSA}: Cube Detector}
+      \field{version}{1.0.0}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \verb{doi}
+      \verb 10.5281/zenodo.5788773
+      \endverb
+      \verb{urlraw}
+      \verb https://orcid.org/0000-0002-3621-7194
+      \endverb
+      \verb{url}
+      \verb https://orcid.org/0000-0002-3621-7194
+      \endverb
+    \endentry
+    \entry{the_ai_guy_yologeneratetrainingfile_2021}{software}{}
+      \name{author}{1}{}{%
+        {{hash=55559e668f3e6d9a11671bafa6652d33}{%
+           family={{The AI Guy}},
+           familyi={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{55559e668f3e6d9a11671bafa6652d33}
+      \strng{fullhash}{55559e668f3e6d9a11671bafa6652d33}
+      \strng{bibnamehash}{55559e668f3e6d9a11671bafa6652d33}
+      \strng{authorbibnamehash}{55559e668f3e6d9a11671bafa6652d33}
+      \strng{authornamehash}{55559e668f3e6d9a11671bafa6652d33}
+      \strng{authorfullhash}{55559e668f3e6d9a11671bafa6652d33}
+      \field{sortinit}{1}
+      \field{sortinithash}{50c6687d7fc80f50136d75228e3c59ba}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{abstract}{Script to generate train.txt for custom yolov3 object detection.}
+      \field{day}{17}
+      \field{month}{12}
+      \field{note}{Erstveröffentlichung: 08.01.2020}
+      \field{title}{{YoloGenerateTrainingFile}}
+      \field{urlday}{14}
+      \field{urlmonth}{2}
+      \field{urlyear}{2022}
+      \field{year}{2021}
+      \field{dateera}{ce}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://github.com/theAIGuysCode/YoloGenerateTrainingFile/blob/2bcb9b1ba7e75061ce1c267a48860c67cb229b62/generate_train.py
+      \endverb
+      \verb{url}
+      \verb https://github.com/theAIGuysCode/YoloGenerateTrainingFile/blob/2bcb9b1ba7e75061ce1c267a48860c67cb229b62/generate_train.py
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

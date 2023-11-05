@@ -1,0 +1,4 @@
+rsv:
+  robot_address: "192.168.2.130"
+  robot_port: "80"
+  socket_timeout: 5

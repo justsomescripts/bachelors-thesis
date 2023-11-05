@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: rv6l_cell
+    relative_path: urdf/rv6l_cell.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/rv6l_cell.srdf
+  CONFIG:
+    author_name: Dennis Steinbeck
+    author_email: s170893@th-ab.de
+    generated_timestamp: 1624319417

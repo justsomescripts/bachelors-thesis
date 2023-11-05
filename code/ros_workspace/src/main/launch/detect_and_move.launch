@@ -1,0 +1,9 @@
+<launch>
+
+  <!-- Start RealSense driver -->
+  <include file="$(find realsense2_camera)/launch/RV6L.launch" />
+
+  <!-- Start rv6l_3d -->
+  <include file="$(find darknet_ros_3d)/launch/RV6L.launch" />
+
+</launch>

@@ -1,0 +1,19 @@
+%\chapter*{Abstract}
+\newpage
+\begin{center}
+    \Large
+    \textbf{Entwicklung einer KI-basierten Robotersteuerung mit Industrial ROS}
+       
+    \large
+    Automatische Erkennung und Lokalisierung von Objekten durch ein 3D-Kamerasystem
+        
+    \vspace{0.4cm}
+    \textbf{David Gries}
+       
+    \vspace{2cm}
+    \textbf{Abstract}
+\end{center}
+
+Die vorliegende Arbeit befasst sich mit der Entwicklung einer KI-basierten Robotersteuerung auf Basis von ROS, die mithilfe eines 3D-Kamerasystems die Position und Art von Objekten erkennt. Diese nutzt das Intel RealSense 435 3D-Kamerasystem und den Objekterkennungsalgorithmus YOLOv3. Die Umsetzung des Systems erfolgt am 6-Achs-Knickarmroboter RV6L der Firma Reis Robotics. Es wird ein ROS-Paket implementiert, das die zweidimensionale Objektposition mit dem 3D-Bild der RealSense abgleicht, um zusätzlich zum Objektmittelpunkt dessen Abstand zur Kamera zu ermitteln. Der YOLOv3-Algorithmus weist eine geringe Fehlerrate bei der Klassifizierung auf und erkennt die Positionen der Objekte zuverlässig, kann jedoch nicht deren Orientierung feststellen. Im Vergleich zu traditioneller Computer Vision bietet der verwendete Deep Learning Algorithmus vor allem in Bezug auf den Einlernprozess und der möglichen Weiterentwicklung Vorteile.\\
+
+This thesis describes the development of an AI-based robot controller using ROS. It uses a 3D camera system to recognize the position and class of unordered objects. To accomplish this, an Intel RealSense 435 3D camera system and the object recognition algorithm YOLOv3 are used. The system is implemented on the six-axis articulated arm robot RV6L from Reis Robotics. A ROS package that matches the two-dimensional object position with the three-dimensional image of the RealSense is implemented to determine the distance between the camera and the object center. The YOLOv3 algorithm has a low error rate in classification and reliably detects the positions of the objects, but cannot determine their orientation. Compared to traditional computer vision, the Deep Learning algorithm offers advantages especially in terms of the learning process and possible further development.

@@ -1,0 +1,85 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Einbinden des Seiten Layouts
+\input{setup/page}
+
+% Einbinden eigener Kommandos
+\input{setup/commands}
+
+% Einbinden der Packages
+\input{setup/packages}
+\input{setup/listofequations.tex}
+
+% Einbinden eigener Makros
+\input{setup/macros}
+
+% Einbinen eigner Pakete
+\input{setup/custom_packages}
+
+%Daten die Automatisch Verwendet werden
+\author{David Gries}
+\title{\texorpdfstring{\hspace{-0.3cm}\includegraphics[width=6cm]{Bilder/thab_logo.png}\\[3cm]}{}Entwicklung einer KI-basierten Robotersteuerung mit Industrial ROS}
+\subject{Automatische Erkennung und Lokalisierung von Objekten durch ein 3D-Kamerasystem}
+\thesisType{Bachelorarbeit}
+\faculty{Fakultät Ingenieurswissenschaften}
+\erstpruefer{Prof. Dr. Hartmut Bruhm}
+\matrikelnummer{2217395}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                          Dokumentanfang                         %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+   % Dokument erstmalig initialisieren (Front Matter)
+   \frontmatter
+   \pagenumbering{Roman}
+   % Deckblatt
+   \input{Seiten/Deckblaetter}
+   \input{Seiten/Abstract}
+
+   \setcounter{page}{0}
+   % Inhaltsverzeichnis einfügen
+   \pagestyle{plain}
+   \setcounter{secnumdepth}{3}                        % Tiefe des Inhaltsverzeichnisses festlegen
+   \setcounter{tocdepth}{2}
+   \maintoc                                           % Inhaltsverzeichnis erzeugen
+
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+   \newpage \phantomsection
+   \addtotoc{Abkürzungsverzeichnis}
+   \input{Seiten/Acronyme}
+   
+   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+   % Dokument initialisieren
+   \mainmatter
+   \pagestyle{headings}
+
+   % Kapitel einbinden
+   \input{Kapitel/Einleitung}
+   \input{Kapitel/TechnischeGrundlagen}
+   \input{Kapitel/SoftwareundHardware}
+   \input{Kapitel/Gesamtsystem}
+   \input{Kapitel/EvaluierungWeiterentwicklung}
+   \input{Kapitel/Fazit}
+
+   \backmatter
+   \pagenumbering{Roman}
+   \setcounter{page}{4}
+
+   \newpage
+   \addtotoc{Abbildungsverzeichnis}
+   \listoffigures
+   \begin{flushleft}
+   \addtotoc{Literatur}
+   \printbibliography  % Bibliographie erzeugen
+   \end{flushleft}
+   \appendix
+   \renewcommand{\thesection}{\Alph{section}}
+   \input{Seiten/Anhang}
+
+\end{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                           Dokumentende                          %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

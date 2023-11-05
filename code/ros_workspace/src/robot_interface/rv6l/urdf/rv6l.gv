@@ -1,0 +1,23 @@
+digraph G {
+node [shape=box];
+"RV6L_L1" [label="RV6L_L1"];
+"RV6L_L2" [label="RV6L_L2"];
+"RV6L_L3" [label="RV6L_L3"];
+"RV6L_L4" [label="RV6L_L4"];
+"RV6L_L5" [label="RV6L_L5"];
+"RV6L_L6" [label="RV6L_L6"];
+"RV6L_Greifer_Sauger" [label="RV6L_Greifer_Sauger"];
+node [shape=ellipse, color=blue, fontcolor=blue];
+"RV6L_L1" -> "Joint_1" [label="xyz: 0 0 0.912 \nrpy: 0 -0 0"]
+"Joint_1" -> "RV6L_L2"
+"RV6L_L2" -> "Joint_2" [label="xyz: 0.28 0 0.203 \nrpy: -1.5708 0 0"]
+"Joint_2" -> "RV6L_L3"
+"RV6L_L3" -> "Joint_3" [label="xyz: 0.615 0 0 \nrpy: 0 -0 0"]
+"Joint_3" -> "RV6L_L4"
+"RV6L_L4" -> "Joint_4" [label="xyz: 0 0 0 \nrpy: 1.5708 -0 0"]
+"Joint_4" -> "RV6L_L5"
+"RV6L_L5" -> "Joint_5" [label="xyz: 0.74 0 0 \nrpy: 0 -0 0"]
+"Joint_5" -> "RV6L_L6"
+"RV6L_L6" -> "Joint_6" [label="xyz: 0.09 0 0 \nrpy: 1.5708 -5.55112e-17 1.5708"]
+"Joint_6" -> "RV6L_Greifer_Sauger"
+}

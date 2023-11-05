@@ -1,0 +1,69 @@
+\babel@toc {english}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {chapter}{\textbf {Abkürzungsverzeichnis}}{III}{section*.3}%
+\contentsline {chapter}{\numberline {\bfseries {1}} \textbf {Einleitung}}{1}{chapter.5}%
+\contentsline {chapter}{\numberline {\bfseries {2}} \textbf {Technische Grundlagen}}{3}{chapter.10}%
+\contentsline {section}{\numberline {\bfseries {2.1}}Robot Operating System (ROS)}{3}{section.11}%
+\contentsline {subsection}{\numberline {\bfseries {2.1.1}}Aufbau}{4}{subsection.12}%
+\contentsline {subsubsection}{\numberline {2.1.1.1}Paketmanagement}{4}{subsubsection.13}%
+\contentsline {subsubsection}{\numberline {2.1.1.2}Struktur}{5}{subsubsection.14}%
+\contentsline {subsubsection}{\numberline {2.1.1.3}Entwicklung und Dokumentation}{7}{subsubsection.16}%
+\contentsline {subsection}{\numberline {\bfseries {2.1.2}}ROS Versionen}{8}{subsection.17}%
+\contentsline {section}{\numberline {\bfseries {2.2}}Arten von 3D-Kameras}{9}{section.19}%
+\contentsline {subsection}{\numberline {\bfseries {2.2.1}}Stereokamera}{9}{subsection.21}%
+\contentsline {subsection}{\numberline {\bfseries {2.2.2}}RGB-D Kamera}{10}{subsection.23}%
+\contentsline {section}{\numberline {\bfseries {2.3}}Objekterkennungsalgorithmen}{11}{section.27}%
+\contentsline {subsection}{\numberline {\bfseries {2.3.1}}Traditionelle Computer Vision}{11}{subsection.28}%
+\contentsline {subsection}{\numberline {\bfseries {2.3.2}}Deep Learning}{12}{subsection.34}%
+\contentsline {chapter}{\numberline {\bfseries {3}} \textbf {Software und Hardware}}{15}{chapter.39}%
+\contentsline {section}{\numberline {\bfseries {3.1}}Konfiguration des Kamerasystems}{15}{section.40}%
+\contentsline {subsection}{\numberline {\bfseries {3.1.1}}Technische Daten}{15}{subsection.41}%
+\contentsline {paragraph}{\nonumberline Microsoft Kinect}{15}{section*.42}%
+\contentsline {paragraph}{\nonumberline Intel Realsense}{17}{section*.45}%
+\contentsline {subsection}{\numberline {\bfseries {3.1.2}}Kalibrierung}{19}{subsection.51}%
+\contentsline {subsubsection}{\numberline {3.1.2.1}RGB-D Kalibrierung}{19}{subsubsection.52}%
+\contentsline {paragraph}{\nonumberline Microsoft Kinect}{19}{section*.53}%
+\contentsline {paragraph}{\nonumberline Intel RealSense}{20}{section*.54}%
+\contentsline {subsubsection}{\numberline {3.1.2.2}Hand-Auge-Kalibrierung}{20}{subsubsection.55}%
+\contentsline {subsection}{\numberline {\bfseries {3.1.3}}Befestigung}{21}{subsection.56}%
+\contentsline {section}{\numberline {\bfseries {3.2}}Implementierung der Objekterkennung}{21}{section.58}%
+\contentsline {subsection}{\numberline {\bfseries {3.2.1}}Voraussetzungen für das Objekterkennungsprogramm}{22}{subsection.59}%
+\contentsline {subsection}{\numberline {\bfseries {3.2.2}}Training des YOLO-Algorithmus}{23}{subsection.62}%
+\contentsline {subsection}{\numberline {\bfseries {3.2.3}}rv6l\_3d-Paket}{25}{subsection.65}%
+\contentsline {subsection}{\numberline {\bfseries {3.2.4}}Bounding Box Subscriber}{27}{subsection.91}%
+\contentsline {subsection}{\numberline {\bfseries {3.2.5}}Algorithmus zur Positionserkennung}{27}{subsection.98}%
+\contentsline {chapter}{\numberline {\bfseries {4}} \textbf {Gesamtsystem}}{32}{chapter.125}%
+\contentsline {section}{\numberline {\bfseries {4.1}}Programmstruktur}{32}{section.127}%
+\contentsline {section}{\numberline {\bfseries {4.2}}Programmablauf}{35}{section.129}%
+\contentsline {section}{\numberline {\bfseries {4.3}}Bewegungsablauf}{35}{section.130}%
+\contentsline {chapter}{\numberline {\bfseries {5}} \textbf {Evaluierung und Weiterentwicklung}}{38}{chapter.135}%
+\contentsline {section}{\numberline {\bfseries {5.1}}Auswertung und Optimierung}{38}{section.136}%
+\contentsline {section}{\numberline {\bfseries {5.2}}Ansätze zur Weiterentwicklung des rv6l\_3d-Pakets}{39}{section.137}%
+\contentsline {chapter}{\numberline {\bfseries {6}} \textbf {Fazit}}{42}{chapter.141}%
+\contentsline {chapter}{\textbf {Abbildungsverzeichnis}}{IV}{section*.142}%
+\contentsline {chapter}{\textbf {Literatur}}{V}{section*.144}%
+\contentsline {chapter}{\textbf {Anhang}}{XII}{section*.146}%
+\appendixattoc 
+\renewcommand *{\@pnumwidth }{3.5em}
+\contentsline {section}{\numberline {\bfseries {A}}RV6L 3D}{XV}{section.150}%
+\contentsline {subsection}{\numberline {\bfseries {A.1}}Konfiguration}{XV}{subsection.151}%
+\contentsline {subsubsection}{\numberline {A.1.1}Hauptkonfiguration}{XV}{subsubsection.152}%
+\contentsline {subsubsection}{\numberline {A.1.2}Darknet ROS Konfiguration}{XV}{subsubsection.161}%
+\contentsline {subsubsection}{\numberline {A.1.3}RV6L Konfiguration}{XV}{subsubsection.169}%
+\contentsline {subsection}{\numberline {\bfseries {A.2}}Bounding Box Funktion}{XVI}{subsection.184}%
+\contentsline {subsection}{\numberline {\bfseries {A.3}}Bounding Box Message}{XVII}{subsection.257}%
+\contentsline {subsubsection}{\numberline {A.3.1}Struktur}{XVII}{subsubsection.258}%
+\contentsline {subsubsection}{\numberline {A.3.2}Ausgabe (Topic)}{XVIII}{subsubsection.265}%
+\contentsline {subsection}{\numberline {\bfseries {A.4}}Launchfiles}{XVIII}{subsection.281}%
+\contentsline {subsubsection}{\numberline {A.4.1}RV6L 3D (Darknet)}{XVIII}{subsubsection.282}%
+\contentsline {subsubsection}{\numberline {A.4.2}rv6l\_object\_detection}{XIX}{subsubsection.317}%
+\contentsline {subsection}{\numberline {\bfseries {A.5}}ROS Package}{XX}{subsection.340}%
+\contentsline {section}{\numberline {\bfseries {B}}Realsense Launchfile}{XXIII}{section.414}%
+\contentsline {section}{\numberline {\bfseries {C}}Handhabung}{XXVIII}{section.567}%
+\contentsline {subsection}{\numberline {\bfseries {C.1}}Bounding Box Subscriber}{XXVIII}{subsection.568}%
+\contentsline {subsection}{\numberline {\bfseries {C.2}}Anfahren des Objekts}{XXVIII}{subsection.588}%
+\contentsline {section}{\numberline {\bfseries {D}}Darknet}{XXXIII}{section.738}%
+\contentsline {subsection}{\numberline {\bfseries {D.1}}Darknet Konfiguration}{XXXIII}{subsection.739}%
+\contentsline {subsection}{\numberline {\bfseries {D.2}}Objekt Konfiguration}{XXXIII}{subsection.759}%
+\contentsline {subsection}{\numberline {\bfseries {D.3}}Generator für train.txt (Python)}{XXXIII}{subsection.765}%

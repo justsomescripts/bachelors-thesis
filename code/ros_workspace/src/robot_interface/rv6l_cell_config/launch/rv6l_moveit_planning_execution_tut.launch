@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!--Erklärungen in Tutorial https://www.youtube.com/watch?v=edHAzfYre7E&t=334s-->
+    <arg name="use_rviz" default="true" />
+
+    <rosparam command="load" file="$(find rv6l_cell_config)/config/controller_joint_names.yaml"/>
+
+    <include file="$(find rv6l_cell_config)/launch/planning_context.launch">
+        <arg name="load_robot_description" value="true"/>
+    </include>
+    
+    <!-- Wird nicht gebraucht, da schon in HW Interface Node vorhanden
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+        <param name="/use_gui" value="false"/>
+        <rosparam param="/source_list">[/rv6l/joint_states]</rosparam>        
+    </node>-->
+
+  <include file="$(find rv6l_cell_config)/launch/move_group.launch">
+    <arg name="publish_monitored_planning_scene" value="true" />
+  </include>
+
+  <!--<include file="$(find rv6l_urdf_config)/launch/moveit_rviz.launch">
+    <arg name="config" value="true"/>
+        
+  </include>-->
+
+  <include file="$(find rv6l_cell_config)/launch/moveit_rviz.launch" if="$(arg use_rviz)">
+    <arg name="rviz_config" value="$(find rv6l_cell_config)/launch/moveit.rviz"/>
+    <!--<arg name="debug" value="$(arg debug)"/>-->
+  </include>
+
+</launch>

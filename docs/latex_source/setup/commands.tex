@@ -1,0 +1,139 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Spezielle Kommandos für die Bearbeitung des Projekts
+% Fügt eine leere Seite ein
+\newcommand*{\blankpage}{
+   \clearpage{
+      \pagestyle{empty}
+      \cleardoublepage
+   }
+}
+
+% Ändert die Schriftart
+\newcommand*{\changefont}[3]{
+\fontfamily{#1}  \fontseries{#2}  \fontshape{#3}  \selectfont}
+
+% Verhalten der Gleichungs-Zähler
+\newcommand*{\subeq}{\renewcommand\theequation{\theparentequation{}-\arabic{equation}}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Kommandos zum Einfügen von Querverweisen
+%% Deutsche Version
+
+% Markiert eine indirekte Zitierung.
+% #1: Seitennummer
+% #2: Literaturreferenz
+\newcommand*{\vgl}[2]{(vgl. \cite[S.~#2]{#1})}
+
+% Markiert eine indirekte Zitierung mit 2 Verweisen
+% #1: Seitennummer Verweis 1
+% #2: Literaturreferenz 1
+% #3: Seitennummer Verweis 2
+% #4: Literaturreferenz 2
+\newcommand*{\Vgl}[4]{(vgl. \cite[S.~#2]{#1} und \cite[S.~#4]{#3})}
+
+% Deklariert eine Quelle.
+% #1: Literaturreferenz
+\newcommand*{\source}[1]{Quelle:~\cite{#1}}
+
+% Verweist auf eine Quelle
+% #1: Literaturreferenz
+\newcommand*{\refSource}[1]{\cite{#1}}
+
+% Verweist auf zwei Quellen
+% #1: Literaturreferenz 1
+% #2: Literaturreferenz 2
+\newcommand*{\RefSource}[2]{\cite{#1, #2}}
+
+% Fügt einen Verweis zu einem Bild ein.
+% #1: Referenzname
+\newcommand*{\refFig}[1]{\textbf{Abbildung~\ref{#1}}}
+
+% Fügt einen Verweis zu einer Tabelle ein.
+% #1: Referenzname
+\newcommand*{\refTab}[1]{Tabelle~\ref{#1}}
+
+% Fügt einen Verweis zu einem Kapitel ein.
+% #1: Referenzname
+\newcommand*{\refChpt}[1]{\textbf{Kapitel~\ref{#1}}}
+
+% Fügt einen Verweis zu einem Abschnitt ein.
+% #1: Referenzname
+\newcommand*{\refSec}[1]{\textbf{Abschnitt~\ref{#1}}}
+\newcommand*{\refAtt}[1]{\textbf{Anhang~\ref{#1}}}
+
+% Fügt einen Verweis zu einem Unterabschnitt ein.
+% #1: Referenzname
+\newcommand*{\refSubSec}[1]{Unterabschnitt~\ref{#1}}
+
+% Fügt einen Verweis zu einem Codeabschnitt ein.
+% #1: Referenzname
+\newcommand*{\refCode}[1]{Quellcode~\ref{#1}}
+
+% Fügt einen Verweis zu einer Gleichung ein.
+% #1: Referenzname
+\newcommand*{\refEqu}[1]{Gleichung~\textnormal{(\ref{#1})}}
+
+% Fügt ein kursiven Querverweis zu einem Bild ein.
+% #1: Referenzname
+\newcommand*{\seeFig}[1]{(s. \refFig{#1})}
+
+% Fügt ein kursiven Querverweis zu einer Tabelle ein.
+% #1: Referenzname
+\newcommand*{\seeTab}[1]{(siehe \refTab{#1})}
+
+% Fügt ein kursiven Querverweis zu einem Abschnitt ein.
+% #1: Referenzname
+\newcommand*{\seeSec}[1]{(s. \refSec{#1})}
+\newcommand*{\seeAtt}[1]{(s. \refAtt{#1})}
+
+% Fügt ein kursiven Querverweis zu einem Kapitel ein.
+% #1: Referenzname
+\newcommand*{\seeChpt}[1]{(siehe \refChpt{#1})}
+
+% Fügt ein kursiven Querverweis zu einem Codeabschnitt ein.
+% #1: Referenzname
+\newcommand*{\seeCode}[1]{(siehe \refCode{#1})}
+
+% Fügt ein kursiven Querverweis zu einer Gleichung ein.
+% #1: Referenzname
+\newcommand*{\seeEqu}[1]{(siehe \refEqu{#1})}
+
+% Fügt ein kursiven Querverweis zu zwei Gleichungen ein.
+% #1: Referenzname 1
+% #2: Referenzname 2
+\newcommand*{\SeeEqu}[2]{(siehe \refEqu{#1} und \refEqu{#2})}
+
+\newcommand{\addtotoc}[1]{
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{\textbf{#1}}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\newcommand{\faculty}[1]{\gdef\@faculty{#1}}
+\newcommand{\@faculty}{\@latex@warning@no@line{No \noexpand\faculty given}}
+\newcommand{\thesisType}[1]{\gdef\@thesisType{#1}}
+\newcommand{\@thesisType}{\@latex@warning@no@line{No \noexpand\thesisType given}}
+\newcommand{\erstpruefer}[1]{\gdef\@erstpruefer{#1}}
+\newcommand{\@erstpruefer}{\@latex@warning@no@line{No \noexpand\erstpruefer given}}
+\newcommand{\zweitpruefer}[1]{\gdef\@zweitpruefer{#1}}
+\newcommand{\@zweitpruefer}{\@latex@warning@no@line{No \noexpand\zweitpruefer given}}
+\newcommand{\matrikelnummer}[1]{\gdef\@matrikelnummer{#1}}
+\newcommand{\@matrikelnummer}{\@latex@warning@no@line{No \noexpand\matrikelnummer given}}
+
+\renewcommand*{\maketitle}{
+\begin{titlepage}
+   \centering
+   \vspace*{\fill}
+   {\textbf{\Huge{\@title} \label{title}} \par}
+   \vspace{1cm}
+   {\LARGE \@subject \par}
+   \vspace{2.3cm}
+   {\LARGE{{\@thesisType} von \par \@author} \par}
+   {\vspace{2.6cm}}
+   {\LARGE{\@date}}
+   \vfill
+\end{titlepage}
+}
+\makeatother

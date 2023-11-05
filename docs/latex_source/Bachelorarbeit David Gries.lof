@@ -1,0 +1,31 @@
+\babel@toc {english}{}
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\addvspace {\baselineskip }
+\addvspace {\baselineskip }
+\contentsline {figure}{\numberline {2.1}{\ignorespaces ROS Struktur \cite {clearpath_robotics_intro_2015}\relax }}{7}{figure.caption.15}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Aufbau RGB-D Kamera \cite {prof_dr-ing_gunter_pomaska_primesensorpng_2013}\relax }}{10}{figure.caption.26}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Traditioneller Ansatz \cite [Abbildung~3]{youzi_review_2020}\relax }}{12}{figure.caption.32}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Vereinfachte Struktur von YOLO \cite {redmon_you_2016}\relax }}{13}{figure.caption.38}%
+\addvspace {\baselineskip }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Aufbau der Microsoft Kinect v2 \cite [Abbildung~5]{sung_real-time_2019}\relax }}{16}{figure.caption.43}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Genauigkeit der Microsoft Kinect v2 \cite [Abbildung~5]{chen_comparison_2017}\relax }}{16}{figure.caption.44}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Aufbau der Intel RealSense 435, Abbildung nach \cite {intel_corporation_depth_2022}\relax }}{17}{figure.caption.46}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Infrarotproj. und 3D-Bild der Intel RealSense 435\relax }}{17}{figure.caption.47}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Genauigkeit der Intel RealSense 435\relax }}{18}{figure.caption.48}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces RealSense Point Cloud in Rviz\relax }}{19}{figure.caption.50}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Befestigung der Intel RealSense am Endeffektor\relax }}{21}{figure.caption.57}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Anzahl der ROS-Downloads im März 2020 und 2021, Grafik nach \cite {scott_ros_2021}\relax }}{22}{figure.caption.60}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces YOLO Label\relax }}{23}{figure.caption.63}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Darknet Iterationen [generiert mit Darknet]\relax }}{24}{figure.caption.64}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces rv6l\_3d Bounding Boxes\relax }}{25}{figure.caption.66}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Koordinatensystem der Intel RealSense, Abbildung nach \cite {intel_corporation_depth_2022}\relax }}{27}{figure.caption.90}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Koordinatensystem des RV6L, Abbildung nach \cite [Abbildung~12]{leber_steuerung_2021}\relax }}{28}{figure.caption.99}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Objektkoordinaten\relax }}{29}{figure.caption.100}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Roboterpositionen\relax }}{31}{figure.caption.124}%
+\addvspace {\baselineskip }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Struktur des Gesamtsystems\relax }}{34}{figure.caption.128}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Ablauf des Gesamtprogramms\relax }}{37}{figure.caption.134}%
+\addvspace {\baselineskip }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Vergleich zwischen HBBs (links) und OBBs (rechts) \cite {yin_fast_2018}\relax }}{40}{figure.caption.140}%
+\addvspace {\baselineskip }

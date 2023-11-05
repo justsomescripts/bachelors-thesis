@@ -1,0 +1,9 @@
+rsv:
+  #ip adress for real rsv
+  robot_address: "10.205.202.31"
+  #ip adress for roboffice/local home
+  #robot_address: "192.168.2.130"
+  #ip address for roboffice/loval camra
+  #robot_address: "172.31.66.128"
+  robot_port: "80"
+  socket_timeout: 5

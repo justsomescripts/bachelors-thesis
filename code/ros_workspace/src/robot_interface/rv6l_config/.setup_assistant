@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: rv6l
+    relative_path: urdf/rv6l.urdf
+    xacro_args: ""
+  SRDF:
+    relative_path: config/rv6l.srdf
+  CONFIG:
+    author_name: Marvin Leber
+    author_email: marvin.leber99@gmail.com
+    generated_timestamp: 1624304470

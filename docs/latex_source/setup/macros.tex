@@ -1,0 +1,38 @@
+\newcommand*{\maintoc}{% Hauptinhaltsverzeichnis
+  \begingroup
+    \@fileswfalse% kein neues Verzeichnis öffnen
+    \renewcommand*{\appendixattoc}{% Trennanweisung im Inhaltsverzeichnis
+      \value{tocdepth}=-10000 % lokal tocdepth auf sehr kleinen Wert setzen
+    }%
+    \tableofcontents% Verzeichnis ausgeben
+  \endgroup
+}
+\newcommand*{\appendixtoc}{% Anhangsinhaltsverzeichnis
+  \begingroup
+    \edef\@alltocdepth{\the\value{tocdepth}}% tocdepth merken
+    \setcounter{tocdepth}{-10000}% Keine Verzeichniseinträge
+    \renewcommand*{\contentsname}{% Verzeichnisname ändern
+      Anhang}%
+    \renewcommand*{\appendixattoc}{% Trennanweisung im Inhaltsverzeichnis
+      \setcounter{tocdepth}{\@alltocdepth}% tocdepth wiederherstellen
+    }%
+    \tableofcontents% Verzeichnis ausgeben
+    \setcounter{tocdepth}{\@alltocdepth}% tocdepth wiederherstellen
+  \endgroup
+}
+\newcommand*{\appendixattoc}{% Trennanweisung im Inhaltsverzeichnis
+}
+\g@addto@macro\appendix{% \appendix erweitern
+  \if@openright\cleardoublepage\else\clearpage\fi% Neue Seite
+  \phantomsection
+  \addcontentsline{toc}{chapter}{\textbf{\appendixname}}% Eintrag ins Hauptverzeichnis
+  \addtocontents{toc}{\protect\appendixattoc}% Trennanweisung in die toc-Datei
+}
+
+\g@addto@macro\appendix{%
+  %\pagenumbering{Roman}%
+  \addtocontents{toc}{\protect\renewcommand*{\protect\@pnumwidth}{3.5em}}%Seitenzahlen im Anhangverzeichnis nicht über Seitenrand hinaus. Problem entstand durch die langen römischen Zahlen. Siehe auch: http://www.komascript.de/node/608
+}
+
+% Kapitel Punkt entfernen
+%\renewcommand{\autodot}{}

@@ -1,0 +1,23 @@
+% Hie die eigenen benötigten Pakete einflegen
+\usepackage[backend=biber, style=ieee, citestyle=ieee, dashed=false]{biblatex}
+
+   % Einbinden des Literaturverzeichnisses
+   \addbibresource{Literatur/Literatur_David.bib}
+   \addbibresource{Literatur/Literatur_Dennis.bib}
+
+% fix nodate
+\xpatchbibdriver{online}
+   {\printtext[parens]{\usebibmacro{date}}}
+   {\iffieldundef{year}
+     {. (o. D.). }
+     {\printtext[parens]{\usebibmacro{date}}}}
+   {}
+   {\typeout{There was an error patching biblatex-ieee (specifically, ieee.bbx's @online driver)}}
+
+\usepackage{tensor} % Formeln
+
+\usepackage{fixfoot}
+\DeclareFixedFootnote{\ver}{verfasst von Steinbeck \cite{steinbeck_entwicklung_2022}}
+\DeclareFixedFootnote{\aus}{ausführlich behandelt in \cite[Steinbeck, Abschnitt~3.4]{steinbeck_entwicklung_2022}}
+\DeclareFixedFootnote{\beh}{ausführlich behandelt in \cite[Steinbeck, Abschnitt~4.2]{steinbeck_entwicklung_2022}}
+\usepackage{dirtree}

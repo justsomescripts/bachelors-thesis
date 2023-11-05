@@ -1,0 +1,13 @@
+controller_list:
+  - name: fake_rv6l_planning_group_controller
+    type: $(arg execution_type)
+    joints:
+      - Joint_1
+      - Joint_2
+      - Joint_3
+      - Joint_4
+      - Joint_5
+      - Joint_6
+initial:  # Define initial robot poses.
+  - group: rv6l_planning_group
+    pose: zero

@@ -1,0 +1,12 @@
+yolo_model:
+
+  config_file:
+    name: RV6L.cfg
+  weight_file:
+    name: RV6L.weights
+  threshold:
+    value: 0.3
+  detection_classes:
+    names:
+      - box_r
+      - cyl_b

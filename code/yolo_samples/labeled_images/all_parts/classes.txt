@@ -1,0 +1,3 @@
+orange_cyl
+white_box
+red_box

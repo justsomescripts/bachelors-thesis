@@ -1,0 +1,8 @@
+<launch>
+
+  <!-- Start execution -->
+  <include file="$(find rv6l_cell_config)/launch/rv6l_moveit_planning_execution_tut.launch" />
+
+  <!-- Start movement -->
+
+</launch>

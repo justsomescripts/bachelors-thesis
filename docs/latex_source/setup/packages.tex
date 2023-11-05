@@ -1,0 +1,243 @@
+\pagestyle{empty}
+% Deutsche Anpassungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[T1]{fontenc}				% Schriftkodierung
+\usepackage[utf8]{inputenc}				% Eingabekodierung
+
+\usepackage[english,ngerman]{babel}		% Neue deutsche Rechtschreibung verwenden
+\addto\captionsngerman{					% Name des Literaturverzeichnisses verändern
+  \renewcommand{\bibname}{Quellenverzeichnis}
+}
+\usepackage{microtype}					% verbessert Umbruch von Texten
+\usepackage{scrhack}
+
+% URL %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{url}						% Links durch \url{}
+
+\usepackage[
+  left=3.8cm,
+  right=2.8cm,
+  top=3.5cm,
+  bottom=3.5cm,
+]{geometry}
+
+\usepackage[normalem]{ulem}
+
+\makeatletter
+\let\oldTitle\title
+\renewcommand{\title}[1]{
+   \oldTitle{#1}
+   \gdef\@utitle{\uline{#1}}
+}
+\newcommand{\@utitle}{\@latex@warning@no@line{No \noexpand\Title given}}
+\newcommand{\underlinedtitle}{\@utitle}
+\makeatother
+
+\usepackage[sfdefault]{roboto}					% Roboto Schriftart
+\usepackage[section]{placeins}
+
+\usepackage[                  % Package für Farbe
+   pdftex,                    % Ausgabe für pdfTeX
+   %xetex,                    % Ausgabe für XeTeX
+   hyperref,                  % Hyperref-Support
+   svgnames,                             % Zusätzliche Farben per Name hinzufügen
+   x11names,                             % un nochmehr Farben
+   showerror                  % Fehlermeldung bei Verwendung undefinierter Farbe
+   ]{xcolor}%
+
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+
+%% Packages für Grafiken & Abbildungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[pdftex]{graphicx}			% Zum Laden von Grafiken
+   \graphicspath{{Bilder/}}				% Standardpfad für Bilder/Grafiken
+
+\usepackage{fancybox}		% Ermöglicht zeichnen von Boxen von definierter Länge
+
+
+% fancy cross-referencing \fref & \Fref
+\usepackage[german, plain]{fancyref}
+
+
+\usepackage[                  % Bildunterschriften
+   format = hang,             % Ausrichtung
+%   indention = 0.5cm,        % Texteinzug ab 2. Zeile
+   labelformat = default,     % Bezeichnerformatierung
+   labelsep = colon,          % Bezeichner-Trennzeichen
+%  textformat = period,       % Textformatierung (Textendzeichen)
+   justification = justified, % Text als Blocksatz setzen
+   singlelinecheck = true,    % 1-Zeilen-Beschriftungen --> zentrieren erlaubt
+   font = {it, small},        % Beschriftungsformat
+   labelfont = bf,			  % Bezeichnerformat (Bild x.y...)
+%   textfont = it,            % Textformat
+   margin = 0pt,              % Beschriftungsrand (auch links/rechts möglich {0pt, 0pt})
+   oneside,                   % Einseitiger Textsatz
+%   twoside,                  % Zweiseitiger Textsatz
+   parskip = 5pt,             % Abstand zwischen Absätzen in Beschriftungen
+   skip = 8pt,                % Abstand von Beschriftung
+   listfigurename = Bilderverzeichnis,	% Abbildungen anstatt Abbildungsverzeichniss
+   listtablename  = Tabellen,           % Tabellen anstatt Tabellenverzeichnis
+   figurewithin = chapter,    % Zählerbegrenzung festlegen (also Bild 3.1 anstatt Bild 43)
+   tablewithin = chapter      % Zahlerbegrenzung festlegen
+   ]{caption}
+
+% Tabellen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{array}             % Standarderweiterung für Tabellen
+\usepackage{diagbox}		   % Diagonale linie durch Zelle
+
+% Bibliographiestil %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[				% Erweiterung der Basisfunktionalität
+%	numbers,				% Nummern
+%	square,					% Eckige Klammern
+%    sort&compress,			% Multiple Zitate sortieren und zusammenfassen
+%    longnamesfirst			% Erstes Zitat mit vollen Namen
+%   ]
+%   {natbib}
+
+%{Bibliographie/ka-style}
+%   \setcitestyle{
+%     authoryear,% Author-Year-Style
+%      square,   % Eckige Klammern
+%     semicolon, % semicolon als Trennzeichen
+%      aysep{},% Kein explizites Trennzeichen zwischen Author und Year
+%      yysep{;}% Komma als Trennzeichen zwischen mehreren Jahren
+%      }
+
+% Listings %%
+\usepackage{listings}
+\usepackage{lipsum}
+
+% Spaltendefinition rechtsbndig mit definierter Breite
+%\newcolumntype{w}[1]{>{\raggedleft\hspace{0pt}}p{#1}}
+
+%% Mathematik-Packages%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{amsmath}             % AMS Mathematikumgebungen/-erweiterungen
+\usepackage{amssymb}             % AMS Symbol/Font-Paket
+%\usepackage{accents}            % Erweiterung für Akzente im Mathematik-Modus
+\usepackage{mathcomp}            % Symbolerweiterungen für Mathematikmodus
+%\usepackage{cancel}             % Durchstreicehn in Mathematikumgebung
+
+% Title format Anpassen
+\makeatletter
+\renewcommand{\chapterlinesformat}[3]{\@hangfrom{\bfseries{#2}}\mdseries{#3}}
+\renewcommand{\sectionlinesformat}[4]{\@hangfrom{\hskip#2\bfseries{#3}}{\mdseries{#4}}}
+\makeatother
+
+% TODO: handle more than only chapter and section
+
+\usepackage[                  % Paket zum Navigieren innerhalb eines Dokuments
+   plainpages=true,           % Arabische Zeichen für Link-Darstellung
+   bookmarksopen=true,        % Lesezeichenbaum aufklappen
+   bookmarksopenlevel=1,      % Aufklapptiefe
+   pdfborder={0 0 0},         % Rahmenfarbe
+   pdfpagemode=UseOutlines,	% Ansicht im Adobe Reader
+   pdftex,                    % Ausgabe mit pdfTeX
+   pdfusetitle
+   ]{hyperref}
+   \hypersetup{
+   pdfborder={0 0 0},			% Kein Rand um Links
+	plainpages=false,			% Zur korrekten Erstellung der Bookmarks
+	hypertexnames=false			% Zur korrekten Erstellung der Bookmarks
+   }
+
+
+\usepackage[
+   printonlyused
+   ]{acronym}
+
+\usepackage{upgreek}
+
+\lstset{ %
+    basicstyle=\footnotesize\ttfamily,	% the size of the fonts that are used for the code
+    numbers=left,						% where to put the line-numbers
+    numbersep=5pt,						% how far the line-numbers are from the code
+    backgroundcolor=\color{white},      % choose the background color. You must add \usepackage{color}
+    showspaces=false,               % show spaces adding particular underscores
+    showstringspaces=false,         % underline spaces within strings
+    showtabs=false,                 % show tabs within strings adding particular underscores
+    rulecolor=\color{black},        % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. commens (green here))
+    tabsize=2,                      % sets default tabsize to 2 spaces
+    captionpos=t,                   % sets the caption-position to bottom
+    breaklines=true,                % sets automatic line breaking
+    breakatwhitespace=false,        % sets if automatic breaks should only happen at whitespace
+    title=\lstname,                 % show the filename of files included with \lstinputlisting;
+									% also try caption instead of title
+    keywordstyle=\color{blue},      % keyword style
+    commentstyle=\color{dkgreen},   % comment style
+    escapeinside={\%*}{*)},         % if you want to add LaTeX within your code
+    morekeywords={*,...}            % if you want to add more keywords to the set
+    frame=b,
+    stringstyle=\color{mauve}\ttfamily,	% Farbe der String
+    showspaces=false,					% Leerzeichen anzeigen ?
+    showtabs=false,						% Tabs anzeigen ?
+    xleftmargin=17pt,
+    framexleftmargin=17pt,
+    framexrightmargin=5pt,
+    framexbottommargin=4pt,
+    showstringspaces=false      % Leerzeichen in Strings anzeigen ?
+}
+
+\DeclareCaptionFont{white}{\color{white}}
+\DeclareCaptionFormat{listing}{\colorbox[cmyk]{0.43, 0.35, 0.35,0.01}{\parbox{\textwidth}{\hspace{15pt}#1#2#3}}}
+%\captionsetup[lstlisting]{format=listing,labelfont=white,textfont=white, singlelinecheck=false, margin=0pt, font={bf,footnotesize}}
+
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{csquotes}
+\usepackage{helvet}
+\usepackage{mathpazo}
+\usepackage[binary-units=true]{siunitx}
+\usepackage{subcaption}
+\usepackage{enumitem}
+\setlist[description]{style=nextline}
+\usepackage{romannum}
+
+\renewcaptionname{ngerman}\figureautorefname{Abb.}
+
+\tolerance 1414
+\hbadness 1414
+\emergencystretch 1.5em
+\hfuzz 0.3pt
+\widowpenalty=10000
+\vfuzz \hfuzz
+\raggedbottom
+
+% XXX: ugly
+%\makeatletter
+%  \let\ps@plain\ps@empty
+%\makeatother
+
+\DeclareTOCStyleEntries[linefill=\hfill]{tocline}{section,subsection,subsubsection,figure,table}
+\DeclareTOCEntryStyle{section}{section}
+\addtokomafont{chapterentry}{\mdseries}
+\addtokomafont{chapterentrypagenumber}{\bfseries}
+\newcommand*{\SavedOriginaladdchaptertocentry}{}
+\let\SavedOriginaladdchaptertocentry\addchaptertocentry
+
+\setuptoc{toc}{indent}
+\RedeclareSectionCommand[tocpagenumberformat=\bfseries]{section}%
+\RedeclareSectionCommand[tocpagenumberformat=\bfseries]{subsection}%
+
+\renewcommand*{\addchaptertocentry}[2]{%
+   \SavedOriginaladdchaptertocentry{\bfseries{#1}}{
+       \texorpdfstring{\textbf{#2}}{#2}}
+}
+
+\newcommand*{\SavedOriginaladdsectiontocentry}{}
+\let\SavedOriginaladdsectiontocentry\addsectiontocentry
+\renewcommand*{\addsectiontocentry}[2]{%
+   \SavedOriginaladdsectiontocentry{\bfseries{#1}}{#2}
+}
+
+\newcommand*{\SavedOriginaladdsubsectiontocentry}{}
+\let\SavedOriginaladdsubsectiontocentry\addsubsectiontocentry
+\renewcommand*{\addsubsectiontocentry}[2]{%
+   \SavedOriginaladdsubsectiontocentry{\bfseries{#1}}{#2}
+}
+
+\makeatletter
+%\renewcommand\frontmatter{%
+%   \cleardoublepage
+%   \@mainmatterfalse
+%   \pagenumbering{Roman}}
+%\makeatother

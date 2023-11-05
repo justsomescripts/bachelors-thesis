@@ -1,0 +1,45 @@
+% Dokumentation des KOMA-Script-Packets: scrbook
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Optionen zum Layout des Artikels                                  %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[            %% KOMA-Skript Dokumentklassen verwenden
+draft = false,             		% Entwurfsmodus
+paper = A4,                		% Papierart
+% paper = landscape,       		% Seite im Querformat setzen
+pagesize = pdftex,         		% Pagesize an pdfTeX anpassen
+% pagesitze = xetex,       		% Pagesize an XeTeX anpassen
+fontsize = 12pt,           		% Schriftgröße (12pt, 11pt (Standard))
+%BCOR = 10mm,                	% Bindekorrektur
+DIV=15,                    		% Satzspiegelfaktor, je größer, desto mehr Text auf Seite
+twoside = false,           		% Doppelseiten (Ein|Aus|Semi)
+twocolumn = false,         		% zweispaltiger Satz
+parskip = full,           		% Absatzformatierung s. scrguide 3.1
+%abstract = true,         		% Überschrift über Abstract an (nicht bei scrbook aktiv)
+chapterprefix = false,      		% Layout der Kapitelüberschriften
+appendixprefix = true,     		% Layout der Anhangüberschriften
+headinclude = false,       		% Kopfzeile zu Text betrachten (für Satzspiegelberechnung)
+footinclude = false,       		% Fußzeile zu Text betrachten (für Satzspiegelberechnung)
+mpinclude = false,         		% Rand zum Text betrachten (für Satzspiegelberechnung)
+% headlines = 1.25,        		% Anzahl der Kopfzeilen
+% headheight = 2cm,        		% Höhe der Kopfzeile
+% headsepline = true,      		% Trennline zum Seitenkopf
+% footsepline = true,      		% Trennline zum Seitenfuß
+numbers = auto,            		% KOMA-Skript setzt Endpunktierung im Inahltsverzeichnis.
+cleardoublepage = plain,   		% Einstellung des Seitenstils für eingefügte Vakatseiten
+% leqno,                   		% Nummerierung von Gleichungen links
+% fleqn,                   		% Ausgabe von Gleichungen linksbündig
+footnotes = multiple,      		% Mehrer aufeinander folgende Fußnoten durch Komma trennen
+titlepage = true,          		% Titelei auf eigener Seite \maketitle[Seitenanzahl]
+%headings = openright,     		% Kapitel auf rechter Seite beginnen, ggf. Vakatseiten
+headings = normal,         		% Normalgroße Überschriften
+open = right,              		% Seiten rechts beginnen
+%toc = listof,
+%toc = listof,              		% Abb.- und Tab.verzeichnis im Inhaltsverzeichnis
+%toc = noindex,             		% Index im Inhaltsverzeichnis (index|noindex)
+%toc = sectionentrywithoutdots,
+%toc = chapterentrywithoutdots,
+%bibliography = openstyle,  		% Offener Darstellungsstil der Bibliographie
+listof = chaptergapline,   		% Abb.- und Tab.verzeichnis werden nach Kapitel geordnet
+overfullrule = true,
+numbers=noenddot                % keine Punkte in Kapitelnummern
+]{scrbook}

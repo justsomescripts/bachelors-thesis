@@ -1,0 +1,25 @@
+[0] Config.pm:304> INFO - This is Biber 2.14 (beta)
+[0] Config.pm:307> INFO - Logfile is 'Bachelorarbeit David Gries.blg'
+[38] biber:322> INFO - === So Feb 27, 2022, 23:35:29
+[46] Biber.pm:415> INFO - Reading 'Bachelorarbeit David Gries.bcf'
+[85] Biber.pm:943> INFO - Found 62 citekeys in bib section 0
+[92] Biber.pm:4256> INFO - Processing section 0
+[92] Utils.pm:75> INFO - Globbing data source 'Literatur/Literatur_David.bib'
+[92] Utils.pm:91> INFO - Globbed data source 'Literatur/Literatur_David.bib' to Literatur/Literatur_David.bib
+[93] Utils.pm:75> INFO - Globbing data source 'Literatur/Literatur_Dennis.bib'
+[93] Utils.pm:91> INFO - Globbed data source 'Literatur/Literatur_Dennis.bib' to Literatur/Literatur_Dennis.bib
+[98] Biber.pm:4455> INFO - Looking for bibtex format file 'Literatur/Literatur_David.bib' for section 0
+[100] bibtex.pm:1653> INFO - LaTeX decoding ...
+[152] bibtex.pm:1471> INFO - Found BibTeX data source 'Literatur/Literatur_David.bib'
+[225] Utils.pm:293> WARN - ISBN '978-3-030-17794-2 978-3-030-17795-9' in entry 'arai_deep_2020' is invalid - run biber with '--validate_datamodel' for details.
+[272] Utils.pm:293> WARN - ISBN '978-3-319-54426-7 978-3-319-54427-4' in entry 'chen_comparison_2017' is invalid - run biber with '--validate_datamodel' for details.
+[355] Biber.pm:4455> INFO - Looking for bibtex format file 'Literatur/Literatur_Dennis.bib' for section 0
+[357] bibtex.pm:1653> INFO - LaTeX decoding ...
+[377] bibtex.pm:1471> INFO - Found BibTeX data source 'Literatur/Literatur_Dennis.bib'
+[414] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[414] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[414] Biber.pm:4084> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'de-DE'
+[414] Biber.pm:4090> INFO - No sort tailoring available for locale 'de-DE'
+[436] bbl.pm:652> INFO - Writing 'Bachelorarbeit David Gries.bbl' with encoding 'UTF-8'
+[461] bbl.pm:755> INFO - Output to Bachelorarbeit David Gries.bbl
+[461] Biber.pm:128> INFO - WARNINGS: 2
