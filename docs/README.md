@@ -106,7 +106,7 @@ A visual calibration target mounted to the end effector is used for the calibrat
 
 ### Adding custom objects to the dataset
 
-Custom objects can be added to the configuration using a custom `weights` file. Weights for general objects using YOLOv3 can be found [here](https://pjreddie.com/media/files/yolov3.weights) for example. Weights are placed in [this](ros_packages/workspace/src/darknet_ros/darknet_ros/yolo_network_config/weights) directory.
+Custom objects can be added to the configuration using a custom `weights` file. Weights for general objects using YOLOv3 can be found [here](https://pjreddie.com/media/files/yolov3.weights) for example. Weights are placed in [this](../code/ros_workspace/src/object_detection/darknet_ros/darknet_ros/yolo_network_config/weights) directory.
 ### Training with own objects
 
 To generate weights for adding own objects, multiple different images of those objects are necessary. The images should differ in image size, position and orientation of the object, surroundings and lightning for good results. A minimum of 100 images per object is recommended for good accuracy. Bounding Boxes have to be added around objects in the images. That can be done using a tool like [LabelImg](https://github.com/tzutalin/labelImg). The entire training process is described in [detailed_instructions/training.md](detailed_instructions/training.md).
