@@ -7,17 +7,27 @@ The goal is using the real-time neural network for object detection YOLOv3 to re
 
 ## Table of contents
 
-- [General Information](#general-information)
-- [Project videos](#project-videos)
-- [Package structure](#package-structure-de)
-- [Movement](#movement-de)
-- [Detection example](#detection-example)
-- [Requirements](#requirements)
-- [Hints for compilation](#hints-for-compilation-of-required-dependencies-and-ros-packages)
-- [Hand-eye calibration](#hand-eye-calibration)
-- [Adding Objects](#adding-objects)
-- [Outlook](#outlook)
-- [Authors](#authors)
+- [Object detection and Point Cloud mapping using ROS Noetic and Intel RealSense 435](#object-detection-and-point-cloud-mapping-using-ros-noetic-and-intel-realsense-435)
+  - [Table of contents](#table-of-contents)
+  - [General information](#general-information)
+  - [Project videos](#project-videos)
+  - [Package structure \[de\]](#package-structure-de)
+  - [Movement \[de\]](#movement-de)
+  - [Detection example](#detection-example)
+  - [Quick start](#quick-start)
+  - [Requirements](#requirements)
+  - [Hints for compilation of required dependencies and ROS packages](#hints-for-compilation-of-required-dependencies-and-ros-packages)
+    - [Building darknet\_ros](#building-darknet_ros)
+      - [Use Nvidia CUDA](#use-nvidia-cuda)
+  - [Hand-eye calibration](#hand-eye-calibration)
+  - [Adding Objects](#adding-objects)
+    - [Adding custom objects to the dataset](#adding-custom-objects-to-the-dataset)
+    - [Training with own objects](#training-with-own-objects)
+  - [Outlook](#outlook)
+  - [Authors](#authors)
+    - [Instructions](#instructions)
+    - [Code](#code)
+    - [External resources](#external-resources)
 
 ## General information
 
@@ -83,10 +93,6 @@ Additionally, a config file has to be adjusted. Detailed instructions can be fou
 #### Use Nvidia CUDA
 
 To enable Nvidia CUDA Support in darknet_ros, the CUDA Toolkit and NVCC hast to be installed. Instructions can be found [here](https://developer.nvidia.com/cuda-downloads?target_os=Linux&target_arch=x86_64&Distribution=Ubuntu&target_version=20.04&target_type=deb_local). The local deb (or network deb) is the installation method used here. Also, g++ and gcc are only supported on versions lower than 8. Detailed instructions to make CUDA work on the setup used here can be found in [detailed_instructions/setup.md](detailed_instructions/setup.md#installing-darknet_ros).
-
-## Testing packages
-
-The packages can be tested with the commands mentioned in [detailed_instructions/setup.md](detailed_instructions/setup.md#useful-commands-for-starting-out). The results show if the topic is published correctly and general object detection works.
 
 ## Hand-eye calibration
 

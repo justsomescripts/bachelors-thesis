@@ -4,7 +4,7 @@ This directory contains detailed instructions for setting up, running and modify
 
 ## Files
 
-* [setup.md](detailed_instructions/setup.md): setting up the environment, tests
-* [calibration.md](detailed_instructions/calibration.md): RGB-D-calibration, hand-eye-calibration
-* [custom_objects.md](detailed_instructions/custom_objects.md): add custom weights to YOLO
-* [training.md](detailed_instructions/training.md): training custom yolo objects
+* [setup.md](setup.md): setting up the environment, tests
+* [calibration.md](calibration.md): RGB-D-calibration, hand-eye-calibration
+* [custom_objects.md](custom_objects.md): add custom weights to YOLO
+* [training.md](training.md): training custom yolo objects

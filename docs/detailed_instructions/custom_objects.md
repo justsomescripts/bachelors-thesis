@@ -8,7 +8,7 @@ To use custom weights in darknet_ros_3d, it's recommended to do all the steps be
 
 ## Darknet
 
-To use custom weights in Darknet, download them to the Darknet root directory. For the detection to work, a config for YOLO (v3 is used as an example here) is necessary. An example can be found [here](/code/yolo_samples/configuration/darknet_ros/yolo_network_config/cfg). Basic instructions for the config parameters are included [here](training.md#yolo-configuration).
+To use custom weights in Darknet, download them to the Darknet root directory. For the detection to work, a config for YOLO (v3 is used as an example here) is necessary. An example can be found [here](../code/yolo_samples/configuration/darknet_ros/yolo_network_config/cfg). Basic instructions for the config parameters are included [here](training.md#yolo-configuration).
 
 Detection with a static image is started using the following command:
 
@@ -42,7 +42,7 @@ yolo_model:
       - red_box                         # names of the objects as defined in training or used dataset
 ```
 
-* The [YOLO network config](/code/yolo_samples/configuration/darknet_ros/yolo_network_config/cfg) has to be adjusted like mentioned above [(example)](training.md#yolo-configuration)
+* The [YOLO network config](../code/yolo_samples/configuration/darknet_ros/yolo_network_config/cfg) has to be adjusted like mentioned above [(example)](training.md#yolo-configuration)
 
 * Weights have to be placed into `[catkin workspace]/src/darknet_ros/darknet_ros/yolo_network_config/weights`
 
